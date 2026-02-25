@@ -12,7 +12,7 @@ export default function AryabhataCourse() {
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
-              2 Years Inter + IIT Program
+              Integrated Inter + IIT Programme(2 Years)
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">

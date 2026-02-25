@@ -6,7 +6,7 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 export default function Faculty() {
   const faculty = [
     {
-      img: "/faculty/pv.jpg",
+      img: "/faculty/rb-sir.jpeg",
       name: "P.V.RAMA BRAHMAM",
       role: "Maths EXPERT",
       exp: "36 Years Exp.",

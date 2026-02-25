@@ -48,7 +48,7 @@ export default function AboutPage() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/about/rbiit.jpg"
+              src="/home/rb-iit.png"
               alt="P.V. Rama Brahmam"
               width={500}
               height={600}

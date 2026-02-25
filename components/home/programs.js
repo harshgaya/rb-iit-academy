@@ -5,28 +5,34 @@ import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 export default function Programs() {
   const programs = [
     {
-      title: "2 Year IIT Program",
+      title: "Integrated Inter + IIT Programme(2 Years)",
       items: ["Class 11 & 12", "2 Years Duration", "Offline & Online Mode"],
+      link: "/2-year-iit-course",
     },
     {
-      title: "2 Year NEET Program",
+      title: "Integrated Inter + NEET Programme(2 Years)",
       items: ["Class 11 & 12", "2 Years Duration", "Offline & Online Mode"],
+      link: "/2-year-neet-course",
     },
     {
       title: "Senior Inter + IIT",
       items: ["Class 12 Integrated", "1 Year Duration", "Offline Mode"],
+      link: "/senior-inter-iit-program",
     },
     {
       title: "Long Term Program",
       items: ["12th Pass / Droppers", "1 Year Duration", "Offline Mode"],
+      link: "/neet-long-term-course",
     },
     {
-      title: "Crash Course",
+      title: "EAMCET / NEET Crash Course",
       items: ["Class 12 / Droppers", "3 Months Duration", "Online & Offline"],
+      link: "/eamcet-neet-crash",
     },
     {
       title: "Foundation",
       items: ["Class 6 to 10", "1 to 5 Years Duration", "Offline Mode"],
+      link: "/senior-inter-iit-program",
     },
   ];
 
@@ -69,9 +75,11 @@ export default function Programs() {
               </div>
 
               {/* button */}
-              <button className="mt-6 text-black w-full border border-gray-200 rounded-lg py-3 font-semibold hover:bg-gray-100 transition">
-                View Details
-              </button>
+              <a href={prog.link}>
+                <button className="mt-6 text-black w-full border border-gray-200 rounded-lg py-3 font-semibold hover:bg-gray-100 transition">
+                  View Details
+                </button>
+              </a>
             </div>
           ))}
         </div>

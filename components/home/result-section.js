@@ -10,36 +10,36 @@ export default function ResultsSection() {
   const inView = useInView(ref, { once: true });
 
   const stats = [
-    { number: 1245, suffix: "+", label: "IIT SELECTIONS" },
-    { number: 2890, suffix: "+", label: "NEET SELECTIONS" },
-    { number: 450, suffix: "+", label: "MEDICAL ADMISSIONS" },
+    { number: 130, suffix: "+", label: "IIT SELECTIONS" },
+    { number: 128, suffix: "+", label: "NEET SELECTIONS" },
+    { number: 250, suffix: "+", label: "MEDICAL ADMISSIONS" },
     { number: 100, suffix: "%", label: "YEAR-WISE CONSISTENCY" },
   ];
 
   const toppers = [
     {
       img: "/s1.jpg",
-      rank: "AIR 42",
-      name: "Rohan Mehta",
-      college: "IIT Delhi",
+      rank: "AIR 36",
+      name: "P. Anurag Reddy",
+      college: "IIT JEE Advanced",
     },
     {
       img: "/s2.jpg",
-      rank: "AIR 56",
-      name: "Ananya Sharma",
+      rank: "127",
+      name: "Sharath",
       college: "NEET UG",
     },
     {
       img: "/s3.jpg",
-      rank: "AIR 89",
-      name: "Kabir Singh",
-      college: "IIT Kanpur",
+      rank: "AIR 94",
+      name: "Nikhil",
+      college: "EACET",
     },
     {
       img: "/s4.jpg",
-      rank: "AIR 115",
-      name: "Priya Patel",
-      college: "NEET UG",
+      rank: "AIR 1",
+      name: "Amrita",
+      college: "AEEE",
     },
   ];
 

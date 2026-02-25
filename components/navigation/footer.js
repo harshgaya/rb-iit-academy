@@ -26,11 +26,11 @@ export default function Footer() {
                 width={45}
                 height={45}
               />
-              <h3 className="text-xl font-bold">RB IIT NEET</h3>
+              <h3 className="text-xl font-bold">RB IIT NEET Academy</h3>
             </div>
 
             <p className="text-gray-300 mt-4 text-sm leading-relaxed">
-              The RB IIT Academy is one of the pioneers and promoters of
+              The RB IIT NEET Academy is one of the pioneers and promoters of
               educational methodologies and ideologies in Hyderabad, Telangana.
             </p>
 

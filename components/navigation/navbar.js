@@ -10,8 +10,14 @@ export default function Navbar() {
 
   const dropdownItems = {
     Courses: [
-      { name: "2 Year Inter + IIT Program", href: "/2-year-iit-course" },
-      { name: "2 Year Inter + NEET Program", href: "/2-year-neet-course" },
+      {
+        name: "Integrated Inter + IIT Programme(2 Years)",
+        href: "/2-year-iit-course",
+      },
+      {
+        name: "Integrated Inter + NEET Programme(2 Years)",
+        href: "/2-year-neet-course",
+      },
       { name: "Senior Inter + IIT Program", href: "/senior-inter-iit-program" },
       { name: "IIT Longterm Program", href: "/iit-longterm-program" },
       { name: "NEET Longterm Program", href: "/neet-long-term-course" },
@@ -113,7 +119,7 @@ export default function Navbar() {
               href="/contact"
               className="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition"
             >
-              Book Demo
+              Book Free Counselling
             </Link>
           </div>
 
@@ -194,7 +200,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="block bg-primary text-white text-center py-3 rounded-lg font-semibold"
           >
-            Book Demo Class
+            Book Free Counselling
           </Link>
         </div>
       </div>

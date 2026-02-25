@@ -64,7 +64,7 @@ export default function CTASection() {
           {/* LEFT CONTENT */}
           <div className="text-white">
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-              Start Your Child’s IIT / NEET Journey Today
+              Start Your Child’s<br></br> IIT / NEET<br></br> Journey Today
             </h2>
 
             <p className="mt-4 text-white/90">

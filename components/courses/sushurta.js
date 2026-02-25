@@ -12,7 +12,7 @@ export default function Sushruta() {
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
-              2 Year Inter + NEET Program
+              Integrated Inter + NEET Programme(2 Years)
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">

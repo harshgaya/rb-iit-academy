@@ -19,8 +19,8 @@ export default function Hero() {
 
           {/* heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-            Proven IIT-JEE & <br className="hidden md:block" /> NEET Results
-            Year <br className="hidden md:block" /> After Year
+            Proven <br className="hidden md:block" />
+            IIT-JEE & NEET Results Year After Year
           </h1>
 
           {/* ✅ RESULTS — ALWAYS 2/2 IN MOBILE */}
@@ -29,8 +29,8 @@ export default function Hero() {
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 bg-gray-200 rounded-full" />
                 <div>
-                  <p className="text-primary font-bold text-sm">AIR 112</p>
-                  <p className="text-xs text-gray-500">IIT BOMBAY</p>
+                  <p className="text-primary font-bold text-sm">AIR 36</p>
+                  <p className="text-xs text-gray-500">IIT JEE Advanced</p>
                 </div>
               </div>
             </div>
@@ -39,8 +39,8 @@ export default function Hero() {
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 bg-gray-200 rounded-full" />
                 <div>
-                  <p className="text-primary font-bold text-sm">AIR 387</p>
-                  <p className="text-xs text-gray-500">IIT MADRAS</p>
+                  <p className="text-primary font-bold text-sm">AIR 94</p>
+                  <p className="text-xs text-gray-500">EAMCET</p>
                 </div>
               </div>
             </div>
@@ -49,8 +49,8 @@ export default function Hero() {
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 bg-gray-200 rounded-full" />
                 <div>
-                  <p className="text-primary font-bold text-sm">Rank 542</p>
-                  <p className="text-xs text-gray-500">GOVT MEDICAL</p>
+                  <p className="text-primary font-bold text-sm">Rank 127</p>
+                  <p className="text-xs text-gray-500">NEET</p>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
             <a href="/contact">
               <button className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-90 transition w-full sm:w-auto">
-                Book Free Demo Class
+                Book Free Counselling
               </button>
             </a>
 
@@ -109,7 +109,7 @@ export default function Hero() {
         {/* ✅ IMAGE — ALWAYS BOTTOM IN MOBILE */}
         <div className="relative mt-10 md:mt-0">
           <Image
-            src="/home/iit-b.jpg"
+            src="/home/rb-iit.png"
             alt="students"
             width={600}
             height={500}
