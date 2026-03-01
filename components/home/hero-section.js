@@ -2,6 +2,7 @@
 import { SOCIAL_LINKS } from "@/lib/constants";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
+import ImageCarousel from "./image_carousal";
 
 export default function Hero() {
   return (
@@ -24,48 +25,66 @@ export default function Hero() {
           </h1>
 
           {/* ✅ RESULTS — ALWAYS 2/2 IN MOBILE */}
-          <div className="grid grid-cols-2 gap-3 mt-6">
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-gray-200 rounded-full" />
-                <div>
-                  <p className="text-primary font-bold text-sm">AIR 36</p>
-                  <p className="text-xs text-gray-500">IIT JEE Advanced</p>
-                </div>
-              </div>
-            </div>
+          <div className="grid grid-cols-2 gap-4 mt-6">
+            {[
+              {
+                name: "Anurag Reddy",
+                rank: "AIR 36",
+                exam: "IIT JEE Advanced",
+                image: "/home/anurag_reddy.jpeg",
+              },
+              {
+                name: "Bhanu Kiran",
+                rank: "AIR 1342",
+                exam: "NEET",
+                image: "/home/bhanu_kiran_neet.jpeg",
+              },
+              {
+                name: "Gaytri Sowmya",
+                rank: "_",
+                exam: "EAMCET",
+                image: "/home/gaytri_sowmya_eamcet.jpeg",
+              },
+              {
+                name: "500+ Students",
+                rank: "500+",
+                exam: "Selections",
+                image: null,
+              },
+            ].map((student, index) => (
+              <div
+                key={index}
+                className="bg-white p-4 rounded-xl border shadow-sm hover:shadow-md transition"
+              >
+                <div className="flex items-center gap-3">
+                  {/* Student Image */}
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                    {student.image ? (
+                      <Image
+                        src={student.image}
+                        alt={student.name}
+                        width={48}
+                        height={48}
+                        className="object-cover w-full h-full"
+                      />
+                    ) : (
+                      <span className="text-lg">🏆</span>
+                    )}
+                  </div>
 
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-gray-200 rounded-full" />
-                <div>
-                  <p className="text-primary font-bold text-sm">AIR 94</p>
-                  <p className="text-xs text-gray-500">EAMCET</p>
+                  {/* Student Info */}
+                  <div>
+                    <p className="text-primary font-bold text-sm md:text-base">
+                      {student.rank}
+                    </p>
+                    <p className="text-xs text-gray-500">{student.exam}</p>
+                    <p className="text-xs font-medium text-gray-800 mt-1">
+                      {student.name}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-gray-200 rounded-full" />
-                <div>
-                  <p className="text-primary font-bold text-sm">Rank 127</p>
-                  <p className="text-xs text-gray-500">NEET</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-4 rounded-xl border shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-primary/10 rounded-full flex items-center justify-center">
-                  🏆
-                </div>
-                <div>
-                  <p className="text-primary font-bold text-sm">500+</p>
-                  <p className="text-xs text-gray-500">SELECTIONS</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* desc */}
@@ -76,9 +95,9 @@ export default function Hero() {
 
           {/* buttons */}
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
-            <a href="/contact">
+            <a href="/result">
               <button className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-90 transition w-full sm:w-auto">
-                Book Free Counselling
+                View Results
               </button>
             </a>
 
@@ -106,17 +125,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ✅ IMAGE — ALWAYS BOTTOM IN MOBILE */}
-        <div className="relative mt-10 md:mt-0">
-          <Image
-            src="/home/rb-iit.png"
-            alt="students"
-            width={600}
-            height={500}
-            priority
-            className="rounded-2xl shadow-lg w-full h-auto"
-          />
-        </div>
+        <ImageCarousel />
       </div>
     </section>
   );

@@ -108,6 +108,9 @@ export default function Navbar() {
             <Link href="/contact" className="hover:text-primary transition">
               Contact
             </Link>
+            <Link href="/result" className="hover:text-primary transition">
+              Results
+            </Link>
             <Link
               target="blank"
               href="https://iitneetbooks.com/"
@@ -193,6 +196,13 @@ export default function Navbar() {
             className="block py-3 font-medium"
           >
             Contact
+          </Link>
+          <Link
+            href="/result"
+            onClick={() => setMenuOpen(false)}
+            className="block py-3 font-medium"
+          >
+            Results
           </Link>
 
           <Link

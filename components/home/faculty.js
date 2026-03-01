@@ -27,7 +27,7 @@ export default function Faculty() {
       edu: "M.Sc,B.Ed Chemistry, Osmania University",
     },
     {
-      img: "/faculty/chandra.jpeg",
+      img: "/faculty/chandra_sir_new.jpeg",
       name: "Chandra Sir",
       role: "Bilogy Expert",
       exp: "33 Years Exp.",
