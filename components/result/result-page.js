@@ -98,7 +98,8 @@ const toppers = [
     value: "AIR 36",
     name: "P. Anurag Reddy",
     college: "IIT Bombay – CSE",
-    quote: "Dedicated revision cycles helped me secure AIR 36.",
+    quote:
+      "Dedicated revision cycles and targeted practice helped me secure AIR 36.",
   },
   {
     img: "/results/kamal_iit.jpeg",
@@ -106,8 +107,89 @@ const toppers = [
     title: "SELECTED",
     value: "IIT JEE Advanced",
     name: "Kamal",
+    college: "IIT Guwahati",
+    quote:
+      "Consistent mock analysis and reviewing every mistake sharpened my problem-solving speed.",
+  },
+  {
+    img: "/results/new/abhiram_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Abhiram",
+    college: "IIT Patna",
+    quote:
+      "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Advanced.",
+  },
+  {
+    img: "/results/new/c.harshit_kumar_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "C. Harshit Kumar",
     college: "IIT Madras",
-    quote: "Consistent mock analysis strengthened my problem-solving speed.",
+    quote:
+      "Strong conceptual foundations built in class made even the toughest problems approachable.",
+  },
+  {
+    img: "/results/new/g.ajay_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "C. Ajay",
+    college: "IIT Hyderabad",
+    quote:
+      "Time management during mocks and staying calm under pressure made all the difference.",
+  },
+  {
+    img: "/results/new/paul_nikhil_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Paul Nikhil",
+    college: "IIT Hyderabad",
+    quote:
+      "Focused study plans and faculty guidance kept me on track throughout my preparation.",
+  },
+  {
+    img: "/results/new/prabhakar_narshimha_nit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Prabhakar Narshimha",
+    college: "NIT Warangal",
+    quote:
+      "Disciplined daily practice and never skipping revision helped me land NIT Warangal.",
+  },
+  {
+    img: "/results/new/rishpal_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Rishpal",
+    college: "IIT Hyderabad",
+    quote:
+      "Breaking complex topics into smaller chunks and mastering each one was my strategy.",
+  },
+  {
+    img: "/results/new/sai_kiran_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Sai Kiran",
+    college: "IIT Roorkee",
+    quote:
+      "Regular performance reviews and honest self-assessment pushed me to consistently improve.",
+  },
+  {
+    img: "/results/new/vikas_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Vikas",
+    college: "IIT Dhanbad",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
   },
   {
     img: "/results/bhanu_kiran_neet.jpeg",
@@ -178,6 +260,65 @@ const toppers = [
     title: "SELECTED",
     value: "BITS",
     name: "Bhavika",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new/bharat_teja_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Bharat Teja",
+    college: "",
+    quote:
+      "Solving previous year papers repeatedly gave me the edge I needed for BITS.",
+  },
+  {
+    img: "/results/new/greeshma_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Greeshma",
+    college: "",
+    quote:
+      "Staying consistent with weekly tests and timely revisions made BITS a reality.",
+  },
+  {
+    img: "/results/new/Maniratna_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Maniratna",
+    college: "",
+    quote:
+      "Mastering speed and accuracy together was the real key to cracking BITSAT.",
+  },
+  {
+    img: "/results/new/sanath_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Sanath",
+    college: "",
+    quote:
+      "Strong basics and smart time management during the exam helped me get into BITS.",
+  },
+  {
+    img: "/results/new/sanjay_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Sanjay",
+    college: "",
+    quote:
+      "Daily mock practice and learning from every error built my confidence for BITSAT.",
+  },
+  {
+    img: "/results/new/srija_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Srija",
     college: "",
     quote: "Focused preparation sessions helped secure my admission.",
   },

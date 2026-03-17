@@ -16,12 +16,12 @@ export default function NeetLongTerm() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Charaka Program <br />
+              Charaka Programme <br />
               <span className="text-primary">Target NEET 2027</span>
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Intensive long-term NEET preparation program for Class XII
+              Intensive long-term NEET preparation Programme for Class XII
               completed students who aim to secure seats in top medical colleges
               across India.
             </p>
@@ -57,7 +57,7 @@ export default function NeetLongTerm() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/neet-long-term.png"
+              src="/courses/new/1-year-neet.jpeg"
               alt="NEET Long Term Coaching"
               width={600}
               height={500}
@@ -71,13 +71,13 @@ export default function NeetLongTerm() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Program Overview
+            Programme Overview
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
             NEET is one of India’s most competitive medical entrance exams with
             lakhs of aspirants competing for limited government medical seats.
-            Our long-term program is designed to give students a structured,
+            Our long-term Programme is designed to give students a structured,
             focused, and result-oriented preparation.
           </p>
 

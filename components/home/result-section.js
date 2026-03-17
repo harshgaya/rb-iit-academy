@@ -40,8 +40,86 @@ export default function ResultsSection() {
       college: "IIT Madras",
       quote: "Consistent mock analysis strengthened my problem-solving speed.",
     },
-
-    /* ================= NEET ================= */
+    {
+      img: "/results/new/abhiram_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Abhiram",
+      college: "IIT Patna",
+      quote:
+        "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Advanced.",
+    },
+    {
+      img: "/results/new/c.harshit_kumar_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "C. Harshit Kumar",
+      college: "IIT Madras",
+      quote:
+        "Strong conceptual foundations built in class made even the toughest problems approachable.",
+    },
+    {
+      img: "/results/new/g.ajay_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "C. Ajay",
+      college: "IIT Hyderabad",
+      quote:
+        "Time management during mocks and staying calm under pressure made all the difference.",
+    },
+    {
+      img: "/results/new/paul_nikhil_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Paul Nikhil",
+      college: "IIT Hyderabad",
+      quote:
+        "Focused study plans and faculty guidance kept me on track throughout my preparation.",
+    },
+    {
+      img: "/results/new/prabhakar_narshimha_nit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Prabhakar Narshimha",
+      college: "NIT Warangal",
+      quote:
+        "Disciplined daily practice and never skipping revision helped me land NIT Warangal.",
+    },
+    {
+      img: "/results/new/rishpal_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Rishpal",
+      college: "IIT Hyderabad",
+      quote:
+        "Breaking complex topics into smaller chunks and mastering each one was my strategy.",
+    },
+    {
+      img: "/results/new/sai_kiran_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Sai Kiran",
+      college: "IIT Roorkee",
+      quote:
+        "Regular performance reviews and honest self-assessment pushed me to consistently improve.",
+    },
+    {
+      img: "/results/new/vikas_iit.jpeg",
+      exam: "IIT JEE Advanced",
+      title: "SELECTED",
+      value: "IIT JEE Advanced",
+      name: "Vikas",
+      college: "IIT Dhanbad",
+      quote:
+        "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+    },
 
     {
       img: "/results/bhanu_kiran_neet.jpeg",

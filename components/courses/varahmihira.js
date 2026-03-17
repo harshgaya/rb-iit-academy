@@ -16,7 +16,7 @@ export default function VarahamihiraCourse() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Varahamihira Program <br />
+              Varahamihira Programme <br />
               <span className="text-primary">Target IIT 2027</span>
             </h1>
 
@@ -57,7 +57,7 @@ export default function VarahamihiraCourse() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/1-year-iit.png"
+              src="/courses/new/1-year-long-iit.jpeg"
               alt="IIT Long Term Coaching"
               width={600}
               height={500}
@@ -71,11 +71,11 @@ export default function VarahamihiraCourse() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Program Overview
+            Programme Overview
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This program is specially crafted for two types of aspirants:
+            This Programme is specially crafted for two types of aspirants:
             students who want to strengthen weak areas despite prior exposure,
             and those who require complete structured preparation with proper
             guidance and mentoring.
@@ -176,7 +176,7 @@ export default function VarahamihiraCourse() {
         </h2>
 
         <p className="mt-4 text-white/90">
-          Dedicated long-term program for serious aspirants.
+          Dedicated long-term Programme for serious aspirants.
         </p>
 
         <a href="/contact">

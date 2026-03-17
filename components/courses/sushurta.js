@@ -21,9 +21,9 @@ export default function Sushruta() {
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Intensive 2-year integrated program for students moving from Class
-              X to XI who aspire to secure top ranks in NEET and top medical
-              colleges across India.
+              Intensive 2-year integrated programme for students moving from
+              Class X to XI who aspire to secure top ranks in NEET and top
+              medical colleges across India.
             </p>
 
             {/* rating */}
@@ -57,7 +57,7 @@ export default function Sushruta() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/neet.jpg"
+              src="/courses/new/neet-program.jpeg"
               alt="NEET coaching"
               width={600}
               height={500}
@@ -71,11 +71,11 @@ export default function Sushruta() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Program Overview
+            Programme Overview
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This program is designed for students who aspire to become doctors
+            This Programme is designed for students who aspire to become doctors
             and secure seats in top government medical colleges. We focus on
             strong conceptual learning in Physics, Chemistry, and Biology
             aligned with NEET syllabus and board curriculum.

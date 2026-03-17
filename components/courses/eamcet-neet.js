@@ -12,7 +12,7 @@ export default function EamcetNeetCrash() {
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
-              Short Term Intensive Program
+              Short Term Intensive Programme
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">

@@ -16,7 +16,7 @@ export default function BhaskaraCourse() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Bhaskara Program <br />
+              Bhaskara Programme <br />
               <span className="text-primary">Target IIT 2027</span>
             </h1>
 
@@ -57,7 +57,7 @@ export default function BhaskaraCourse() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/senior.webp"
+              src="/courses/new/seniour-iit-program.jpeg"
               alt="IIT coaching"
               width={600}
               height={500}
@@ -71,11 +71,11 @@ export default function BhaskaraCourse() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Program Overview
+            Programme Overview
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This program is designed for students who feel they have not fully
+            This Programme is designed for students who feel they have not fully
             utilized Class 11 and want to rebuild strong conceptual foundations
             before IIT-JEE. With personalized attention and structured learning,
             we help students bridge knowledge gaps and improve performance.

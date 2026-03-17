@@ -16,12 +16,12 @@ export default function AryabhataCourse() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Aryabhata Program <br />
+              Aryabhata Programme <br />
               <span className="text-primary">Target IIT 2028</span>
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Specially designed integrated program for Class X to XI moving
+              Specially designed integrated programme for Class X to XI moving
               students who aim to secure top ranks in IIT-JEE and national level
               competitive exams.
             </p>
@@ -57,7 +57,7 @@ export default function AryabhataCourse() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/arya.webp"
+              src="/courses/new/iit-program.jpeg"
               alt="IIT coaching"
               width={600}
               height={500}
@@ -152,7 +152,7 @@ export default function AryabhataCourse() {
 
             <div className="grid md:grid-cols-2 gap-4 text-gray-700">
               <p>
-                <b>Course Name:</b> Aryabhata Program
+                <b>Course Name:</b> Aryabhata Programme
               </p>
               <p>
                 <b>Target:</b> IIT 2028
