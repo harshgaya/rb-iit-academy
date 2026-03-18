@@ -46,7 +46,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Abhiram",
-      college: "IIT Patna",
+      college: "IIT Ropar",
       quote:
         "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Advanced.",
     },
