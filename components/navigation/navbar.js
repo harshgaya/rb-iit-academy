@@ -23,7 +23,8 @@ export default function Navbar() {
       { name: "NEET Longterm Program", href: "/neet-long-term-course" },
       { name: "Crash Course", href: "/crash-course" },
       { name: "Regular Tuition", href: "/regular-tutions" },
-      { name: "EAMCET / NEET Crash Course", href: "/eamcet-neet-crash" },
+      { name: "EAMCET Crash Course", href: "/eamcet-neet-crash" },
+      { name: "NEET Crash Course", href: "/neet-crash-course" },
     ],
     // "Previous Year Papers": [
     //   { name: "JEE Mains", href: "#" },

@@ -34,17 +34,31 @@ export default function Hero() {
                 image: "/home/anurag_reddy.jpeg",
               },
               {
-                name: "Bhanu Kiran",
-                rank: "AIR 1342",
-                exam: "NEET",
-                image: "/home/bhanu_kiran_neet.jpeg",
+                name: "Siddharth",
+                rank: "AIR 4",
+                exam: "JEE Main",
+                image: "/results/new/siddhart_jee_main_rank_4.jpeg",
               },
               {
-                name: "Gaytri Sowmya",
-                rank: "_",
-                exam: "EAMCET",
-                image: "/home/gaytri_sowmya_eamcet.jpeg",
+                name: "Nikhil",
+                rank: "AEEE Rank 1, EAMCET Rank 94",
+                exam: "AEEE & EAMCET",
+                image: "/results/new/aeee_rank_1.jpg",
               },
+              {
+                name: "Elina Senapathi",
+                rank: "AIR 16",
+                exam: "NEET",
+                image: "/results/new/elina.jpeg",
+              },
+              {
+                image: "/results/bhanu_kiran_neet.jpeg",
+                exam: "NEET UG",
+
+                rank: "AIR 127",
+                name: "Sharath",
+              },
+
               {
                 name: "500+ Students",
                 rank: "500+",

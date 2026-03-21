@@ -159,6 +159,20 @@ export default function ResultsCarousel() {
       image: "/carousal/car-4.jpeg",
       highlight: "primary",
     },
+    {
+      name: "Bhanu Kiran",
+      rank: "127",
+      exam: "NEET 2025",
+      image: "/carousal/car-5.jpeg",
+      highlight: "primary",
+    },
+    {
+      name: "Bhanu Kiran",
+      rank: "127",
+      exam: "NEET 2025",
+      image: "/carousal/car-6.jpeg",
+      highlight: "primary",
+    },
   ];
 
   const [index, setIndex] = useState(0);

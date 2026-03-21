@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaCheck, FaStar } from "react-icons/fa";
 
-export default function EamcetNeetCrash() {
+export default function NeetCrash() {
   return (
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
@@ -16,13 +16,13 @@ export default function EamcetNeetCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              EAMCET <br />
+              NEET <br />
               Crash Course 2026
             </h1>
 
             <p className="text-gray-600 mt-5">
               Special crash course for Class XII completed students targeting
-              EAMCET 2026 with intensive revision and daily practice.
+              NEET 2026 with intensive revision and daily practice.
             </p>
 
             {/* rating */}
@@ -56,7 +56,7 @@ export default function EamcetNeetCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/eamcet_crash.jpeg"
+              src="/courses/neet_crash.jpeg"
               alt="Crash course"
               width={600}
               height={500}
@@ -74,9 +74,9 @@ export default function EamcetNeetCrash() {
           </h2>
 
           <p className="text-gray-600 mt-6">
-            Comprehensive crash course designed for students preparing for
-            EAMCET 2026. Focused revision, daily exams, and expert mentoring
-            ensure maximum performance in limited time.
+            Comprehensive crash course designed for students preparing for NEET
+            2026. Focused revision, daily exams, and expert mentoring ensure
+            maximum performance in limited time.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function EamcetNeetCrash() {
 
             <div className="grid md:grid-cols-2 gap-4 text-gray-700">
               <p>
-                <b>Target:</b> EAMCET 2026
+                <b>Target:</b> NEET 2026
               </p>
               <p>
                 <b>Eligibility:</b> Class XII passed students
@@ -145,7 +145,7 @@ export default function EamcetNeetCrash() {
 
           <p className="text-gray-600 mt-5">
             Students who completed Class XII with BiPC/PCM and aim to secure top
-            ranks in EAMCET. Minimum eligibility 40–45% marks as per category.
+            ranks in NEET. Minimum eligibility 40–45% marks as per category.
           </p>
         </div>
       </section>

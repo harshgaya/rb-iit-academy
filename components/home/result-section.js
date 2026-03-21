@@ -28,8 +28,18 @@ export default function ResultsSection() {
       title: "ALL INDIA RANK",
       value: "AIR 36",
       name: "P. Anurag Reddy",
-      college: "IIT Bombay - CSE",
+      college: "",
       quote: "Dedicated revision cycles helped me secure AIR 36.",
+    },
+    {
+      img: "/results/new/siddhart_jee_main_rank_4.jpeg",
+      exam: "IIT JEE Main",
+      title: "ALL INDIA RANK",
+      value: "AIR 4",
+      name: "Siddhart",
+      college: "",
+      quote:
+        "Daily revision and mock tests helped me achieve AIR 4 in JEE Main, setting a strong foundation for Advanced.",
     },
     {
       img: "/results/kamal_iit.jpeg",
@@ -37,7 +47,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Kamal",
-      college: "IIT Madras",
+      college: "",
       quote: "Consistent mock analysis strengthened my problem-solving speed.",
     },
     {
@@ -46,7 +56,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Abhiram",
-      college: "IIT Ropar",
+      college: "",
       quote:
         "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Advanced.",
     },
@@ -56,7 +66,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "C. Harshit Kumar",
-      college: "IIT Madras",
+      college: "",
       quote:
         "Strong conceptual foundations built in class made even the toughest problems approachable.",
     },
@@ -66,7 +76,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "C. Ajay",
-      college: "IIT Hyderabad",
+      college: "",
       quote:
         "Time management during mocks and staying calm under pressure made all the difference.",
     },
@@ -76,7 +86,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Paul Nikhil",
-      college: "IIT Hyderabad",
+      college: "",
       quote:
         "Focused study plans and faculty guidance kept me on track throughout my preparation.",
     },
@@ -86,7 +96,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Prabhakar Narshimha",
-      college: "NIT Warangal",
+      college: "",
       quote:
         "Disciplined daily practice and never skipping revision helped me land NIT Warangal.",
     },
@@ -96,7 +106,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Rishpal",
-      college: "IIT Hyderabad",
+      college: "",
       quote:
         "Breaking complex topics into smaller chunks and mastering each one was my strategy.",
     },
@@ -106,7 +116,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Sai Kiran",
-      college: "IIT Roorkee",
+      college: "",
       quote:
         "Regular performance reviews and honest self-assessment pushed me to consistently improve.",
     },
@@ -116,7 +126,7 @@ export default function ResultsSection() {
       title: "SELECTED",
       value: "IIT JEE Advanced",
       name: "Vikas",
-      college: "IIT Dhanbad",
+      college: "",
       quote:
         "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
     },
@@ -127,8 +137,18 @@ export default function ResultsSection() {
       title: "FINAL SCORE",
       value: "710 / 720",
       name: "Sharath",
-      college: "AIIMS Delhi",
+      college: "",
       quote: "Daily biology practice improved my final NEET score.",
+    },
+    {
+      img: "/results/new/elina.jpeg",
+      exam: "NEET UG",
+      title: "FINAL SCORE",
+      value: "Rank 16",
+      name: "Elina Senapathi",
+      college: "_",
+      quote:
+        "Daily mockups and focused revision helped me achieve a top NEET rank.",
     },
     {
       img: "/results/syed_fatima_neet.jpeg",
