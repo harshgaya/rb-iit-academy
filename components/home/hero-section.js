@@ -7,14 +7,14 @@ import ImageCarousel from "./image_carousal";
 export default function Hero() {
   return (
     <section className="bg-[#FBFBFA] py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-start">
         {/* LEFT CONTENT */}
         <div>
           {/* top trust line */}
           <div className="text-primary text-xs md:text-sm font-semibold mb-3 flex items-center gap-2 flex-wrap">
-            <span>✔</span>
             <span>
-              36+ YEARS EXPERIENCE | IIT-JEE & NEET SPECIALISTS | LIMITED SEATS
+              ✔ 36+ YEARS EXPERIENCE | IIT-JEE & NEET SPECIALISTS | LIMITED
+              SEATS
             </span>
           </div>
 
