@@ -20,9 +20,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "RB IIT NEET Academy",
+  metadataBase: new URL("https://rbiitacademy.com/"),
+  title: "RB IIT NEET Academy | IIT-JEE & NEET Coaching Institute",
   description:
     "RB IIT NEET Academy offers expert IIT-JEE and NEET coaching with 36+ years of teaching excellence, experienced faculty, structured study plans, and consistent top results. Join our result-oriented programs for IIT and medical entrance preparation with small batches, regular tests, and personal mentoring. Book a free demo class today.",
+  keywords:
+    "RB IIT Academy, NEET Coaching, IIT JEE Coaching, EAMCET Coaching, Best Coaching Institute India, IIT Preparation, Medical Entrance Coaching, NEET Preparation, JEE Preparation, Coaching Institute Bihar, Top IIT Coaching",
+  authors: [{ name: "RB IIT NEET Academy", url: "https://rbiitacademy.com/" }],
+  creator: "RB IIT NEET Academy",
+
+  openGraph: {
+    title: "RB IIT NEET Academy | IIT-JEE & NEET Coaching Institute",
+    description:
+      "Join RB IIT NEET Academy for IIT-JEE, NEET & EAMCET preparation with expert faculty, small batches, and proven results. Book your free demo class now.",
+    url: "https://rbiitacademy.com/",
+    type: "website",
+    siteName: "RB IIT NEET Academy",
+    images: [
+      {
+        url: "/navbar/rb-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "RB IIT NEET Academy Logo",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    site: "@rbiitacademy",
+    title: "RB IIT NEET Academy | IIT-JEE & NEET Coaching",
+    description:
+      "Expert coaching for IIT-JEE, NEET & EAMCET with 36+ years experience. Small batches, personal mentoring & top results.",
+    images: ["/navbar/rb-logo.png"],
+  },
+
+  icons: {
+    icon: "/navbar/rb-logo.png",
+    apple: "/navbar/rb-logo.png",
+  },
+
+  alternates: {
+    canonical: "https://rbiitacademy.com/",
+    languages: {
+      en: "https://rbiitacademy.com/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
