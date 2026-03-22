@@ -1,18 +1,10 @@
 "use client";
 
-/**
- * ResultsSection — Luxury Editorial Light Theme
- * Fonts: Cormorant Garamond (display) + DM Sans (body)
- * Add to layout/head:
- *   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
- */
-
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
 import { useRef, useState } from "react";
 import Image from "next/image";
 
-/* ─── Exam colour palette ────────────────────────────────────────────────── */
 const EXAM_META = {
   "IIT JEE Advanced": {
     color: "#E8450A",
@@ -111,16 +103,7 @@ const toppers = [
     quote:
       "Daily revision and mock tests helped me achieve AIR 4 in JEE Main, setting a strong foundation for Advanced.",
   },
-  {
-    img: "/results/anurag_reddy.jpeg",
-    exam: "IIT JEE Advanced",
-    title: "ALL INDIA RANK",
-    value: "AIR 36",
-    name: "P. Anurag Reddy",
-    college: "",
-    quote:
-      "Dedicated revision cycles and targeted practice helped me secure AIR 36.",
-  },
+
   {
     img: "/results/kamal_iit.jpeg",
     exam: "IIT JEE Advanced",
@@ -212,6 +195,116 @@ const toppers = [
       "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
   },
   {
+    img: "/results/new2/a.s.karthik_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "A.S. Karthik",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/punith_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Punith",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/sai_varun_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Sai Varun",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/saveen_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Saveen",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/siri_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Siri",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/vanya_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Vanya",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/varshini_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Varshini",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/varshit_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Varshit",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/vishes_meena_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Vishes Meena",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/zenith_prabhkar_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Zenith Prabhkar",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
+    img: "/results/new2/vasudev_iit.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "SELECTED",
+    value: "IIT JEE Advanced",
+    name: "Vasudev",
+    college: "",
+    quote:
+      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+  },
+  {
     img: "/results/bhanu_kiran_neet.jpeg",
     exam: "NEET UG",
     title: "FINAL SCORE",
@@ -240,6 +333,79 @@ const toppers = [
     quote: "Focused mentoring sessions helped me clear NEET confidently.",
   },
   {
+    img: "/results/new2/A.Vanjari_Akshitsa_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "A. Vanjari Akshitsa",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/deepika_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Deepika",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/mokshita_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Mokshita",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/n.rahul_chowdary_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "N. Rahul Chowdary",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/pramodh_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Pramodh",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/sharath_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Sharath",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/surendar_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Surendar",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+  {
+    img: "/results/new2/tushara_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "Tushara",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+  },
+
+  {
     img: "/results/Mamatha_NIT.jpeg",
     exam: "Engineering",
     title: "SELECTED",
@@ -247,6 +413,15 @@ const toppers = [
     name: "Mamatha",
     college: "",
     quote: "Structured guidance helped me secure NIT admission.",
+  },
+  {
+    img: "/results/new2/v.mounika_neet.jpeg",
+    exam: "NEET UG",
+    title: "SELECTED",
+    value: "NEET UG",
+    name: "V. Mounika",
+    college: "",
+    quote: "Focused mentoring sessions helped me clear NEET confidently.",
   },
   {
     img: "/results/Vijitha_NIT.jpeg",
@@ -353,6 +528,96 @@ const toppers = [
     quote: "Focused preparation sessions helped secure my admission.",
   },
   {
+    img: "/results/new2/anvesh_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Anvesh",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/aveen_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Aveen",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/krishna_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Krishna",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/m.nitya_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "M. Nithya",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/nithin_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Nithin",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/srija_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Srija",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/steffi_roy_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Steffi Roy",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/supriya_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Supriya",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/Vijita_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Vijita",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
+    img: "/results/new2/vivek_bits.jpeg",
+    exam: "BITS",
+    title: "SELECTED",
+    value: "BITS",
+    name: "Vivek",
+    college: "",
+    quote: "Focused preparation sessions helped secure my admission.",
+  },
+  {
     img: "/results/sai_arunkanth_bits.jpeg",
     exam: "Engineering",
     title: "SELECTED",
@@ -361,15 +626,15 @@ const toppers = [
     college: "BITS Pilani",
     quote: "Consistent mock testing gave me confidence for BITS.",
   },
-  {
-    img: "/results/kmv_akhil_102_advanced.jpeg",
-    exam: "EAMCET",
-    title: "STATE RANK",
-    value: "Rank 3",
-    name: "Nikhil",
-    college: "JNTU Hyderabad",
-    quote: "Balanced preparation ensured a top state rank.",
-  },
+  // {
+  //   img: "/results/kmv_akhil_102_advanced.jpeg",
+  //   exam: "EAMCET",
+  //   title: "STATE RANK",
+  //   value: "Rank 3",
+  //   name: "Nikhil",
+  //   college: "JNTU Hyderabad",
+  //   quote: "Balanced preparation ensured a top state rank.",
+  // },
   {
     img: "/results/Haripriya_eamcet.jpeg",
     exam: "EAMCET",
@@ -475,6 +740,42 @@ const toppers = [
     title: "SELECTED",
     value: "IPE",
     name: "Anirudh",
+    college: "",
+    quote: "Strong subject clarity made the difference.",
+  },
+  {
+    img: "/results/new2/Bhavya_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "Bhavya",
+    college: "",
+    quote: "Strong subject clarity made the difference.",
+  },
+  {
+    img: "/results/new2/D.Shruti_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "D. Shruti",
+    college: "",
+    quote: "Strong subject clarity made the difference.",
+  },
+  {
+    img: "/results/new2/NagaSriya_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "NagaSriya",
+    college: "",
+    quote: "Strong subject clarity made the difference.",
+  },
+  {
+    img: "/results/new2/Vyshnavi_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "Vyshnavi",
     college: "",
     quote: "Strong subject clarity made the difference.",
   },

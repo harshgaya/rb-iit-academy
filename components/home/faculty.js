@@ -6,28 +6,28 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 export default function Faculty() {
   const faculty = [
     {
-      img: "/faculty/rb-sir.jpeg",
+      img: "/faculty/rb.png",
       name: "P.V.RAMA BRAHMAM",
       role: "Maths EXPERT",
       exp: "36 Years Exp.",
       edu: "Hyderabad Central University",
     },
     {
-      img: "/faculty/sumit.jpeg",
+      img: "/faculty/sumit.png",
       name: "Sumit Sir",
       role: "Physics Expert",
       exp: "15 Years Exp.",
       edu: "IIT Bombay",
     },
     {
-      img: "/faculty/jit.jpeg",
+      img: "/faculty/jit.png",
       name: "N. Jitendara Sir",
       role: "Chemistry Expert",
       exp: "30 Years Exp.",
       edu: "M.Sc,B.Ed Chemistry, Osmania University",
     },
     {
-      img: "/faculty/chandra_sir_new.jpeg",
+      img: "/faculty/chandra.png",
       name: "Chandra Sir",
       role: "Bilogy Expert",
       exp: "33 Years Exp.",
@@ -56,7 +56,7 @@ export default function Faculty() {
                   src={item.img}
                   alt={item.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 

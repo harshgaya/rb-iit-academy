@@ -30,26 +30,32 @@ export default function CrashCourses() {
             {
               title: "IIT MAINS Crash Course",
               desc: "Focused preparation for IIT-JEE Mains with mock tests after board exams.",
+              link: "/iit-mains-crash-course",
             },
             {
               title: "EAMCET (Engineering)",
               desc: "Complete revision and practice tests for Engineering EAMCET aspirants.",
+              link: "/eamcet-neet-crash",
             },
             {
               title: "EAMCET (Medical)",
               desc: "Crash preparation program for medical stream EAMCET students.",
+              link: "/eamcet-neet-crash",
             },
             {
               title: "NEET Crash Course",
               desc: "Intensive NEET preparation with quick revision and mock tests.",
+              link: "/neet-long-term-course",
             },
             {
               title: "BITSAT Crash Course",
               desc: "Special focus on English, logical reasoning and speed-based problem solving.",
+              link: "/bitsat-crash-course",
             },
             {
               title: "IIT Foundation (After 10th)",
               desc: "1-month foundation program to strengthen basics and problem-solving ability.",
+              link: "/iit-foundation-crash-course",
             },
           ].map((course) => (
             <div
@@ -69,7 +75,7 @@ export default function CrashCourses() {
                 {course.desc}
               </p>
 
-              <a href="/contact">
+              <a href={course.link}>
                 <button className="mt-5 bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
                   Enquire Now
                 </button>
