@@ -13,7 +13,7 @@ export default function Faculty() {
       edu: "Hyderabad Central University",
     },
     {
-      img: "/faculty/sumit.png",
+      img: "/faculty/sumit.jpeg",
       name: "Sumit Sir",
       role: "Physics Expert",
       exp: "15 Years Exp.",

@@ -28,18 +28,8 @@ export default function CrashCourses() {
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
             {
-              title: "IIT MAINS Crash Course",
-              desc: "Focused preparation for IIT-JEE Mains with mock tests after board exams.",
-              link: "/iit-mains-crash-course",
-            },
-            {
-              title: "EAMCET (Engineering)",
+              title: "EAMCET (EAPCET) Crash Course",
               desc: "Complete revision and practice tests for Engineering EAMCET aspirants.",
-              link: "/eamcet-neet-crash",
-            },
-            {
-              title: "EAMCET (Medical)",
-              desc: "Crash preparation program for medical stream EAMCET students.",
               link: "/eamcet-neet-crash",
             },
             {
@@ -52,6 +42,18 @@ export default function CrashCourses() {
               desc: "Special focus on English, logical reasoning and speed-based problem solving.",
               link: "/bitsat-crash-course",
             },
+            {
+              title: "IIT MAINS Crash Course",
+              desc: "Focused preparation for IIT-JEE Mains with mock tests after board exams.",
+              link: "/iit-mains-crash-course",
+            },
+
+            // {
+            //   title: "EAMCET (Medical)",
+            //   desc: "Crash preparation program for medical stream EAMCET students.",
+            //   link: "/eamcet-neet-crash",
+            // },
+
             {
               title: "IIT Foundation (After 10th)",
               desc: "1-month foundation program to strengthen basics and problem-solving ability.",
@@ -75,11 +77,18 @@ export default function CrashCourses() {
                 {course.desc}
               </p>
 
-              <a href={course.link}>
-                <button className="mt-5 bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
-                  Enquire Now
-                </button>
-              </a>
+              <div className="flex gap-2">
+                <a href={course.link}>
+                  <button className="mt-5 bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+                    View Details
+                  </button>
+                </a>
+                <a href="/contact">
+                  <button className="mt-5 bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
+                    Enquire Now
+                  </button>
+                </a>
+              </div>
             </div>
           ))}
         </div>

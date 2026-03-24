@@ -6,12 +6,12 @@ export default function Programs() {
   const programs = [
     {
       title: "Integrated Inter + IIT Programme(2 Years)",
-      items: ["Class 11 & 12", "2 Years Duration", "Offline & Online Mode"],
+      items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],
       link: "/2-year-iit-course",
     },
     {
       title: "Integrated Inter + NEET Programme(2 Years)",
-      items: ["Class 11 & 12", "2 Years Duration", "Offline & Online Mode"],
+      items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],
       link: "/2-year-neet-course",
     },
     {
@@ -20,14 +20,34 @@ export default function Programs() {
       link: "/senior-inter-iit-program",
     },
     {
-      title: "Long Term Program",
+      title: "IIT Long Term Program",
+      items: ["12th Pass / Droppers", "1 Year Duration", "Offline Mode"],
+      link: "/iit-longterm-program",
+    },
+    {
+      title: "NEET Long Term Program",
       items: ["12th Pass / Droppers", "1 Year Duration", "Offline Mode"],
       link: "/neet-long-term-course",
     },
     {
-      title: "EAMCET / NEET Crash Course",
-      items: ["Class 12 / Droppers", "3 Months Duration", "Online & Offline"],
+      title: "EAMCET / EAPCET Crash Course",
+      items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
       link: "/eamcet-neet-crash",
+    },
+    {
+      title: "NEET Crash Course",
+      items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
+      link: "/neet-long-term-course",
+    },
+    {
+      title: "BITSAT Crash Course",
+      items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
+      link: "/bitsat-crash-course",
+    },
+    {
+      title: "IIT MAINS Crash Course",
+      items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
+      link: "/iit-mains-crash-course",
     },
     {
       title: "Foundation",

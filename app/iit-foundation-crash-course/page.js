@@ -54,7 +54,7 @@ export default function IitFoundation() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/iit_foundation.jpeg"
+              src="/courses/iit-foundation-crash.jpeg"
               alt="IIT Foundation"
               width={600}
               height={500}

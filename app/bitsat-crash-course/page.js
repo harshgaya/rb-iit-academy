@@ -54,7 +54,7 @@ export default function BitsatCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/bitsat_crash.jpeg"
+              src="/courses/bitsat.jpeg"
               alt="Crash course"
               width={600}
               height={500}

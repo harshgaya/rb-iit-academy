@@ -16,7 +16,7 @@ export default function EamcetNeetCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              EAMCET <br />
+              EAMCET (EAPCET) <br />
               Crash Course 2026
             </h1>
 
@@ -56,7 +56,7 @@ export default function EamcetNeetCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/eamcet_crash.jpeg"
+              src="/courses/eamcet_crash_new.jpeg"
               alt="Crash course"
               width={600}
               height={500}
@@ -123,7 +123,7 @@ export default function EamcetNeetCrash() {
                 <b>Course Start:</b> 16 March 2026
               </p>
               <p>
-                <b>Duration:</b> Till exam
+                <b>Duration:</b> 40 -50 DAYS
               </p>
               <p>
                 <b>Admission:</b> Direct / Selection

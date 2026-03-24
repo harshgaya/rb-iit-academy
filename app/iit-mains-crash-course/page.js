@@ -54,7 +54,7 @@ export default function IitMainsCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/iit_crash.jpeg"
+              src="/courses/jee_mains.jpeg"
               alt="Crash course"
               width={600}
               height={500}
