@@ -123,7 +123,7 @@ export default function NeetCrash() {
                 <b>Course Start:</b> 16 March 2026
               </p>
               <p>
-                <b>Duration:</b> Till exam
+                <b>Duration:</b> 40 to 50 day
               </p>
               <p>
                 <b>Admission:</b> Direct / Selection

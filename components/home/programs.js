@@ -37,7 +37,7 @@ export default function Programs() {
     {
       title: "NEET Crash Course",
       items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
-      link: "/neet-long-term-course",
+      link: "/neet-crash-course",
     },
     {
       title: "BITSAT Crash Course",
@@ -52,7 +52,16 @@ export default function Programs() {
     {
       title: "Foundation",
       items: ["Class 6 to 10", "1 to 5 Years Duration", "Offline Mode"],
-      link: "/senior-inter-iit-program",
+      link: "/foundation-program",
+    },
+    {
+      title: "Regular Tution",
+      items: [
+        "IIT JEE/Bitsat/Individual Subject Coaching",
+        "Till Exam",
+        "Offline/Online Mode",
+      ],
+      link: "/regular-tutions",
     },
   ];
 

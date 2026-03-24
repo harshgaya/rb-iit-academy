@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ResultsSection />
+      {/* <ResultsSection /> */}
       <Programs />
       <WhyChoose />
       <Faculty />
