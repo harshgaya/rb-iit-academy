@@ -57,6 +57,9 @@ export default function Navbar() {
               <p className="text-[11px] text-gray-500 -mt-1">
                 IIT • NEET • Foundation
               </p>
+              <p className="text-[11px] mt-[0.5px] text-gray-500 ">
+                Nallakuntha, Hyderabad
+              </p>
             </div>
           </Link>
 
