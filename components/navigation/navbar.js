@@ -55,7 +55,7 @@ export default function Navbar() {
                 RB IIT NEET Academy
               </h1>
               <p className="text-[11px] text-gray-500 -mt-1">
-                IIT • NEET • Foundation
+                IIT JEE • NEET • Foundation (Class 6–10)
               </p>
               <p className="text-[11px] mt-[0.5px] text-gray-500 ">
                 Nallakuntha, Hyderabad

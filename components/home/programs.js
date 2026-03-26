@@ -6,6 +6,7 @@ export default function Programs() {
   const programs = [
     {
       title: "Integrated Inter + IIT Programme(2 Years)",
+      subtitle: "IIT JEE, BITSAT, EAMCET & Other Engineering Entrances",
       items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],
       link: "/2-year-iit-course",
     },
@@ -55,7 +56,8 @@ export default function Programs() {
       link: "/foundation-program",
     },
     {
-      title: "Regular Tution",
+      title:
+        "JEE Mains + Advanced & NEET Classes Available for All Subjects or Individual Subjects",
       items: [
         "IIT JEE/Bitsat/Individual Subject Coaching",
         "Till Exam",
@@ -68,24 +70,26 @@ export default function Programs() {
   return (
     <section className="bg-[#FBFBFA]  md:py-10">
       <div className="max-w-7xl mx-auto px-4">
-        {/* heading */}
         <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-10">
           Programs Offered
         </h2>
 
-        {/* 🔥 MOBILE SCROLL + DESKTOP GRID */}
         <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-3">
           {programs.map((prog, i) => (
             <div
               key={i}
               className="min-w-[280px] md:min-w-0 bg-white rounded-xl p-6 border shadow-sm hover:shadow-md transition"
             >
-              {/* title */}
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-5">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                 {prog.title}
               </h3>
+              <p
+                className="
+              text-black mb-3 text-sm"
+              >
+                {prog.subtitle}
+              </p>
 
-              {/* features */}
               <div className="space-y-4 text-sm text-gray-700">
                 <div className="flex items-center gap-3">
                   <FaGraduationCap className="text-red-800" />
@@ -103,7 +107,6 @@ export default function Programs() {
                 </div>
               </div>
 
-              {/* button */}
               <a href={prog.link}>
                 <button className="mt-6 text-black w-full border border-gray-200 rounded-lg py-3 font-semibold hover:bg-gray-100 transition">
                   View Details

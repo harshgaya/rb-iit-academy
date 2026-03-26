@@ -12,7 +12,7 @@ export default function BhaskaraCourse() {
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
-              Senior Inter IIT Programme
+              Senior Inter + IIT Programme
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -57,7 +57,7 @@ export default function BhaskaraCourse() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/new/seniour-iit-program.jpeg"
+              src="/courses/new2/senior-iit.jpeg"
               alt="IIT coaching"
               width={600}
               height={500}
@@ -75,16 +75,27 @@ export default function BhaskaraCourse() {
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This Programme is designed for students who feel they have not fully
-            utilized Class 11 and want to rebuild strong conceptual foundations
-            before IIT-JEE. With personalized attention and structured learning,
-            we help students bridge knowledge gaps and improve performance.
+            This programme is specially designed for students who feel they have
+            not fully utilized Class 11 and want to rebuild strong conceptual
+            foundations for IIT-JEE. Through a structured and result-oriented
+            approach, we help students: Identify and bridge learning gaps
+            Strengthen core concepts Improve problem-solving skills 👉 Along
+            with the Class 12 syllabus, we systematically revise and strengthen
+            key and challenging topics from Class 11 to ensure a strong
+            foundation. With expert faculty support, regular assessments, and
+            strategic preparation, students are trained to achieve their best
+            performance in IIT-JEE, BITSAT, EAMCET, and other competitive exams.
           </p>
 
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Our faculty provides focused guidance, regular assessments, and
-            strategic preparation to ensure students achieve their full
-            potential in IIT-JEE, BITSAT, EAMCET and other competitive exams.
+            Through a structured and result-oriented approach, we help students:
+            Identify and bridge learning gaps Strengthen core concepts Improve
+            problem-solving skills 👉 Along with the Class 12 syllabus, we
+            systematically revise and strengthen key and challenging topics from
+            Class 11 to ensure a strong foundation. With expert faculty support,
+            regular assessments, and strategic preparation, students are trained
+            to achieve their best performance in IIT-JEE, BITSAT, EAMCET, and
+            other competitive exams.
           </p>
         </div>
       </section>

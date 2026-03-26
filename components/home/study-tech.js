@@ -78,7 +78,7 @@ export default function StudyTech() {
 
             <div>
               <Image
-                src="/home/study.jpg"
+                src="/home/study.jpeg"
                 alt="study"
                 width={600}
                 height={420}
@@ -92,7 +92,7 @@ export default function StudyTech() {
           <div className="max-w-7xl mx-auto px-4 py-15 grid md:grid-cols-2 gap-10 items-center ">
             <div className="order-last md:order-first">
               <Image
-                src="/home/tech.jpg"
+                src="/home/tech.jpeg"
                 alt="tech"
                 width={600}
                 height={420}

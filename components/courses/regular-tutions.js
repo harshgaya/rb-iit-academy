@@ -7,57 +7,102 @@ export default function RegularTuitions() {
   return (
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
-      {/* HERO */}
       <section className="py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-          {/* LEFT CONTENT */}
-          <div className="text-center md:text-left">
-            <div className="text-primary font-semibold mb-2">
-              Classroom Programs
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <div className="text-primary font-semibold mb-2">
+            Classroom Programs
+          </div>
+
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            IIT-JEE (Mains + Advanced) & NEET Coaching
+          </h1>
+
+          <p className="text-gray-600 mt-5 max-w-3xl mx-auto">
+            Structured classroom programs designed to build strong concepts,
+            improve problem-solving skills, and achieve top ranks in IIT-JEE,
+            NEET & Board exams.
+          </p>
+        </div>
+      </section>
+
+      {/* IMAGE GRID (4 IMAGES) */}
+      <section className="pb-16">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            "/courses/new2/regular-tution-1.jpeg",
+            "/courses/new2/regular-tution-2.jpeg",
+            "/courses/new2/regular-tution-3.jpeg",
+            "/courses/new2/regular-tution-4.jpeg",
+          ].map((img, i) => (
+            <div key={i} className="relative w-full h-40 md:h-56">
+              <Image
+                src={img}
+                alt="Classroom"
+                fill
+                className="object-contain rounded-xl shadow-md"
+              />
             </div>
-
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
-              Regular Tuitions
-            </h1>
-
-            <p className="text-gray-600 mt-5 leading-relaxed">
-              Structured classroom programs for IIT-JEE, NEET & Board Exams with
-              strong conceptual learning and personal attention
-            </p>
-          </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="flex justify-center md:justify-end">
-            <Image
-              src="/courses/regular-tution.jpeg"
-              alt="Crash course"
-              width={500}
-              height={400}
-              className="rounded-2xl shadow-lg object-cover"
-            />
-          </div>
+          ))}
         </div>
       </section>
 
       {/* ABOUT */}
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <p className="text-gray-600 leading-relaxed text-center">
-            At RB IIT NEET Academy, we offer flexible learning options to suit
-            every student’s schedule. 👉 Offline & Online Coaching Available 👉
-            Morning & Evening Batch Options Students can choose the batch timing
-            that best fits their school/college schedule, ensuring maximum
-            learning without stress. Our programs are designed based on the
-            latest IIT-JEE, NEET & Board exam patterns, focusing on strong
-            fundamentals, concept clarity, and top results.
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Complete Coaching for Every Student
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            At{" "}
+            <span className="font-semibold text-gray-900">
+              RB IIT NEET Academy
+            </span>
+            , we provide both{" "}
+            <span className="font-semibold">complete course preparation</span>
+            and{" "}
+            <span className="font-semibold">subject-wise focused coaching</span>
+            .
           </p>
 
-          {/* <p className="text-gray-600 leading-relaxed mt-4 text-center">
-            Updated and comprehensive study materials are provided based on the
-            latest exam patterns. Our methodology ensures strong conceptual
-            clarity from basic level to advanced competition level.
-          </p> */}
+          <div className="mt-6 space-y-4 text-gray-600">
+            <p>
+              👉{" "}
+              <span className="font-semibold text-gray-900">
+                All Subjects Coaching:
+              </span>
+              Full preparation for Physics, Chemistry, and Mathematics/Biology
+              aligned with IIT-JEE, NEET & Board exam patterns.
+            </p>
+
+            <p>
+              👉{" "}
+              <span className="font-semibold text-gray-900">
+                Individual Subject Coaching:
+              </span>
+              Strengthen weak subjects with deep concept clarity, targeted
+              practice, and expert guidance.
+            </p>
+
+            <p>
+              👉{" "}
+              <span className="font-semibold text-gray-900">
+                Flexible Learning:
+              </span>
+              Choose between{" "}
+              <span className="font-semibold">Offline & Online classes</span>
+              with{" "}
+              <span className="font-semibold">Morning & Evening batches</span>.
+            </p>
+          </div>
         </div>
+      </section>
+
+      {/* HIGHLIGHT STRIP */}
+      <section className="py-10 bg-primary text-white text-center">
+        <p className="text-lg md:text-xl font-semibold">
+          Strong Fundamentals • Personal Attention • Proven Results
+        </p>
       </section>
 
       {/* FEATURES */}
@@ -66,18 +111,18 @@ export default function RegularTuitions() {
           {[
             "Offline & Online Classes Available",
             "Morning & Evening Flexible Batches ⭐",
-            "Updated study material based on latest IIT-JEE & NEET pattern",
-            "Concept clarity from basic to advanced level",
-            "Regular tests & performance analysis",
-            "Personal attention with limited batch size",
-            "Remedial classes for weak students",
-            "Special preparation for IIT-JEE Main, Advanced & EAMCET",
+            "Updated Study Material (Latest IIT-JEE & NEET Pattern)",
+            "Concept Clarity from Basic to Advanced Level",
+            "Regular Tests & Performance Analysis",
+            "Limited Batch Size for Personal Attention",
+            "Remedial Classes for Weak Students",
+            "Special Preparation for JEE Main, Advanced & EAMCET",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
               <span className="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center">
                 <FaCheck size={12} />
               </span>
-              <span className="text-gray-700">{item}</span>
+              <span className="text-gray-700 font-medium">{item}</span>
             </div>
           ))}
         </div>
@@ -92,15 +137,14 @@ export default function RegularTuitions() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "IIT JEE (Mains & Advanced) – Junior Inter",
-              "IIT JEE (Mains & Advanced) – Senior Inter",
-              "BITSAT Preparation",
-
-              "Individual Subject Coaching",
+              "JEE Mains & Advanced Coaching",
+              "NEET Physics Coaching",
+              "JEE Maths Coaching",
+              "JEE Physics Coaching",
             ].map((course) => (
               <div
                 key={course}
-                className="bg-[#FBFBFA] p-6 rounded-xl border shadow-sm"
+                className="bg-[#FBFBFA] p-6 rounded-xl border shadow-sm hover:shadow-md transition"
               >
                 <div className="flex items-center gap-3">
                   <span className="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center">
@@ -112,7 +156,7 @@ export default function RegularTuitions() {
             ))}
           </div>
 
-          <p className="text-center text-gray-600 mt-8">
+          <p className="text-center text-gray-600 mt-8 font-medium">
             Choose Your Batch: Morning or Evening | Study Online or Offline
           </p>
         </div>
@@ -120,14 +164,14 @@ export default function RegularTuitions() {
 
       {/* CTA */}
       <section className="py-16 bg-primary text-white text-center">
-        <h2 className="text-2xl md:text-4xl font-bold">ENROLL NOW</h2>
+        <h2 className="text-2xl md:text-4xl font-bold">Enroll Now</h2>
 
         <p className="mt-4 text-white/90">
-          Limited seats. Personal attention. Proven results.
+          Limited Seats • Personal Attention • Proven Results
         </p>
 
         <a href="/contact">
-          <button className="mt-6 bg-white text-primary px-8 py-4 rounded-lg font-bold">
+          <button className="mt-6 bg-white text-primary px-8 py-4 rounded-lg font-bold shadow-md hover:scale-105 transition">
             Enquire Now
           </button>
         </a>

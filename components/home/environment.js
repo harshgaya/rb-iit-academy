@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Environment() {
   const images = [
-    "/home/class-1.jpg",
-    "/home/class-2.jpg",
+    "/home/class-new-woman.jpeg",
+    "/home/class-2.jpeg",
     "/home/class-3.jpg",
     "/home/class-4.jpg",
   ];

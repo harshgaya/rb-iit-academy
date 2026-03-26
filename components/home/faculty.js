@@ -12,6 +12,7 @@ export default function Faculty() {
       exp: "36 Years Exp.",
       edu: "Hyderabad Central University",
       tag: "IIT & NEET Specialist",
+      trained: "5000+ Students Trained",
     },
     {
       img: "/faculty/sumit.jpeg",
@@ -19,7 +20,8 @@ export default function Faculty() {
       role: "Physics Expert",
       exp: "15 Years Exp.",
       edu: "IIT Bombay",
-      tag: "IIT & NEET Specialist",
+      tag: "Proven Track Record of Results",
+      trained: "1500+ Students Trained",
     },
     {
       img: "/faculty/jit.png",
@@ -27,7 +29,8 @@ export default function Faculty() {
       role: "Chemistry Expert",
       exp: "30 Years Exp.",
       edu: "Osmania University",
-      tag: "IIT & NEET Specialist",
+      tag: "Concept to Rank Approach",
+      trained: "4000+ Students Trained",
     },
     {
       img: "/faculty/chandra.png",
@@ -36,6 +39,7 @@ export default function Faculty() {
       exp: "33 Years Exp.",
       edu: "Genetics, Osmania University",
       tag: "NEET Specialist",
+      trained: "3500+ Students Trained",
     },
   ];
 
@@ -64,24 +68,19 @@ export default function Faculty() {
                 />
               </div>
 
-              {/* content */}
               <div className="p-5 text-center">
-                {/* name */}
                 <h3 className="font-bold text-lg text-gray-900">{item.name}</h3>
 
-                {/* role */}
                 <p className="text-red-800 font-semibold text-sm mt-1 tracking-wide">
                   {item.role}
                 </p>
 
-                {/* 🔥 SPECIALIZATION BADGE */}
                 <div className="mt-2">
                   <span className="text-[11px] bg-red-100 text-red-800 px-2 py-1 rounded-full font-semibold">
                     {item.tag}
                   </span>
                 </div>
 
-                {/* 🔥 AUTHORITY PROOF */}
                 <div className="mt-4 flex flex-wrap justify-center gap-2 text-[11px]">
                   <span className="bg-green-100 text-green-700 px-2 py-1 rounded-full flex items-center gap-1">
                     <FaTrophy size={10} /> Top Rankers Produced
@@ -92,7 +91,6 @@ export default function Faculty() {
                   </span>
                 </div>
 
-                {/* details */}
                 <div className="mt-4 space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center gap-2">
                     <FaBriefcase className="text-gray-400" />

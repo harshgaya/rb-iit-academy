@@ -12,12 +12,15 @@ export default function AryabhataCourse() {
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
-              Integrated Inter + IIT Programme(2 Years)
+              2 Year IIT JEE Course (Class 11 + 12)
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
               Aryabhata Programme <br />
-              <span className="text-primary">Target IIT 2028</span>
+              <span className="text-primary">
+                {" "}
+                IIT JEE 2028 (Main + Advanced)
+              </span>
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
@@ -57,7 +60,7 @@ export default function AryabhataCourse() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/new/iit-program.jpeg"
+              src="/courses/new2/2-year-iit-aryabhat.jpeg"
               alt="IIT coaching"
               width={600}
               height={500}
@@ -75,18 +78,22 @@ export default function AryabhataCourse() {
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed text-center">
-            We identify talented students with strong analytical and
-            problem-solving abilities and nurture them for IIT & top national
-            institutes. This course bridges the gap between school learning and
-            IIT-level preparation by strengthening conceptual clarity and
-            logical thinking.
+            Students coming from different boards and schools often have
+            differences in conceptual understanding. To eliminate this gap, we
+            begin with a focused 8-week Bridge Program. This phase ensures that
+            every student: Builds strong fundamentals Covers essential concepts
+            required for IIT-level preparation Reaches a uniform standard for
+            advanced learning After this, students enter our 2-Year IIT JEE
+            Program (Class 11 & 12), where they are trained rigorously in:
+            Advanced concepts Competitive problem-solving JEE Main & Advanced
+            pattern practice
           </p>
 
-          <p className="text-gray-600 mt-4 leading-relaxed text-center">
+          {/* <p className="text-gray-600 mt-4 leading-relaxed text-center">
             Students joining immediately after Class X get an 8-week head start,
             enabling them to build confidence, understand JEE pattern, and
             develop a competitive mindset.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -155,19 +162,21 @@ export default function AryabhataCourse() {
                 <b>Course Name:</b> Aryabhata Programme
               </p>
               <p>
-                <b>Target:</b> IIT 2028
+                <b>Target:</b> IIT JEE 2028 (Main + Advanced)
               </p>
               <p>
                 <b>Eligibility:</b> Class X appearing/passed students
               </p>
               <p>
-                <b>Admission:</b> Through Selection Test
+                <b>Admission:</b> Through Selection Test replace with Admission
+                through Scholarship cum Selection Test
               </p>
               <p>
                 <b>Course Start:</b> 25 May / 15 June 2026
               </p>
               <p>
-                <b>Batch Size:</b> Limited Seats Only
+                <b>Batch Size:</b> Limited Seats Only replace with Only 30–40
+                Students
               </p>
             </div>
           </div>

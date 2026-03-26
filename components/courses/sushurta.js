@@ -21,9 +21,8 @@ export default function Sushruta() {
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Intensive 2-year integrated programme for students moving from
-              Class X to XI who aspire to secure top ranks in NEET and top
-              medical colleges across India.
+              This programme is specially designed for students who join our
+              institute immediately after Class 10 and aspire to become doctors.
             </p>
 
             {/* rating */}
@@ -57,7 +56,7 @@ export default function Sushruta() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/new/neet-program.jpeg"
+              src="/courses/new2/2-year-neet.jpeg"
               alt="NEET coaching"
               width={600}
               height={500}
@@ -75,16 +74,21 @@ export default function Sushruta() {
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This Programme is designed for students who aspire to become doctors
-            and secure seats in top government medical colleges. We focus on
-            strong conceptual learning in Physics, Chemistry, and Biology
-            aligned with NEET syllabus and board curriculum.
+            This program is structured in two phases to ensure strong and
+            systematic preparation: Phase 1: Foundation Phase (8 Weeks)
+            Foundation classes begin for students who join after Class 10. This
+            phase focuses on: Strengthening Basic Mathematics required for
+            Physics Building fundamental concepts in Physics and Chemistry
+            Developing the base required for advanced problem-solving This
+            ensures all students reach a strong and uniform foundation.
           </p>
 
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Students who join immediately after Class X gain an early advantage,
-            building strong fundamentals and confidence to face national-level
-            competition.
+            Phase 2: Main Program (2 Years – Inter + NEET) After completing the
+            foundation phase, students enter the main program, which is designed
+            to: Complete Inter (Board) syllabus thoroughly Provide structured
+            preparation for NEET Build strong concepts in Physics, Chemistry,
+            and Biology Train students for national-level competition
           </p>
         </div>
       </section>

@@ -14,8 +14,7 @@ export default function IitFoundation() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              IIT Foundation <br />
-              (After 10th)
+              IIT / NEET Foundation Crash Course (After 10th)
             </h1>
 
             <p className="text-gray-600 mt-5">
@@ -68,13 +67,26 @@ export default function IitFoundation() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Strong Foundation for Future Success
+            Bridge Course + Foundation for IIT / NEET After 10th
           </h2>
 
           <p className="text-gray-600 mt-6">
-            This program is designed for students who have completed Class 10
-            and want to build a solid base in Physics, Chemistry, and
-            Mathematics before starting serious IIT-JEE preparation.
+            RB IIT NEET Academy’s Foundation Crash Course is designed to bridge
+            the gap between different academic backgrounds and prepare students
+            for competitive exams like IIT JEE and NEET. Students from various
+            boards often miss essential foundational concepts or lack proper
+            subject guidance, especially in core areas like Physics and
+            Mathematics/Biology. This course systematically fills those gaps,
+            strengthens fundamentals, and upgrades students from school-level
+            understanding to competitive exam level. We also provide
+            well-structured study material to support learning and practice. In
+            addition, we conduct regular tests to continuously monitor student
+            performance, identify weak areas, and provide proper guidance and
+            counseling to help students improve and progress effectively. By
+            covering missing topics, reinforcing core concepts, and training
+            students in problem-solving and analytical thinking, we ensure that
+            every student becomes confident, well-prepared, and capable of
+            facing any type of question in a competitive environment.
           </p>
         </div>
       </section>

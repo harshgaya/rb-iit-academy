@@ -59,7 +59,7 @@ export default function FoundationCourse() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/iit-foundation-crash.jpeg"
+              src="/courses/new2/foundation.jpeg"
               alt="Foundation course"
               width={600}
               height={500}
@@ -77,9 +77,34 @@ export default function FoundationCourse() {
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            Students who begin preparation early build strong fundamentals, gain
-            confidence in problem-solving, and perform better in both school and
-            competitive exams.
+            RB IIT NEET Academy offers a well-structured IIT Foundation Program
+            for students of Classes 6 to 10, conducted on weekends to ensure
+            smooth balance with school academics. Classes are held on Saturdays
+            (6:00 PM – 8:00 PM) and Sundays (10:00 AM – 12:00 Noon), making it
+            convenient for students to learn without academic pressure. The
+            program is carefully designed with a planned syllabus and schedule,
+            which is provided to students at the time of admission. It clearly
+            outlines the topics to be covered, the number of classes required
+            for each topic, and the structured progression of learning. Study
+            material is provided class-wise, ensuring students get the right
+            content at the right stage. All subjects are taught by highly
+            experienced faculty with a strong focus on concept clarity,
+            problem-solving ability, and analytical thinking. A systematic
+            examination system is followed to regularly assess student
+            performance, track improvement, and identify areas that need
+            attention. In addition, special guidance is provided for NTSE,
+            Olympiads, and other national and international Mathematics and
+            Science competitions. Students are trained to develop competitive
+            skills and are evaluated class-wise to understand their progress and
+            readiness for global-level competition. The academy also emphasizes
+            continuous monitoring and personalized support. Regular counseling
+            sessions are conducted for both students and parents to guide them
+            on academic progress, study habits, and performance improvement.
+            Parents are also guided on how to effectively monitor their child’s
+            learning at home. Through close monitoring, interactive teaching,
+            and continuous encouragement, we ensure that every student actively
+            participates in the learning process and steadily improves in both
+            academic performance and competitive readiness.
           </p>
 
           <p className="text-primary font-semibold mt-4">
