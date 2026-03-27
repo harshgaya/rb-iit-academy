@@ -8,7 +8,7 @@ export default function VarahamihiraCourse() {
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO SECTION */}
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
@@ -16,14 +16,17 @@ export default function VarahamihiraCourse() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Varahamihira Programme <br />
-              <span className="text-primary">Target IIT 2027</span>
+              Varahamihira Programme Target IIT 2027 <br />
+              <span className="text-primary text-lg">
+                Best IIT Coaching Programme in Nallakunta, Hyderabad
+              </span>
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Specially designed for Class XII completed students (droppers) who
-              aim to secure top ranks in IIT-JEE with focused, structured, and
-              result-oriented preparation.
+              Specially designed IIT JEE Long Term Coaching program in
+              Nallakunta, Hyderabad for Class XII completed students (droppers).
+              Our structured training, expert faculty, and result-oriented
+              approach help students achieve top ranks in IIT-JEE.
             </p>
 
             {/* Reviews */}
@@ -57,7 +60,7 @@ export default function VarahamihiraCourse() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/new/1-year-long-iit.jpeg"
+              src="/courses/new2/1-year-iit.jpeg"
               alt="IIT Long Term Coaching"
               width={600}
               height={500}
@@ -75,17 +78,17 @@ export default function VarahamihiraCourse() {
           </h2>
 
           <p className="text-gray-600 mt-6 leading-relaxed">
-            This Programme is specially crafted for two types of aspirants:
-            students who want to strengthen weak areas despite prior exposure,
-            and those who require complete structured preparation with proper
-            guidance and mentoring.
+            his IIT JEE Long Term Coaching Programme in Hyderabad is specially
+            designed for two types of aspirants: students who want to strengthen
+            weak areas despite prior exposure, and those who require complete
+            structured preparation with expert guidance and mentoring.
           </p>
 
-          <p className="text-gray-600 mt-4 leading-relaxed">
+          {/* <p className="text-gray-600 mt-4 leading-relaxed">
             We combine conceptual clarity, exam temperament training, speed,
             accuracy and structured testing to ensure students are fully
             prepared for IIT-JEE (Main + Advanced) and other competitive exams.
-          </p>
+          </p> */}
         </div>
       </section>
 

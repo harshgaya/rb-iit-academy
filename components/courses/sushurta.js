@@ -21,8 +21,9 @@ export default function Sushruta() {
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              This programme is specially designed for students who join our
-              institute immediately after Class 10 and aspire to become doctors.
+              {/* This programme is specially designed for students who join our
+              institute immediately after Class 10 and aspire to become doctors. */}
+              Board (Inter) + NEET + EAMCET in One Structured Program
             </p>
 
             {/* rating */}

@@ -8,7 +8,7 @@ export default function EamcetNeetCrash() {
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
@@ -16,13 +16,17 @@ export default function EamcetNeetCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              EAMCET (EAPCET) <br />
-              Crash Course 2026
+              EAMCET (EAPCET) Crash Course <br />
+              Coaching in Hyderabad – 2026
             </h1>
 
             <p className="text-gray-600 mt-5">
-              Special crash course for Class XII completed students targeting
-              EAMCET 2026 with intensive revision and daily practice.
+              This EAMCET (EAPCET) Crash Course in Hyderabad is specially
+              designed for Class XII completed students aiming to secure top
+              ranks in engineering and medical entrance exams. At RB IIT NEET
+              Academy, Nallakunta, we provide intensive revision, daily
+              practice, and exam-focused preparation to help students achieve
+              high scores in EAMCET 2026.
             </p>
 
             {/* rating */}
@@ -56,7 +60,7 @@ export default function EamcetNeetCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/eamcet_crash_new.jpeg"
+              src="/courses/new2/eamcet-crash.jpeg"
               alt="Crash course"
               width={600}
               height={500}
@@ -74,9 +78,22 @@ export default function EamcetNeetCrash() {
           </h2>
 
           <p className="text-gray-600 mt-6">
-            Comprehensive crash course designed for students preparing for
-            EAMCET 2026. Focused revision, daily exams, and expert mentoring
-            ensure maximum performance in limited time.
+            This EAMCET (EAPCET) Crash Course in Hyderabad is an intensive
+            short-term coaching programme designed for students aiming to
+            achieve top ranks in EAMCET 2026 within a limited time. The
+            programme is structured to effectively cover the equivalent of a
+            2-year syllabus in just 40–50 days through a well-planned schedule
+            that includes focused revision, daily exams, and continuous
+            assessment. Our expert faculty deliver complete theory in a
+            simplified synopsis-based approach, followed by formula revision,
+            standard problem-solving techniques, and practice of most frequently
+            asked questions from previous years. Special emphasis is given to
+            high-weightage topics, speed, and accuracy. Along with academic
+            training, we provide continuous mentoring, motivation, and
+            monitoring to help students overcome exam fear and stress, ensuring
+            they stay confident and focused. Our goal is to improve student
+            performance rapidly and help them achieve the best possible rank in
+            EAMCET 2026 through dedicated guidance and result-oriented training.
           </p>
         </div>
       </section>

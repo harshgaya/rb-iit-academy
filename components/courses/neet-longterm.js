@@ -17,13 +17,18 @@ export default function NeetLongTerm() {
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
               Charaka Programme <br />
-              <span className="text-primary">Target NEET 2027</span>
+              <span className="text-primary">
+                NEET Long Term Coaching in Hyderabad- Target NEET 2027
+              </span>
             </h1>
 
             <p className="text-gray-600 mt-5 leading-relaxed">
-              Intensive long-term NEET preparation Programme for Class XII
-              completed students who aim to secure seats in top medical colleges
-              across India.
+              This NEET Long Term Coaching Programme in Hyderabad is specially
+              designed for Class XII completed students (droppers) who aim to
+              secure top ranks in NEET. At RB IIT NEET Academy, Nallakunta, we
+              provide expert guidance, structured preparation, and
+              result-oriented training to help students get admission into top
+              medical colleges across India.
             </p>
 
             {/* rating */}
@@ -57,7 +62,7 @@ export default function NeetLongTerm() {
           {/* IMAGE */}
           <div>
             <Image
-              src="/courses/new/1-year-neet.jpeg"
+              src="/courses/new2/neet-1-year.jpeg"
               alt="NEET Long Term Coaching"
               width={600}
               height={500}
@@ -74,18 +79,61 @@ export default function NeetLongTerm() {
             Programme Overview
           </h2>
 
+          {/* Intro Paragraph */}
           <p className="text-gray-600 mt-6 leading-relaxed">
-            NEET is one of India’s most competitive medical entrance exams with
-            lakhs of aspirants competing for limited government medical seats.
-            Our long-term Programme is designed to give students a structured,
-            focused, and result-oriented preparation.
+            NEET is one of India’s most competitive medical entrance
+            examinations, with lakhs of aspirants competing for limited
+            government medical seats. Our NEET Long Term Coaching Programme in
+            Hyderabad is designed to provide structured, focused, and
+            result-oriented preparation for students aiming to secure top
+            medical ranks.
           </p>
 
-          <p className="text-gray-600 mt-4 leading-relaxed">
-            With expert faculty, strong conceptual training, regular mock tests,
-            and personal mentoring, we ensure students are fully prepared to
-            crack NEET and secure top medical ranks.
-          </p>
+          {/* Paragraph + Points */}
+          <div className="text-gray-600 mt-6 leading-relaxed text-left">
+            <p>
+              At RB IIT NEET Academy, Nallakunta, we emphasize strong conceptual
+              clarity, regular practice, and continuous performance evaluation.
+              With expert faculty, systematic study plans, mock tests, and
+              personal mentoring, we ensure students are fully prepared to crack
+              NEET with confidence.
+            </p>
+
+            <p className="mt-6 font-semibold text-gray-800">
+              🔬 Our Unique Approach – Strong Foundation for Physics
+            </p>
+
+            <p className="mt-3">
+              Many students find Physics difficult in NEET not because of
+              concepts alone, but due to a weak foundation in basic Mathematics.
+            </p>
+
+            <p className="mt-4 font-medium">
+              👉 At our academy, we follow a step-by-step foundation approach:
+            </p>
+
+            <div className="mt-3 space-y-2">
+              <p>
+                • We first teach the required basic Mathematics concepts
+                essential for Physics
+              </p>
+              <p>
+                • Then we gradually move to conceptual Physics understanding
+              </p>
+              <p>
+                • Finally, students practice all types of NEET-level problems
+                with confidence
+              </p>
+            </div>
+
+            <p className="mt-5 font-medium">This method helps students:</p>
+
+            <div className="mt-3 space-y-2">
+              <p>✔️ Improve problem-solving ability</p>
+              <p>✔️ Increase speed and accuracy</p>
+              <p>✔️ Handle all models of Physics questions in NEET</p>
+            </div>
+          </div>
         </div>
       </section>
 

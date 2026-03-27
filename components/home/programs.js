@@ -14,11 +14,13 @@ export default function Programs() {
       title: "Integrated Inter + NEET Programme(2 Years)",
       items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],
       link: "/2-year-neet-course",
+      subtitle: "Board (Inter) + NEET + EAMCET in One Structured Program",
     },
     {
       title: "Senior Inter + IIT",
       items: ["Class 12 Integrated", "1 Year Duration", "Offline Mode"],
       link: "/senior-inter-iit-program",
+      subtitle: "Class 12 + Complete Revision of important class 11 topics",
     },
     {
       title: "IIT Long Term Program",
@@ -51,7 +53,7 @@ export default function Programs() {
       link: "/iit-mains-crash-course",
     },
     {
-      title: "Foundation",
+      title: "IIT JEE / NEET FOUNDATION ( CLASSES 6 -10)",
       items: ["Class 6 to 10", "1 to 5 Years Duration", "Offline Mode"],
       link: "/foundation-program",
     },

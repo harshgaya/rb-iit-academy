@@ -30,7 +30,7 @@ export default function RegularTuitions() {
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             "/courses/new2/regular-tution-1.jpeg",
-            "/courses/new2/regular-tution-2.jpeg",
+            "/courses/new2/evening_exclusive_2.jpeg",
             "/courses/new2/regular-tution-3.jpeg",
             "/courses/new2/regular-tution-4.jpeg",
           ].map((img, i) => (

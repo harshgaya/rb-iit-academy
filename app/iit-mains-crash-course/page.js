@@ -6,7 +6,7 @@ export default function IitMainsCrash() {
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
@@ -14,13 +14,20 @@ export default function IitMainsCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              IIT-JEE Mains <br />
-              Crash Course 2026
+              IIT JEE Mains Crash Course <br />
+              Coaching in Hyderabad – 2026
             </h1>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+              Best IIT JEE Mains Coaching in Nallakunta, Hyderabad
+            </h2>
 
             <p className="text-gray-600 mt-5">
-              Focused preparation for IIT-JEE Mains with mock tests after board
-              exams. Designed for quick revision and maximum score improvement.
+              This IIT JEE Mains Crash Course in Hyderabad is designed for
+              students aiming to achieve high scores in JEE Main 2026 after
+              board exams. At RB IIT NEET Academy, Nallakunta, we provide
+              intensive revision, full-length mock tests, and exam-focused
+              preparation to help students improve their performance in a short
+              time.
             </p>
 
             {/* rating */}
@@ -54,7 +61,7 @@ export default function IitMainsCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/jee_mains.jpeg"
+              src="/courses/new2/iit-mains-crash.jpeg"
               alt="Crash course"
               width={600}
               height={500}
@@ -71,11 +78,48 @@ export default function IitMainsCrash() {
             Intensive Short Term Coaching
           </h2>
 
-          <p className="text-gray-600 mt-6">
-            Comprehensive crash course designed for students preparing for
-            IIT-JEE Mains 2026. Focused revision, structured practice, and
-            full-length mock tests after boards.
-          </p>
+          <div className="text-gray-600 mt-6 leading-relaxed text-left">
+            {/* Intro Paragraph */}
+            <p>
+              This IIT JEE Mains Crash Course Coaching in Hyderabad is an
+              intensive short-term programme designed for students preparing for
+              JEE Main 2026 after board exams. The course focuses on rapid
+              revision, smart preparation, and maximizing performance within a
+              limited time.
+            </p>
+
+            {/* Key Features */}
+            <p className="mt-5 font-medium">👉 What this programme offers:</p>
+
+            <div className="mt-3 space-y-2">
+              <p>• Rapid revision of all important concepts</p>
+              <p>• Structured problem-solving practice</p>
+              <p>• Full-length mock tests based on actual exam pattern</p>
+            </div>
+
+            {/* Teaching Approach */}
+            <p className="mt-6">
+              With a well-planned schedule, our expert faculty focus on clear
+              concept revision, shortcut techniques, and practice of important
+              and frequently asked questions from previous years.
+            </p>
+
+            {/* Outcomes */}
+            <p className="mt-5 font-medium">📊 Performance Improvement:</p>
+
+            <div className="mt-3 space-y-2">
+              <p>✔️ Improve speed and accuracy</p>
+              <p>✔️ Develop strong exam strategy</p>
+              <p>✔️ Gain confidence through regular testing</p>
+            </div>
+
+            {/* Final Line */}
+            <p className="mt-6">
+              Through continuous mentoring and focused preparation, we help
+              students strengthen their concepts quickly and achieve the best
+              possible rank in IIT JEE Mains 2026.
+            </p>
+          </div>
         </div>
       </section>
 

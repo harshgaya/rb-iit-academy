@@ -6,7 +6,7 @@ export default function BitsatCrash() {
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
@@ -14,13 +14,19 @@ export default function BitsatCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              BITSAT <br />
-              Crash Course 2026
+              BITSAT Crash Course Coaching6 <br />
+              in Hyderabad – 202
             </h1>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+              Best BITSAT Coaching Institute in Nallakunta, Hyderabad
+            </h2>
 
             <p className="text-gray-600 mt-5">
-              Focused preparation for BITSAT with speed-based practice, mock
-              tests, and strategy to maximize score after board exams.
+              This BITSAT Crash Course in Hyderabad is designed for students
+              aiming to achieve high scores in BITSAT 2026. At RB IIT NEET
+              Academy, Nallakunta, we provide speed-based practice, mock tests,
+              and strategic preparation to help students perform efficiently in
+              the online exam pattern.
             </p>
 
             {/* rating */}
@@ -54,7 +60,7 @@ export default function BitsatCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/bitsat.jpeg"
+              src="/courses/new2/bitsat-crash.jpeg"
               alt="Crash course"
               width={600}
               height={500}
@@ -72,9 +78,20 @@ export default function BitsatCrash() {
           </h2>
 
           <p className="text-gray-600 mt-6">
-            Comprehensive crash course designed for students preparing for
-            BITSAT 2026. Focus on speed, accuracy, and full-length mock tests to
-            boost performance.
+            This BITSAT Crash Course Coaching in Hyderabad is an intensive
+            short-term programme designed for students preparing for BITSAT
+            2026, focusing on speed, accuracy, and maximum score improvement
+            within a limited time. The course is structured to provide
+            comprehensive revision of Mathematics and Physics, along with
+            dedicated training in English and Logical Reasoning by expert
+            faculty, which are crucial scoring areas in BITSAT. Students are
+            given topic-wise assignments, regular tests, and full-length mock
+            exams to build exam temperament and improve time management. Our
+            crash course strategy emphasizes shortcut techniques, high-frequency
+            question practice, and performance analysis, enabling students to
+            attempt more questions with precision. Through continuous mentoring
+            and structured preparation, we help students achieve their best
+            possible score and secure top branches in BITS.
           </p>
         </div>
       </section>

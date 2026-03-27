@@ -8,7 +8,7 @@ export default function NeetCrash() {
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
       <section className="py-14 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
           {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
@@ -16,13 +16,19 @@ export default function NeetCrash() {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-              NEET <br />
-              Crash Course 2026
+              NEET Crash Course Coaching <br />
+              in Hyderabad – 2026
             </h1>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+              Best NEET Coaching Institute in Nallakunta, Hyderabad
+            </h2>
 
             <p className="text-gray-600 mt-5">
-              Special crash course for Class XII completed students targeting
-              NEET 2026 with intensive revision and daily practice.
+              This NEET Crash Course in Hyderabad is designed for Class XII
+              completed students aiming to achieve top ranks in NEET 2026. At RB
+              IIT NEET Academy, Nallakunta, we provide intensive revision, daily
+              tests, and expert mentoring to ensure maximum performance in a
+              short time.
             </p>
 
             {/* rating */}
@@ -56,7 +62,7 @@ export default function NeetCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/neet_crash.jpeg"
+              src="/courses/new2/neet-crash.jpeg"
               alt="Crash course"
               width={600}
               height={500}

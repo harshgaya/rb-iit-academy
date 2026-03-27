@@ -17,8 +17,11 @@ export default function CrashCourses() {
           </h1>
 
           <p className="text-gray-600 mt-5">
-            Intensive short-term courses designed for students preparing for
-            IIT, NEET, EAMCET and other competitive exams after board exams.
+            This NEET Crash Course in Hyderabad is designed for Class XII
+            completed students aiming to achieve top ranks in NEET 2026. At RB
+            IIT NEET Academy, Nallakunta, we provide intensive revision, daily
+            tests, and expert mentoring to ensure maximum performance in a short
+            time.
           </p>
         </div>
       </section>
@@ -28,14 +31,17 @@ export default function CrashCourses() {
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
             {
-              title: "EAMCET (EAPCET) Crash Course",
+              title:
+                "EAMCET (EAPCET) Crash Course Coaching in Hyderabad – 2026",
+              subtitle:
+                "Best EAMCET Coaching Institute in Nallakunta, Hyderabad",
               desc: "Complete revision and practice tests for Engineering EAMCET aspirants.",
               link: "/eamcet-neet-crash",
             },
             {
               title: "NEET Crash Course",
               desc: "Intensive NEET preparation with quick revision and mock tests.",
-              link: "/neet-long-term-course",
+              link: "/neet-crash-course",
             },
             {
               title: "BITSAT Crash Course",
@@ -68,9 +74,12 @@ export default function CrashCourses() {
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                   <FaBolt className="text-primary" />
                 </div>
-                <h3 className="font-bold text-lg text-gray-900">
-                  {course.title}
-                </h3>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">
+                    {course.title}
+                  </h3>
+                  <p className="text-sm text-black"> {course.subtitle}</p>
+                </div>
               </div>
 
               <p className="text-gray-600 text-sm leading-relaxed">

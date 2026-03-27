@@ -59,7 +59,7 @@ export default function FoundationCourse() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/new2/foundation.jpeg"
+              src="/courses/new2/foundation-course.jpeg"
               alt="Foundation course"
               width={600}
               height={500}
