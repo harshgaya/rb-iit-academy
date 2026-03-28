@@ -89,27 +89,66 @@ export default function AboutPage() {
 
           <div className="bg-white p-8 rounded-xl border shadow-sm">
             <p className="text-gray-600 leading-relaxed">
-              Mr. P.V. Rama Brahmam, M.Sc. Mathematics – Hyderabad Central
-              University, is a highly accomplished mathematician with more than
-              25 years of invaluable teaching experience.
+              Mr. P. V. Rama Brahmam, M.Sc. (Applied Mathematics) – Hyderabad
+              Central University, is a highly accomplished educator with{" "}
+              <span className="font-semibold text-gray-900">
+                36+ years of teaching excellence
+              </span>
+              in Mathematics and Physics.
             </p>
 
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Renowned for simplifying complex mathematical concepts, he has
-              mentored thousands of students to achieve outstanding ranks in
-              IIT-JEE, AIEEE, EAMCET, and NEET examinations.
+              Known for his unique ability to simplify complex concepts, he has
+              built strong fundamentals in thousands of students and guided them
+              toward top ranks in national-level competitive exams.
+            </p>
+
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                🏆 Outstanding Student Achievements
+              </h3>
+              <ul className="text-gray-600 space-y-2">
+                <li>✔ JEE Mains – AIR 4</li>
+                <li>✔ JEE Advanced – AIR 36</li>
+                <li>✔ AEEE – Rank 1</li>
+                <li>✔ EAMCET – Rank 94</li>
+                <li>✔ NEET & Health Sciences – Rank 16</li>
+              </ul>
+            </div>
+
+            <p className="text-gray-600 mt-6 leading-relaxed">
+              He has played a key role in producing top rankers, including
+              <span className="font-semibold text-gray-900">
+                {" "}
+                single-digit ranks in IIT–JEE (Mains & Advanced)
+              </span>
+              , with significant contributions at institutions like IPE and Sri
+              Chaitanya.
             </p>
 
             <p className="text-gray-600 mt-4 leading-relaxed">
-              He has been instrumental in producing state and national ranks,
-              including AIR 36, AIR 49, and multiple top 10 state ranks.
+              He has also contributed extensively to NEET success, helping
+              students achieve high scores in Physics and secure top medical
+              ranks.
             </p>
 
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Apart from being an exceptional mentor, he is also a respected
-              author of several mathematics books including Contemporary College
-              Mathematics, Maths Marvels, and Conquering Mathematics.
+              An expert in both Mathematics and Physics, he is widely respected
+              for his concept clarity, teaching methodology, and ability to make
+              difficult topics easy to understand.
             </p>
+
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                📚 Notable Publications
+              </h3>
+              <ul className="text-gray-600 space-y-2">
+                <li>✔ Conquering Mathematics</li>
+                <li>✔ Math Marvels</li>
+                <li>✔ IIT–JEE Preparation Books</li>
+                <li>✔ IIT Foundation Books (Class 6 to 10)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -188,7 +227,7 @@ export default function AboutPage() {
           <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 -mx-4 px-4 md:mx-0 md:px-0">
             {[
               {
-                img: "/about/anurag.jpeg",
+                img: "/about/proud.jpeg",
                 name: "P. Anurag Reddy",
                 exam: "IIT Advanced",
                 rank: "AIR 36",

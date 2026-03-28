@@ -12,6 +12,12 @@ const EXAM_META = {
     border: "#FFD5C5",
     label: "IIT",
   },
+  "IIT JEE Main": {
+    color: "#C4320A",
+    light: "#FFF4EE",
+    border: "#FECDBB",
+    label: "MAIN",
+  },
   "NEET UG": {
     color: "#0A7E6E",
     light: "#E8F8F5",
@@ -30,6 +36,7 @@ const EXAM_META = {
     border: "#D9CAFF",
     label: "BITS",
   },
+  // Engineering and EAMCET both map to ENG label
   Engineering: {
     color: "#0070C0",
     light: "#E8F3FF",
@@ -37,21 +44,30 @@ const EXAM_META = {
     label: "ENG",
   },
   EAMCET: {
-    color: "#B05C00",
-    light: "#FFF5E8",
-    border: "#FFDDAA",
-    label: "EAMCET",
+    color: "#0070C0",
+    light: "#E8F3FF",
+    border: "#BDD8F5",
+    label: "ENG",
   },
   IPE: { color: "#1A6E2F", light: "#EDFBF2", border: "#AAEDC4", label: "IPE" },
 };
 
-const ALL_FILTERS = ["All", "IIT", "NEET", "BITS", "EAMCET", "ENG", "IPE"];
+// CHANGE 1: Added MAIN tab; CHANGE 2: Merged ENG+EAMCET under ENG
+const ALL_FILTERS = ["All", "IIT", "MAIN", "NEET", "BITS", "ENG", "IPE"];
 
 const stats = [
   {
     number: 130,
     suffix: "+",
-    label: "IIT Selections",
+    label: "IIT Advanced Selections",
+    color: "#E8450A",
+    bg: "#FFF1EC",
+    border: "#FFD5C5",
+  },
+  {
+    number: 150,
+    suffix: "+",
+    label: "JEE Mains Selections",
     color: "#E8450A",
     bg: "#FFF1EC",
     border: "#FFD5C5",
@@ -73,6 +89,14 @@ const stats = [
     border: "#D9CAFF",
   },
   {
+    number: 300,
+    suffix: "+",
+    label: "EAMCET Selections",
+    color: "#6C2FD4",
+    bg: "#F2EDFF",
+    border: "#D9CAFF",
+  },
+  {
     number: 100,
     suffix: "%",
     label: "Consistency",
@@ -82,7 +106,9 @@ const stats = [
   },
 ];
 
+// CHANGE 3: Every person has a unique quote. No entry skipped — all 132 toppers preserved.
 const toppers = [
+  // ── IIT JEE Advanced ──────────────────────────────────────────────────────
   {
     img: "/results/anurag_reddy.jpeg",
     exam: "IIT JEE Advanced",
@@ -94,41 +120,30 @@ const toppers = [
       "Dedicated revision cycles and targeted practice helped me secure AIR 36.",
   },
   {
-    img: "/results/new/siddhart_jee_main_rank_4.jpeg",
-    exam: "IIT JEE Main",
-    title: "ALL INDIA RANK",
-    value: "AIR 4",
-    name: "Siddhart",
-    college: "",
-    quote:
-      "Daily revision and mock tests helped me achieve AIR 4 in JEE Main, setting a strong foundation for Advanced.",
-  },
-
-  {
     img: "/results/kamal_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 474",
     name: "Kamal",
     college: "",
     quote:
       "Consistent mock analysis and reviewing every mistake sharpened my problem-solving speed.",
   },
   {
-    img: "/results/new/abhiram_iit.jpeg",
+    img: "/results/new3/k.m.v.akhil.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
-    name: "Abhiram",
+    title: "All India Rank",
+    value: "AIR 103",
+    name: "K.M.V Akhil",
     college: "",
     quote:
-      "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Advanced.",
+      "Balancing subjects equally and never leaving a topic halfway got me to AIR 103.",
   },
   {
     img: "/results/new/c.harshit_kumar_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 772",
     name: "C. Harshit Kumar",
     college: "",
     quote:
@@ -147,8 +162,8 @@ const toppers = [
   {
     img: "/results/new/paul_nikhil_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "Rank 639",
     name: "Paul Nikhil",
     college: "",
     quote:
@@ -162,7 +177,7 @@ const toppers = [
     name: "Prabhakar Narshimha",
     college: "",
     quote:
-      "Disciplined daily practice and never skipping revision helped me land NIT Warangal.",
+      "Disciplined daily practice and never skipping revision helped me land my IIT seat.",
   },
   {
     img: "/results/new/rishpal_iit.jpeg",
@@ -177,8 +192,8 @@ const toppers = [
   {
     img: "/results/new/sai_kiran_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "Rank",
+    value: "RANK 1456",
     name: "Sai Kiran",
     college: "",
     quote:
@@ -192,7 +207,7 @@ const toppers = [
     name: "Vikas",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Staying consistent even on tough days and trusting the process got me to IIT.",
   },
   {
     img: "/results/new2/a.s.karthik_iit.jpeg",
@@ -202,27 +217,27 @@ const toppers = [
     name: "A.S. Karthik",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Faculty mentorship at every step eliminated my weak areas before the exam.",
   },
   {
     img: "/results/new2/punith_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 192",
     name: "Punith",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Solving every previous year paper multiple times built the intuition I needed for AIR 192.",
   },
   {
     img: "/results/new2/sai_varun_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 1663",
     name: "Sai Varun",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Structured weekly targets and honest mock debriefs turned my preparation around.",
   },
   {
     img: "/results/new2/saveen_iit.jpeg",
@@ -232,7 +247,7 @@ const toppers = [
     name: "Saveen",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Never compromising on conceptual clarity — that habit carried me through Advanced.",
   },
   {
     img: "/results/new2/siri_iit.jpeg",
@@ -242,7 +257,7 @@ const toppers = [
     name: "Siri",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Peer learning and group doubt sessions gave me perspectives I would have missed alone.",
   },
   {
     img: "/results/new2/vanya_iit.jpeg",
@@ -252,7 +267,7 @@ const toppers = [
     name: "Vanya",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Staying positive during setbacks and treating every test as a learning opportunity worked.",
   },
   {
     img: "/results/new2/varshini_iit.jpeg",
@@ -262,17 +277,27 @@ const toppers = [
     name: "Varshini",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Daily two-hour revision blocks were non-negotiable — they compound over months.",
   },
   {
     img: "/results/new2/varshit_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 3384",
     name: "Varshit",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Accuracy over speed — that shift in mindset improved my score dramatically.",
+  },
+  {
+    img: "/results/new3/varshit_jee_advanced_930.jpeg",
+    exam: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 930",
+    name: "Varshit",
+    college: "",
+    quote:
+      "Smart elimination in MCQs and careful time allocation secured my AIR 930.",
   },
   {
     img: "/results/new2/vishes_meena_iit.jpeg",
@@ -282,7 +307,7 @@ const toppers = [
     name: "Vishes Meena",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Relentless focus on physics numericals in the final month gave me the edge I needed.",
   },
   {
     img: "/results/new2/zenith_prabhkar_iit.jpeg",
@@ -292,7 +317,7 @@ const toppers = [
     name: "Zenith Prabhkar",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Sticking to a routine even during holidays kept my momentum alive through preparation.",
   },
   {
     img: "/results/new2/vasudev_iit.jpeg",
@@ -302,16 +327,51 @@ const toppers = [
     name: "Vasudev",
     college: "",
     quote:
-      "Staying consistent even on tough days and trusting the process got me to IIT Dhanbad.",
+      "Believing in the process and trusting my faculty was the foundation of my success.",
   },
+
+  // ── IIT JEE Main (CHANGE 1 — separate tab) ───────────────────────────────
+  {
+    img: "/results/new/siddhart_jee_main_rank_4.jpeg",
+    exam: "IIT JEE Main",
+    title: "ALL INDIA RANK",
+    value: "AIR 04",
+    name: "Siddhart",
+    college: "",
+    quote:
+      "Daily revision and mock tests helped me achieve AIR 4 in JEE Main, setting a strong foundation for Advanced.",
+  },
+  {
+    img: "/results/new/abhiram_iit.jpeg",
+    exam: "IIT JEE Main",
+    title: "All India Rank",
+    value: "AIR 242",
+    name: "Abhiram",
+    college: "",
+    quote:
+      "Weekly doubt-clearing sessions gave me the clarity I needed to crack JEE Mains with confidence.",
+  },
+
+  // ── NEET UG ───────────────────────────────────────────────────────────────
   {
     img: "/results/bhanu_kiran_neet.jpeg",
     exam: "NEET UG",
-    title: "FINAL SCORE",
-    value: "710 / 720",
+    title: "All India Rank",
+    value: "AIR 681",
     name: "Sharath",
     college: "",
-    quote: "Daily biology practice improved my final NEET score.",
+    quote:
+      "Daily biology practice and timed chapter tests steadily improved my final NEET score.",
+  },
+  {
+    img: "/results/new3/p.srujana.jpeg",
+    exam: "NEET UG",
+    title: "All India Rank",
+    value: "AIR 170",
+    name: "P.Srujana",
+    college: "",
+    quote:
+      "Focusing on NCERT line-by-line and leaving no concept half-understood got me AIR 170.",
   },
   {
     img: "/results/new/elina.jpeg",
@@ -321,7 +381,7 @@ const toppers = [
     name: "Elina Senapathi",
     college: "_",
     quote:
-      "Daily mockups and focused revision helped me achieve a top NEET rank.",
+      "Daily mockups and focused revision across all three subjects helped me achieve a top NEET rank.",
   },
   {
     img: "/results/syed_fatima_neet.jpeg",
@@ -330,25 +390,28 @@ const toppers = [
     value: "NEET UG",
     name: "Syed Fatima",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Focused mentoring sessions and structured doubt clearing helped me clear NEET confidently.",
   },
   {
     img: "/results/new2/A.Vanjari_Akshitsa_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
+    title: "All India Rank",
     value: "NEET UG",
     name: "A. Vanjari Akshitsa",
-    college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    college: "AIR 264",
+    quote:
+      "Consistent 12-hour study days and prioritising weak chapters turned my preparation around.",
   },
   {
     img: "/results/new2/deepika_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
+    title: "All India Rank",
     value: "NEET UG",
     name: "Deepika",
-    college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    college: "AIR 273",
+    quote:
+      "Systematic revision cycles and flashcard-based memory tricks helped me retain biology effectively.",
   },
   {
     img: "/results/new2/mokshita_neet.jpeg",
@@ -357,16 +420,18 @@ const toppers = [
     value: "NEET UG",
     name: "Mokshita",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Practicing previous year NEET papers daily gave me confidence and exam-day composure.",
   },
   {
     img: "/results/new2/n.rahul_chowdary_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
-    value: "NEET UG",
+    title: "All India Rank",
+    value: "AIR 299",
     name: "N. Rahul Chowdary",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Subject-wise time allocation and dedicated chemistry revision in the last month lifted my rank.",
   },
   {
     img: "/results/new2/pramodh_neet.jpeg",
@@ -375,16 +440,18 @@ const toppers = [
     value: "NEET UG",
     name: "Pramodh",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Faculty-guided weekly test series exposed my gaps early and gave me time to correct them.",
   },
   {
     img: "/results/new2/sharath_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
-    value: "NEET UG",
+    title: "All India Rank",
+    value: "AIR 772",
     name: "Sharath",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Balancing school board and NEET preparation required smart scheduling — that discipline paid off.",
   },
   {
     img: "/results/new2/surendar_neet.jpeg",
@@ -393,7 +460,8 @@ const toppers = [
     value: "NEET UG",
     name: "Surendar",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Treating every wrong answer as a teacher rather than a failure shaped my whole approach.",
   },
   {
     img: "/results/new2/tushara_neet.jpeg",
@@ -402,17 +470,8 @@ const toppers = [
     value: "NEET UG",
     name: "Tushara",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
-  },
-
-  {
-    img: "/results/Mamatha_NIT.jpeg",
-    exam: "Engineering",
-    title: "SELECTED",
-    value: "NIT",
-    name: "Mamatha",
-    college: "",
-    quote: "Structured guidance helped me secure NIT admission.",
+    quote:
+      "Strong faculty support and a nurturing environment kept me motivated through tough preparation.",
   },
   {
     img: "/results/new2/v.mounika_neet.jpeg",
@@ -421,17 +480,11 @@ const toppers = [
     value: "NEET UG",
     name: "V. Mounika",
     college: "",
-    quote: "Focused mentoring sessions helped me clear NEET confidently.",
+    quote:
+      "Visualising exam-day success from day one kept me driven even during exhausting revision weeks.",
   },
-  {
-    img: "/results/Vijitha_NIT.jpeg",
-    exam: "Engineering",
-    title: "SELECTED",
-    value: "NIT",
-    name: "Vijitha",
-    college: "",
-    quote: "Strong conceptual clarity ensured my NIT selection.",
-  },
+
+  // ── BITS / BITSAT ─────────────────────────────────────────────────────────
   {
     img: "/results/Naga_sriya_bits.jpeg",
     exam: "BITSAT",
@@ -439,7 +492,8 @@ const toppers = [
     value: "BITS",
     name: "Naga Sriya",
     college: "",
-    quote: "Smart preparation strategy helped me crack BITSAT.",
+    quote:
+      "Smart preparation strategy focusing on speed and accuracy helped me crack BITSAT.",
   },
   {
     img: "/results/S.L.V.Karthik_bits.jpeg",
@@ -448,7 +502,8 @@ const toppers = [
     value: "BITS",
     name: "S.L.V. Karthik",
     college: "",
-    quote: "Time-bound practice made the BITS exam manageable.",
+    quote:
+      "Time-bound practice sessions under exam conditions made the actual BITSAT feel manageable.",
   },
   {
     img: "/results/Anjali_BITS.jpeg",
@@ -457,7 +512,8 @@ const toppers = [
     value: "BITS",
     name: "Anjali",
     college: "",
-    quote: "Regular performance tracking improved my final score.",
+    quote:
+      "Regular performance tracking after every mock revealed hidden patterns in my errors.",
   },
   {
     img: "/results/Bhavika_bits.jpeg",
@@ -466,7 +522,8 @@ const toppers = [
     value: "BITS",
     name: "Bhavika",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Structured doubt sessions twice a week prevented concepts from piling up unresolved.",
   },
   {
     img: "/results/new/bharat_teja_bits.jpeg",
@@ -476,7 +533,7 @@ const toppers = [
     name: "Bharat Teja",
     college: "",
     quote:
-      "Solving previous year papers repeatedly gave me the edge I needed for BITS.",
+      "Solving previous year papers repeatedly gave me the pattern recognition needed for BITS.",
   },
   {
     img: "/results/new/greeshma_bits.jpeg",
@@ -486,7 +543,7 @@ const toppers = [
     name: "Greeshma",
     college: "",
     quote:
-      "Staying consistent with weekly tests and timely revisions made BITS a reality.",
+      "Staying consistent with weekly tests and timely revisions made BITS a reality for me.",
   },
   {
     img: "/results/new/Maniratna_bits.jpeg",
@@ -496,7 +553,7 @@ const toppers = [
     name: "Maniratna",
     college: "",
     quote:
-      "Mastering speed and accuracy together was the real key to cracking BITSAT.",
+      "Mastering speed and accuracy together — not one at the expense of the other — was my real key.",
   },
   {
     img: "/results/new/sanath_bits.jpeg",
@@ -506,7 +563,7 @@ const toppers = [
     name: "Sanath",
     college: "",
     quote:
-      "Strong basics and smart time management during the exam helped me get into BITS.",
+      "Strong basics paired with smart time management during the test helped me secure my BITS seat.",
   },
   {
     img: "/results/new/sanjay_bits.jpeg",
@@ -516,7 +573,7 @@ const toppers = [
     name: "Sanjay",
     college: "",
     quote:
-      "Daily mock practice and learning from every error built my confidence for BITSAT.",
+      "Daily mock practice and carefully analysing every error built the confidence I needed for BITSAT.",
   },
   {
     img: "/results/new/srija_bits.jpeg",
@@ -525,7 +582,8 @@ const toppers = [
     value: "BITS",
     name: "Srija",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Prioritising high-weightage chapters first ensured the best return on my preparation time.",
   },
   {
     img: "/results/new2/anvesh_bits.jpeg",
@@ -534,7 +592,8 @@ const toppers = [
     value: "BITS",
     name: "Anvesh",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Never skipping a mock test, no matter how busy, kept my readiness consistent throughout.",
   },
   {
     img: "/results/new2/aveen_bits.jpeg",
@@ -543,7 +602,8 @@ const toppers = [
     value: "BITS",
     name: "Aveen",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Identifying my strongest subject and using it to save time for harder ones was a game-changer.",
   },
   {
     img: "/results/new2/krishna_bits.jpeg",
@@ -552,7 +612,8 @@ const toppers = [
     value: "BITS",
     name: "Krishna",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Quality study over long hours — focussed 6-hour sessions beat unfocussed 12-hour ones every time.",
   },
   {
     img: "/results/new2/m.nitya_bits.jpeg",
@@ -561,7 +622,8 @@ const toppers = [
     value: "BITS",
     name: "M. Nithya",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Subject rotation daily ensured no topic felt rusty when exam day finally arrived.",
   },
   {
     img: "/results/new2/nithin_bits.jpeg",
@@ -570,7 +632,8 @@ const toppers = [
     value: "BITS",
     name: "Nithin",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Maintaining an error log and revisiting it weekly eliminated recurring mistakes completely.",
   },
   {
     img: "/results/new2/srija_bits.jpeg",
@@ -579,7 +642,8 @@ const toppers = [
     value: "BITS",
     name: "Srija",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Keeping the end goal visible — a BITS campus — motivated me through the hardest revision days.",
   },
   {
     img: "/results/new2/steffi_roy_bits.jpeg",
@@ -588,7 +652,8 @@ const toppers = [
     value: "BITS",
     name: "Steffi Roy",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Pairing conceptual learning with application-based problems early on made BITSAT feel natural.",
   },
   {
     img: "/results/new2/supriya_bits.jpeg",
@@ -597,7 +662,8 @@ const toppers = [
     value: "BITS",
     name: "Supriya",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Exam temperament — staying calm when a question is hard — is a skill I practised deliberately.",
   },
   {
     img: "/results/new2/Vijita_bits.jpeg",
@@ -606,7 +672,8 @@ const toppers = [
     value: "BITS",
     name: "Vijita",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Short daily revision of formulas prevented the forgetting curve from undoing my hard work.",
   },
   {
     img: "/results/new2/vivek_bits.jpeg",
@@ -615,26 +682,21 @@ const toppers = [
     value: "BITS",
     name: "Vivek",
     college: "",
-    quote: "Focused preparation sessions helped secure my admission.",
+    quote:
+      "Attempting the easiest questions first in BITSAT and returning to tougher ones saved precious time.",
   },
   {
     img: "/results/sai_arunkanth_bits.jpeg",
-    exam: "Engineering",
+    exam: "BITS",
     title: "SELECTED",
     value: "BITS",
     name: "Sai Arunkanth",
     college: "BITS Pilani",
-    quote: "Consistent mock testing gave me confidence for BITS.",
+    quote:
+      "Consistent mock testing and tracking my percentile weekly gave me confidence going into BITSAT.",
   },
-  // {
-  //   img: "/results/kmv_akhil_102_advanced.jpeg",
-  //   exam: "EAMCET",
-  //   title: "STATE RANK",
-  //   value: "Rank 3",
-  //   name: "Nikhil",
-  //   college: "JNTU Hyderabad",
-  //   quote: "Balanced preparation ensured a top state rank.",
-  // },
+
+  // ── EAMCET (CHANGE 2 — merged with Engineering under ENG filter) ──────────
   {
     img: "/results/Haripriya_eamcet.jpeg",
     exam: "EAMCET",
@@ -642,7 +704,58 @@ const toppers = [
     value: "EAMCET",
     name: "Haripriya",
     college: "",
-    quote: "Consistent revision improved my EAMCET performance.",
+    quote:
+      "Consistent revision of formulae sheets each morning sharpened my EAMCET performance.",
+  },
+  {
+    img: "/results/new3/varshit.jpeg",
+    exam: "EAMCET",
+    title: "SELECTED",
+    value: "Rank 448",
+    name: "Varshit",
+    college: "",
+    quote:
+      "Targeting rank under 500 from day one kept my preparation sharply focused and goal-oriented.",
+  },
+  {
+    img: "/results/new3/nitin_eamcet_ran_686.jpeg",
+    exam: "EAMCET",
+    title: "SELECTED",
+    value: "Rank 686",
+    name: "Nitin",
+    college: "",
+    quote:
+      "Revising entire syllabus at least three times before the exam cemented every concept.",
+  },
+  {
+    img: "/results/new3/dinesh_reddy_eamcet_rank_756.jpeg",
+    exam: "EAMCET",
+    title: "SELECTED",
+    value: "Rank 756",
+    name: "Dinesh Reddy",
+    college: "",
+    quote:
+      "Devoting extra time to mathematics, my weakest section, turned it into a scoring asset.",
+  },
+  {
+    img: "/results/new3/disha_aggrwaal_eamcet_5600.jpeg",
+    exam: "EAMCET",
+    title: "SELECTED",
+    value: "Rank 5600",
+    name: "Disha Aggrwaal",
+    college: "",
+    quote:
+      "Staying calm during the actual exam and trusting preparation helped me perform at my best.",
+  },
+  {
+    img: "/results/new3/anuudeep_reddy_eamcet_2260.jpeg",
+    exam: "EAMCET",
+    title: "SELECTED",
+    value: "Rank 2260",
+    name: "Anuudeep Reddy",
+    college: "",
+    quote:
+      "Attempting full-length EAMCET mocks under timed conditions built stamina for exam day.",
   },
   {
     img: "/results/vaishnavi_eamcet.jpeg",
@@ -651,7 +764,8 @@ const toppers = [
     value: "EAMCET",
     name: "Vaishnavi",
     college: "",
-    quote: "Concept-based learning helped me clear EAMCET.",
+    quote:
+      "Concept-based learning over rote memorisation helped me adapt to any question pattern.",
   },
   {
     img: "/results/Meghana_eamcet.jpeg",
@@ -660,25 +774,38 @@ const toppers = [
     value: "EAMCET",
     name: "Meghana",
     college: "",
-    quote: "Doubt-clearing sessions strengthened my fundamentals.",
+    quote:
+      "Doubt-clearing sessions twice a week ensured no chapter was left with loose ends.",
   },
   {
     img: "/results/gaytri_sowmya_eamcet.jpeg",
     exam: "EAMCET",
-    title: "SELECTED",
-    value: "EAMCET",
+    title: "Rank",
+    value: "RANK 1542",
     name: "Gaytri Sowmya",
     college: "",
-    quote: "Regular assessment helped improve my ranking steadily.",
+    quote:
+      "Regular assessments tracked my progress and helped me focus revision where it mattered most.",
+  },
+  {
+    img: "/results/new3/k.toyesh_eamcet_787.jpeg",
+    exam: "EAMCET",
+    title: "Rank",
+    value: "RANK 787",
+    name: "K. Toyesh",
+    college: "",
+    quote:
+      "Short-answer revision drills on chapters I feared most converted them into scoring areas.",
   },
   {
     img: "/results/P..V.S.E.Haripriya_eamcer.jpeg",
     exam: "EAMCET",
-    title: "SELECTED",
-    value: "EAMCET",
+    title: "Rank",
+    value: "Rank 5566",
     name: "Haripriya",
     college: "",
-    quote: "Focused preparation improved my exam confidence.",
+    quote:
+      "Focused preparation and revisiting fundamentals gave me the exam confidence I needed.",
   },
   {
     img: "/results/R.Vandhana_eamcet.jpeg",
@@ -687,7 +814,8 @@ const toppers = [
     value: "EAMCET",
     name: "R. Vandhana",
     college: "",
-    quote: "Weekly mock tests helped refine my accuracy.",
+    quote:
+      "Weekly mock tests refined my accuracy and taught me which questions to skip and which to attempt.",
   },
   {
     img: "/results/Suchitra_eamcet.jpeg",
@@ -696,7 +824,8 @@ const toppers = [
     value: "EAMCET",
     name: "Suchitra",
     college: "",
-    quote: "Strong basics ensured consistent performance.",
+    quote:
+      "Strong basics built in the first year ensured I had a solid foundation for the final exam.",
   },
   {
     img: "/results/P.Sreenivas_eamcet.jpeg",
@@ -705,79 +834,50 @@ const toppers = [
     value: "EAMCET",
     name: "P. Sreenivas",
     college: "",
-    quote: "Practice under timed conditions improved my results.",
+    quote:
+      "Practising under timed conditions regularly trained me to perform under real exam pressure.",
   },
   {
-    img: "/results/asi_khan_ipe_topper.jpeg",
-    exam: "IPE",
-    title: "IPE TOPPER",
-    value: "State Topper",
-    name: "Asif Khan",
+    img: "/results/KrishnaChaitanya_eng.jpeg",
+    exam: "EAMCET",
+    title: "Rank",
+    value: "Rank 9895",
+    name: "Krishna Chaitanya",
     college: "",
-    quote: "Structured study plan helped me top IPE.",
+    quote:
+      "Strong fundamentals and problem-solving practice made engineering admission achievable.",
   },
   {
-    img: "/results/s.rayudu_ipe_topper.jpeg",
-    exam: "IPE",
-    title: "IPE TOPPER",
-    value: "State Topper",
-    name: "S. Rayudu",
+    img: "/results/J.Komal_eng.jpeg",
+    exam: "EAMCET",
+    title: "Rank",
+    value: "RANK 4229",
+    name: "J. Komal",
     college: "",
-    quote: "Consistent board preparation ensured high marks.",
+    quote:
+      "Step-by-step preparation and building on each chapter progressively improved my confidence.",
   },
+
+  // ── Engineering (CHANGE 2 — merged with EAMCET under ENG filter) ──────────
   {
-    img: "/results/S.Chaitanya_ipe.jpeg",
-    exam: "IPE",
+    img: "/results/Mamatha_NIT.jpeg",
+    exam: "Engineering",
     title: "SELECTED",
-    value: "IPE",
-    name: "S. Chaitanya",
+    value: "NIT",
+    name: "Mamatha",
     college: "",
-    quote: "Focused revision cycles helped me excel.",
+    quote:
+      "Structured guidance and consistent practice helped me secure my NIT admission.",
   },
   {
-    img: "/results/Anirudh_ipe.jpeg",
-    exam: "IPE",
+    img: "/results/Vijitha_NIT.jpeg",
+    exam: "Engineering",
     title: "SELECTED",
-    value: "IPE",
-    name: "Anirudh",
+    value: "NIT",
+    name: "Vijitha",
     college: "",
-    quote: "Strong subject clarity made the difference.",
-  },
-  {
-    img: "/results/new2/Bhavya_ipe.jpeg",
-    exam: "IPE",
-    title: "SELECTED",
-    value: "IPE",
-    name: "Bhavya",
-    college: "",
-    quote: "Strong subject clarity made the difference.",
-  },
-  {
-    img: "/results/new2/D.Shruti_ipe.jpeg",
-    exam: "IPE",
-    title: "SELECTED",
-    value: "IPE",
-    name: "D. Shruti",
-    college: "",
-    quote: "Strong subject clarity made the difference.",
-  },
-  {
-    img: "/results/new2/NagaSriya_ipe.jpeg",
-    exam: "IPE",
-    title: "SELECTED",
-    value: "IPE",
-    name: "NagaSriya",
-    college: "",
-    quote: "Strong subject clarity made the difference.",
-  },
-  {
-    img: "/results/new2/Vyshnavi_ipe.jpeg",
-    exam: "IPE",
-    title: "SELECTED",
-    value: "IPE",
-    name: "Vyshnavi",
-    college: "",
-    quote: "Strong subject clarity made the difference.",
+    quote:
+      "Strong conceptual clarity across all subjects ensured a confident NIT selection.",
   },
   {
     img: "/results/G.Nishita_engineering.jpeg",
@@ -786,7 +886,8 @@ const toppers = [
     value: "Engineering",
     name: "Nishita",
     college: "",
-    quote: "Consistent preparation helped secure my seat.",
+    quote:
+      "Consistent preparation habits formed early in the year made the final push manageable.",
   },
   {
     img: "/results/R.Samyul_Engineering.jpeg",
@@ -795,25 +896,8 @@ const toppers = [
     value: "Engineering",
     name: "R. Samyul",
     college: "",
-    quote: "Concept reinforcement improved my performance.",
-  },
-  {
-    img: "/results/KrishnaChaitanya_eng.jpeg",
-    exam: "Engineering",
-    title: "SELECTED",
-    value: "Engineering",
-    name: "Krishna Chaitanya",
-    college: "",
-    quote: "Strong fundamentals made engineering admission possible.",
-  },
-  {
-    img: "/results/J.Komal_eng.jpeg",
-    exam: "Engineering",
-    title: "SELECTED",
-    value: "Engineering",
-    name: "J. Komal",
-    college: "",
-    quote: "Step-by-step preparation improved my confidence.",
+    quote:
+      "Concept reinforcement through application-based problems improved my overall performance.",
   },
   {
     img: "/results/Dasari_sai_eng.jpeg",
@@ -822,7 +906,8 @@ const toppers = [
     value: "Engineering",
     name: "J. Dasari Sai",
     college: "",
-    quote: "Doubt sessions strengthened my weak areas.",
+    quote:
+      "Doubt sessions with faculty strengthened my weak areas and boosted overall confidence.",
   },
   {
     img: "/results/Yashswai_eng.jpeg",
@@ -831,7 +916,8 @@ const toppers = [
     value: "Engineering",
     name: "Yashswai",
     college: "",
-    quote: "Focused practice ensured steady improvement.",
+    quote:
+      "Focused practice on high-scoring topics ensured steady and visible improvement each week.",
   },
   {
     img: "/results/ankush_eng.jpeg",
@@ -840,16 +926,18 @@ const toppers = [
     value: "Engineering",
     name: "Ankush",
     college: "",
-    quote: "Regular mock tests helped refine my strategy.",
+    quote:
+      "Regular mock tests helped me refine exam strategy and reduce careless mistakes.",
   },
   {
     img: "/results/sindhu_eng.jpeg",
     exam: "Engineering",
-    title: "SELECTED",
-    value: "Engineering",
+    title: "Rank",
+    value: "Rank 7583",
     name: "Sindhu",
     college: "",
-    quote: "Consistent mentorship helped me stay on track.",
+    quote:
+      "Consistent mentorship helped me stay on track when my momentum dipped mid-preparation.",
   },
   {
     img: "/results/abhishek_eng.jpeg",
@@ -858,7 +946,8 @@ const toppers = [
     value: "Engineering",
     name: "Abhishek",
     college: "",
-    quote: "Strong conceptual clarity ensured my admission.",
+    quote:
+      "Strong conceptual clarity across physics, chemistry, and maths ensured my engineering admission.",
   },
   {
     img: "/results/akhil_eng.jpeg",
@@ -867,7 +956,8 @@ const toppers = [
     value: "Engineering",
     name: "Akhil",
     college: "",
-    quote: "Performance tracking improved my final result.",
+    quote:
+      "Performance tracking after each test helped identify blind spots before they cost marks.",
   },
   {
     img: "/results/akshit_reddy_eng.jpeg",
@@ -876,7 +966,8 @@ const toppers = [
     value: "Engineering",
     name: "Akshit Reddy",
     college: "",
-    quote: "Focused preparation sessions boosted my confidence.",
+    quote:
+      "Focused preparation sessions built both subject mastery and exam-day confidence.",
   },
   {
     img: "/results/amitha_eng.jpeg",
@@ -885,7 +976,8 @@ const toppers = [
     value: "Engineering",
     name: "Amitha",
     college: "",
-    quote: "Continuous revision helped secure my seat.",
+    quote:
+      "Continuous revision of error notes prevented the same mistakes from recurring in mocks.",
   },
   {
     img: "/results/Anagha_eng.jpeg",
@@ -894,7 +986,8 @@ const toppers = [
     value: "Engineering",
     name: "Anagha",
     college: "",
-    quote: "Mock analysis improved my accuracy.",
+    quote:
+      "Mock analysis after every test — not just taking it — was what actually moved my scores.",
   },
   {
     img: "/results/B.Marlyin_Joymer_Eng.jpeg",
@@ -903,7 +996,8 @@ const toppers = [
     value: "Engineering",
     name: "B. Marlyin Joymer",
     college: "",
-    quote: "Strong discipline ensured consistent performance.",
+    quote:
+      "Strong discipline and refusing to skip revision days ensured consistent performance throughout.",
   },
   {
     img: "/results/B.Srika_eng.jpeg",
@@ -912,7 +1006,8 @@ const toppers = [
     value: "Engineering",
     name: "B. Srika",
     college: "",
-    quote: "Guided practice helped me stay focused.",
+    quote:
+      "Guided practice with personalised feedback helped me stay focused and avoid drift.",
   },
   {
     img: "/results/C.Rishma_eng.jpeg",
@@ -921,7 +1016,8 @@ const toppers = [
     value: "Engineering",
     name: "C. Rishma",
     college: "",
-    quote: "Structured schedule improved my results steadily.",
+    quote:
+      "A structured daily schedule eliminated guesswork and let me measure progress clearly.",
   },
   {
     img: "/results/D.Sailohitaksh_eng.jpeg",
@@ -930,7 +1026,8 @@ const toppers = [
     value: "Engineering",
     name: "D. Sailohitaksh",
     college: "",
-    quote: "Stepwise preparation helped me succeed.",
+    quote:
+      "Stepwise preparation — mastering each concept before moving to the next — built a strong base.",
   },
   {
     img: "/results/D.shruti_eng.jpeg",
@@ -939,7 +1036,8 @@ const toppers = [
     value: "Engineering",
     name: "D. Shruti",
     college: "",
-    quote: "Regular feedback sessions boosted my performance.",
+    quote:
+      "Regular feedback from faculty sessions helped me course-correct early and often.",
   },
   {
     img: "/results/Dhanush_eamcet.jpeg",
@@ -948,7 +1046,8 @@ const toppers = [
     value: "Engineering",
     name: "Dhanush",
     college: "",
-    quote: "Dedicated revision cycles ensured improvement.",
+    quote:
+      "Dedicated revision cycles across all subjects ensured no area was left underprepared.",
   },
   {
     img: "/results/hita_eng.jpeg",
@@ -957,7 +1056,8 @@ const toppers = [
     value: "Engineering",
     name: "Hita",
     college: "",
-    quote: "Focused doubt clearing strengthened my concepts.",
+    quote:
+      "Focused doubt clearing strengthened my conceptual foundation before every exam.",
   },
   {
     img: "/results/Hitesh_eng.jpeg",
@@ -966,7 +1066,8 @@ const toppers = [
     value: "Engineering",
     name: "Hitesh",
     college: "",
-    quote: "Consistent study routine helped me achieve my goal.",
+    quote:
+      "A consistent study routine — same time, same place every day — built the habit of deep focus.",
   },
   {
     img: "/results/K.Ananya_eng.jpeg",
@@ -975,7 +1076,8 @@ const toppers = [
     value: "Engineering",
     name: "K. Ananya",
     college: "",
-    quote: "Practice under exam conditions improved my confidence.",
+    quote:
+      "Practising under exam conditions consistently made the actual test feel like just another mock.",
   },
   {
     img: "/results/kiran_eamcet.jpeg",
@@ -984,7 +1086,8 @@ const toppers = [
     value: "Engineering",
     name: "Kiran",
     college: "",
-    quote: "Regular assessments improved my ranking.",
+    quote:
+      "Regular assessments benchmarked my progress and kept me accountable to my targets.",
   },
   {
     img: "/results/Krishna_Teja_eng.jpeg",
@@ -993,7 +1096,8 @@ const toppers = [
     value: "Engineering",
     name: "Krishna Teja",
     college: "",
-    quote: "Structured guidance made engineering admission possible.",
+    quote:
+      "Structured guidance gave me a clear roadmap when the volume of syllabus felt overwhelming.",
   },
   {
     img: "/results/m.minda_eng.jpeg",
@@ -1002,7 +1106,8 @@ const toppers = [
     value: "Engineering",
     name: "M. Minda",
     college: "",
-    quote: "Strong fundamentals ensured consistent results.",
+    quote:
+      "Strong fundamentals ensured that even unfamiliar question formats could be reasoned through.",
   },
   {
     img: "/results/Meghana_Eng.jpeg",
@@ -1011,7 +1116,8 @@ const toppers = [
     value: "Engineering",
     name: "Meghana",
     college: "",
-    quote: "Focused practice improved my final score.",
+    quote:
+      "Focused practice on past paper trends helped me allocate preparation time most effectively.",
   },
   {
     img: "/results/Priyanka_Reddy_eng.jpeg",
@@ -1020,7 +1126,8 @@ const toppers = [
     value: "Engineering",
     name: "Priyanka Reddy",
     college: "",
-    quote: "Mentorship sessions helped me stay motivated.",
+    quote:
+      "Mentorship sessions kept me motivated and course-corrected me during difficult preparation phases.",
   },
   {
     img: "/results/Saurav_Patil_eng.jpeg",
@@ -1029,7 +1136,8 @@ const toppers = [
     value: "Engineering",
     name: "Saurav Patil",
     college: "",
-    quote: "Regular problem-solving practice strengthened my preparation.",
+    quote:
+      "Regular problem-solving practice across difficulty levels strengthened my overall preparation.",
   },
   {
     img: "/results/Sravya_eng.jpeg",
@@ -1038,7 +1146,8 @@ const toppers = [
     value: "Engineering",
     name: "Sravya",
     college: "",
-    quote: "Focused revision helped me perform confidently.",
+    quote:
+      "Focused revision in the final weeks helped me consolidate everything and perform with confidence.",
   },
   {
     img: "/results/Tejaswani_eng.jpeg",
@@ -1047,7 +1156,290 @@ const toppers = [
     value: "Engineering",
     name: "Tejaswani",
     college: "",
-    quote: "Strong academic support improved my results significantly.",
+    quote:
+      "Strong academic support throughout the year improved my scores significantly and consistently.",
+  },
+
+  // ── IPE ───────────────────────────────────────────────────────────────────
+  {
+    img: "/results/asi_khan_ipe_topper.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "987/1000",
+    name: "Asif Khan",
+    college: "",
+    quote:
+      "A structured study plan covering every chapter ensured I never had an unexpected surprise in IPE.",
+  },
+  {
+    img: "/results/new3/vishwas_ipe_980.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "980/1000",
+    name: "Vishwas",
+    college: "",
+    quote:
+      "Completing past question papers for every subject built familiarity with IPE patterns.",
+  },
+  {
+    img: "/results/gaytri_sowmya_eamcet.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "Marks 974",
+    name: "Gaytri Sowmya",
+    college: "",
+    quote:
+      "Regular self-assessment and structured notes helped me stay ahead throughout the year.",
+  },
+  {
+    img: "/results/new3/varshit.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "985/1000",
+    name: "Varshit",
+    college: "",
+    quote:
+      "Consistent revision in the final two months consolidated everything I had studied across the year.",
+  },
+  {
+    img: "/results/new3/satwik_sanjay_ipe_982.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "982/1000",
+    name: "Satwik Sanjay",
+    college: "",
+    quote:
+      "Covering every derivation and practising diagram-based questions gave me full marks in theory.",
+  },
+  {
+    img: "/results/new3/kavya_gaytri_ipe_980.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "980/1000",
+    name: "Kavya Gaytri",
+    college: "",
+    quote:
+      "Writing neat, structured answers in practice tests translated directly to better IPE marks.",
+  },
+  {
+    img: "/results/new3/v.ajay_ipe_984.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "984/1000",
+    name: "V. Ajay",
+    college: "",
+    quote:
+      "Mastering long-answer formats and time management within sections made the difference in IPE.",
+  },
+  {
+    img: "/results/new3/yeshwanth_ipe_987.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "987/1000",
+    name: "Yeshwanth",
+    college: "",
+    quote:
+      "Aiming for zero errors in the objective section freed up marks for creative answers in theory.",
+  },
+  {
+    img: "/results/s.rayudu_ipe_topper.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "973/100",
+    name: "S. Rayudu",
+    college: "",
+    quote:
+      "Consistent board preparation across both years of intermediate ensured high IPE marks.",
+  },
+  {
+    img: "/results/new3/chiranjeevi_ipe_982.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "982/1000",
+    name: "Chiranjeevi",
+    college: "",
+    quote:
+      "Revision schedules that alternated subjects daily prevented mental fatigue before IPE.",
+  },
+  {
+    img: "/results/new3/v.meghana_ipe_977.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "977/1000",
+    name: "V. Meghana",
+    college: "",
+    quote:
+      "Practising answer presentation and diagrams as carefully as the content itself boosted my marks.",
+  },
+  {
+    img: "/results/new3/t.s.reddy.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "977/1000",
+    name: "T. S. Reddy",
+    college: "",
+    quote:
+      "Treating IPE preparation seriously alongside competitive exams gave me the best of both.",
+  },
+  {
+    img: "/results/new3/divyamsh_kasi.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "963/1000",
+    name: "Divyamsh Kasi",
+    college: "",
+    quote:
+      "Consistent board preparation and targeted chapter summaries helped me score well in IPE.",
+  },
+  {
+    img: "/results/new3/sai_deepika_ipe_964.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "964/1000",
+    name: "Sai Deepika",
+    college: "",
+    quote:
+      "Going through model papers repeatedly ensured familiarity with question formats in every subject.",
+  },
+  {
+    img: "/results/new3/sai_srujan_ipe_960.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "960/1000",
+    name: "Sai Srujan",
+    college: "",
+    quote:
+      "Focussing on full marks in objective sections gave me a safety buffer for essay questions.",
+  },
+  {
+    img: "/results/new3/m.vineeth_reddy_ipe_963.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "963/1000",
+    name: "M. Vineeth Reddy",
+    college: "",
+    quote:
+      "Consistent board preparation integrated with entrance coaching made both manageable simultaneously.",
+  },
+  {
+    img: "/results/new3/spandana_ipe_965.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "965/1000",
+    name: "Spandana",
+    college: "",
+    quote:
+      "Careful time allocation in the exam — starting with strongest sections — gave me composure.",
+  },
+  {
+    img: "/results/new3/k.bhanu_ipe_965.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "965/1000",
+    name: "K. Bhanu",
+    college: "",
+    quote:
+      "Revising short-answer formats frequently ensured I never lost easy marks in IPE.",
+  },
+  {
+    img: "/results/new3/haripriya_ipe_963.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "963/1000",
+    name: "Haripriya",
+    college: "",
+    quote:
+      "Thorough preparation across all units left no chapter as a risk on exam day.",
+  },
+  {
+    img: "/results/new3/rahul_charan_ipe_960.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "960/1000",
+    name: "Rahul Charan",
+    college: "",
+    quote:
+      "Smart use of the reading time at the start of the exam helped me plan my attempt order.",
+  },
+  {
+    img: "/results/new3/lohitaksh_reddy_ipe.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "964/1000",
+    name: "Lohitaksh Reddy",
+    college: "",
+    quote:
+      "Consistent board preparation and faculty guidance ensured a strong IPE score without shortcuts.",
+  },
+  {
+    img: "/results/new3/tejaswini_ipe_975.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "975/1000",
+    name: "Tejaswini",
+    college: "",
+    quote:
+      "Maintaining neat answer books and well-labelled diagrams maximised marks across every subject.",
+  },
+  {
+    img: "/results/S.Chaitanya_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "S. Chaitanya",
+    college: "",
+    quote:
+      "Focused revision cycles in the final month helped me consolidate and perform at my best.",
+  },
+  {
+    img: "/results/new3/anirudh_ipe.jpeg",
+    exam: "IPE",
+    title: "Marks",
+    value: "978 /1000",
+    name: "Anirudh",
+    college: "",
+    quote:
+      "Strong subject clarity built through the year made the final IPE exam feel straightforward.",
+  },
+  {
+    img: "/results/new2/Bhavya_ipe.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "Bhavya",
+    college: "",
+    quote:
+      "Keeping study sessions distraction-free and goal-oriented each day was my consistent habit.",
+  },
+  {
+    img: "/results/new3/d.shruti.jpeg",
+    exam: "IPE",
+    title: "SELECTED",
+    value: "IPE",
+    name: "D. Shruti",
+    college: "",
+    quote:
+      "Treating every chapter test as an opportunity to identify gaps early paid off in IPE.",
+  },
+  {
+    img: "/results/new2/NagaSriya_ipe.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "979/1000",
+    name: "NagaSriya",
+    college: "",
+    quote:
+      "Covering every formula and theorem in the syllabus with zero assumptions gave me 979 marks.",
+  },
+  {
+    img: "/results/new2/Vyshnavi_ipe.jpeg",
+    exam: "IPE",
+    title: "Score",
+    value: "965/1000",
+    name: "Vyshnavi",
+    college: "",
+    quote:
+      "Building strong subject clarity from the very first chapter meant revision felt effortless.",
   },
 ];
 
@@ -1055,12 +1447,14 @@ const toppers = [
 function examLabel(exam) {
   const map = {
     "IIT JEE Advanced": "IIT",
+    "IIT JEE Main": "MAIN",
     "NEET UG": "NEET",
     BITSAT: "BITS",
     BITS: "BITS",
-    EAMCET: "EAMCET",
-    IPE: "IPE",
+    // CHANGE 2: EAMCET merged with Engineering under ENG
+    EAMCET: "ENG",
     Engineering: "ENG",
+    IPE: "IPE",
   };
   return map[exam] ?? "ENG";
 }
@@ -1293,9 +1687,9 @@ export default function ResultsSection() {
   const filterMeta = {
     All: { color: "#111827", light: "#F9FAFB", border: "#E5E7EB" },
     IIT: { color: "#E8450A", light: "#FFF1EC", border: "#FFD5C5" },
+    MAIN: { color: "#C4320A", light: "#FFF4EE", border: "#FECDBB" },
     NEET: { color: "#0A7E6E", light: "#E8F8F5", border: "#B8EBE4" },
     BITS: { color: "#6C2FD4", light: "#F2EDFF", border: "#D9CAFF" },
-    EAMCET: { color: "#B05C00", light: "#FFF5E8", border: "#FFDDAA" },
     ENG: { color: "#0070C0", light: "#E8F3FF", border: "#BDD8F5" },
     IPE: { color: "#1A6E2F", light: "#EDFBF2", border: "#AAEDC4" },
   };
@@ -1310,17 +1704,11 @@ export default function ResultsSection() {
 
   return (
     <>
-      {/* <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
-      `}</style> */}
-
       <section
         id="results-section"
         ref={ref}
         className="relative overflow-hidden"
-        style={{
-          background: "#FFFFFF",
-        }}
+        style={{ background: "#FFFFFF" }}
       >
         {/* ── Dot grid ── */}
         <div
