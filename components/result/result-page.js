@@ -302,8 +302,8 @@ const toppers = [
   {
     img: "/results/new2/vishes_meena_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 333",
     name: "Vishes Meena",
     college: "",
     quote:
@@ -312,8 +312,8 @@ const toppers = [
   {
     img: "/results/new2/zenith_prabhkar_iit.jpeg",
     exam: "IIT JEE Advanced",
-    title: "SELECTED",
-    value: "IIT JEE Advanced",
+    title: "All India Rank",
+    value: "AIR 992",
     name: "Zenith Prabhkar",
     college: "",
     quote:
@@ -356,8 +356,8 @@ const toppers = [
   {
     img: "/results/bhanu_kiran_neet.jpeg",
     exam: "NEET UG",
-    title: "All India Rank",
-    value: "AIR 681",
+    title: "Rank",
+    value: "681",
     name: "Sharath",
     college: "",
     quote:
@@ -366,8 +366,8 @@ const toppers = [
   {
     img: "/results/new3/p.srujana.jpeg",
     exam: "NEET UG",
-    title: "All India Rank",
-    value: "AIR 170",
+    title: "Rank",
+    value: "170",
     name: "P.Srujana",
     college: "",
     quote:
@@ -376,8 +376,8 @@ const toppers = [
   {
     img: "/results/new/elina.jpeg",
     exam: "NEET UG",
-    title: "FINAL SCORE",
-    value: "Rank 16",
+    title: "Rank",
+    value: "16",
     name: "Elina Senapathi",
     college: "_",
     quote:
@@ -406,8 +406,8 @@ const toppers = [
   {
     img: "/results/new2/deepika_neet.jpeg",
     exam: "NEET UG",
-    title: "All India Rank",
-    value: "NEET UG",
+    title: "Rank",
+    value: "273",
     name: "Deepika",
     college: "AIR 273",
     quote:
@@ -416,8 +416,8 @@ const toppers = [
   {
     img: "/results/new2/mokshita_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
-    value: "NEET UG",
+    title: "Rank",
+    value: "543",
     name: "Mokshita",
     college: "",
     quote:
@@ -426,8 +426,8 @@ const toppers = [
   {
     img: "/results/new2/n.rahul_chowdary_neet.jpeg",
     exam: "NEET UG",
-    title: "All India Rank",
-    value: "AIR 299",
+    title: "Rank",
+    value: "299",
     name: "N. Rahul Chowdary",
     college: "",
     quote:
@@ -446,8 +446,8 @@ const toppers = [
   {
     img: "/results/new2/sharath_neet.jpeg",
     exam: "NEET UG",
-    title: "All India Rank",
-    value: "AIR 772",
+    title: "Rank",
+    value: "127",
     name: "Sharath",
     college: "",
     quote:
