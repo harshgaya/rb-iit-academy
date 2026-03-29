@@ -436,8 +436,8 @@ const toppers = [
   {
     img: "/results/new2/pramodh_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
-    value: "NEET UG",
+    title: "Rank",
+    value: "573",
     name: "Pramodh",
     college: "",
     quote:
@@ -466,8 +466,8 @@ const toppers = [
   {
     img: "/results/new2/tushara_neet.jpeg",
     exam: "NEET UG",
-    title: "SELECTED",
-    value: "NEET UG",
+    title: "Rank",
+    value: "170",
     name: "Tushara",
     college: "",
     quote:
@@ -1414,8 +1414,8 @@ const toppers = [
   {
     img: "/results/new3/d.shruti.jpeg",
     exam: "IPE",
-    title: "SELECTED",
-    value: "IPE",
+    title: "Marks",
+    value: "968/1000",
     name: "D. Shruti",
     college: "",
     quote:
