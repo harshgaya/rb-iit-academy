@@ -22,7 +22,10 @@ export default function Navbar() {
       { name: "IIT Longterm Program", href: "/iit-longterm-program" },
       { name: "NEET Longterm Program", href: "/neet-long-term-course" },
       { name: "Crash Course", href: "/crash-course" },
-      { name: "Regular Tuition", href: "/regular-tutions" },
+      {
+        name: "IIT JEE & NEET Master Batch(Morning & Evening)",
+        href: "/regular-tutions",
+      },
       // { name: "EAMCET Crash Course", href: "/eamcet-neet-crash" },
       // { name: "NEET Crash Course", href: "/neet-crash-course" },
     ],

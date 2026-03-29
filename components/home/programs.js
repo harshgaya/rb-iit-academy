@@ -57,6 +57,7 @@ export default function Programs() {
       items: ["Class 6 to 10", "1 to 5 Years Duration", "Offline Mode"],
       link: "/foundation-program",
     },
+
     {
       title:
         "JEE Mains + Advanced & NEET Classes Available for All Subjects or Individual Subjects",
@@ -66,6 +67,14 @@ export default function Programs() {
         "Offline/Online Mode",
       ],
       link: "/regular-tutions",
+    },
+    {
+      title: "IIT Foundation (After 10th)",
+      items: ["IIT JEE", "3 months", "Offline Mode"],
+      // items: [
+      //   "1-month foundation program to strengthen basics and problem-solving ability.",
+      // ],
+      link: "/iit-foundation-crash-course",
     },
   ];
 
