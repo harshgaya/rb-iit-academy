@@ -53,7 +53,15 @@ const EXAM_META = {
 };
 
 // CHANGE 1: Added MAIN tab; CHANGE 2: Merged ENG+EAMCET under ENG
-const ALL_FILTERS = ["All", "IIT", "MAIN", "NEET", "BITS", "ENG", "IPE"];
+const ALL_FILTERS = [
+  "All",
+  "IIT JEE Advanced",
+  "IIT JEE Main",
+  "NEET",
+  "BITS",
+  "ENG",
+  "IPE",
+];
 
 const stats = [
   {
@@ -1446,8 +1454,8 @@ const toppers = [
 /* ─── helpers ────────────────────────────────────────────────────────────── */
 function examLabel(exam) {
   const map = {
-    "IIT JEE Advanced": "IIT",
-    "IIT JEE Main": "MAIN",
+    "IIT JEE Advanced": "IIT JEE Advanced",
+    "IIT JEE Main": "IIT JEE Main",
     "NEET UG": "NEET",
     BITSAT: "BITS",
     BITS: "BITS",
