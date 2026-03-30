@@ -3,11 +3,10 @@ import { FaCheck, FaStar } from "react-icons/fa";
 
 export default function IitFoundation() {
   return (
-    <div className="bg-[#FBFBFA] text-black">
+    <div id="page-container" className="bg-[#FBFBFA] text-black">
       {/* HERO */}
-      <section className="py-14 md:py-20">
+      <section id="hero-section" className="py-14 md:py-20">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-          {/* LEFT */}
           <div>
             <div className="text-primary text-sm font-semibold mb-2">
               Foundation Programme
@@ -19,10 +18,9 @@ export default function IitFoundation() {
 
             <p className="text-gray-600 mt-5">
               1-month foundation program to strengthen basics and develop strong
-              problem-solving skills for future IIT-JEE preparation.
+              problem-solving skills for IIT JEE & NEET preparation.
             </p>
 
-            {/* rating */}
             <div className="flex items-center gap-2 mt-4 text-yellow-500">
               <FaStar />
               <FaStar />
@@ -34,23 +32,27 @@ export default function IitFoundation() {
               </span>
             </div>
 
-            {/* buttons */}
             <div className="flex gap-3 mt-6">
               <a href="/contact">
-                <button className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-90">
+                <button
+                  id="enroll-btn"
+                  className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-90"
+                >
                   Enroll Now
                 </button>
               </a>
 
               <a href="/contact">
-                <button className="border px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                <button
+                  id="counsellor-btn"
+                  className="border px-6 py-3 rounded-lg font-semibold hover:bg-gray-100"
+                >
                   Talk to Counsellor
                 </button>
               </a>
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
           <div>
             <Image
               src="/courses/iit-foundation-crash.jpeg"
@@ -63,208 +65,140 @@ export default function IitFoundation() {
         </div>
       </section>
 
+      {/* BRIDGE COURSE */}
       <section id="bridge-course-section" className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          {/* Heading */}
-          <h2
-            id="bridge-heading"
-            className="text-2xl md:text-3xl font-bold text-gray-900"
-          >
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Bridge Course + Foundation for IIT / NEET After 10th
           </h2>
 
-          {/* Subtitle */}
-          <p
-            id="bridge-subtitle"
-            className="text-gray-600 mt-4 max-w-3xl mx-auto"
-          >
-            A specially designed crash course to strengthen fundamentals and
-            prepare students for IIT JEE & NEET with confidence.
+          <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
+            Designed to strengthen fundamentals and prepare students for
+            competitive exams with confidence.
           </p>
 
-          {/* Points Grid */}
-          <div
-            id="bridge-points"
-            className="grid md:grid-cols-2 gap-6 mt-10 text-left"
-          >
-            {/* Point 1 */}
-            <div
-              id="point-gap"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Bridge Academic Gaps
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Covers missing concepts from different boards and ensures a
-                strong foundation in Physics, Chemistry, Mathematics, and
-                Biology.
-              </p>
-            </div>
-
-            {/* Point 2 */}
-            <div
-              id="point-foundation"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Strong Concept Building
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Focus on conceptual clarity and deep understanding required for
-                competitive exams like IIT JEE and NEET.
-              </p>
-            </div>
-
-            {/* Point 3 */}
-            <div
-              id="point-material"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Structured Study Material
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Well-designed notes and practice material to support learning
-                and improve problem-solving skills.
-              </p>
-            </div>
-
-            {/* Point 4 */}
-            <div
-              id="point-tests"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Regular Tests & Analysis
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Frequent tests to track progress, identify weak areas, and
-                improve performance with proper feedback.
-              </p>
-            </div>
-
-            {/* Point 5 */}
-            <div
-              id="point-guidance"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Personal Guidance & Mentorship
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Expert mentoring and counseling to help students stay focused,
-                motivated, and on the right track.
-              </p>
-            </div>
-
-            {/* Point 6 */}
-            <div
-              id="point-confidence"
-              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
-            >
-              <h3 className="font-semibold text-gray-800 mb-2">
-                Exam-Level Preparation
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Training in analytical thinking and problem-solving to handle
-                any type of competitive exam question confidently.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-6 mt-10 text-left">
+            {[
+              [
+                "Bridge Academic Gaps",
+                "Covers missing concepts across boards.",
+              ],
+              ["Strong Concept Building", "Focus on deep understanding."],
+              ["Structured Study Material", "Well-designed notes & practice."],
+              ["Regular Tests", "Track progress & improve performance."],
+              ["Personal Mentorship", "Guidance from expert faculty."],
+              ["Exam-Level Preparation", "Train for real competitive exams."],
+            ].map(([title, desc], i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+              >
+                <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
+                <p className="text-gray-600 text-sm">{desc}</p>
+              </div>
+            ))}
           </div>
-
-          {/* Bottom Description */}
-          <p
-            id="bridge-description"
-            className="text-gray-600 mt-10 max-w-3xl mx-auto"
-          >
-            This course transforms students from basic school-level
-            understanding to competitive exam readiness by strengthening
-            concepts, improving practice, and building confidence for IIT JEE
-            and NEET success.
-          </p>
         </div>
+      </section>
+
+      {/* SYLLABUS */}
+      <section id="syllabus-section" className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
+            Course Syllabus Overview
+          </h2>
+
+          <div className="overflow-x-auto mt-10">
+            <table className="w-full border border-gray-200">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="p-3">S.No</th>
+                  <th className="p-3">Mathematics</th>
+                  <th className="p-3">Physics</th>
+                  <th className="p-3">Chemistry</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {[
+                  ["1", "Sets", "Motion in One Dimension", "Atomic Structure"],
+                  ["2", "Relations", "Newton’s Laws", "Periodic Table"],
+                  ["3", "Numbers", "Work Energy", "Chemical Bonding"],
+                  ["4", "Logarithms", "Differentiation", "Mole Concept"],
+                  ["5", "Equations", "Applications", "Solutions"],
+                  ["6", "Progressions", "Integration", "Gaseous State"],
+                  ["7", "Trigonometry", "Vectors", "Organic Chemistry"],
+                  ["8", "Graphs", "Current Electricity", ""],
+                  ["9", "Coordinate Geometry", "Optics", ""],
+                  ["10", "Plane Geometry", "", ""],
+                  ["11", "Matrices", "", ""],
+                  ["12", "Binomial Theorem", "", ""],
+                  ["13", "Functions", "", ""],
+                ].map((row, i) => (
+                  <tr key={i} className="border-t text-center">
+                    {row.map((col, j) => (
+                      <td key={j} className="p-3">
+                        {col || "-"}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* RESULTS */}
+      <section id="results-section" className="py-16 bg-gray-50 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          Our Results Speak for Themselves
+        </h2>
+
+        <p className="text-gray-600 mt-4">
+          See our students’ success in IIT JEE & NEET.
+        </p>
+
+        <a href="/result">
+          <button
+            id="results-btn"
+            className="mt-6 bg-primary text-white px-8 py-3 rounded-lg font-semibold"
+          >
+            View Results
+          </button>
+        </a>
       </section>
 
       {/* FEATURES */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
-            "Concept building from basics",
-            "Introduction to IIT-level problem solving",
-            "Daily practice sessions",
-            "Doubt clearing by expert faculty",
-            "Focus on logical thinking & fundamentals",
-            "Structured study material provided",
-            "Regular tests & performance tracking",
-            "Motivation & study guidance sessions",
+            "Concept building",
+            "Problem solving",
+            "Daily practice",
+            "Doubt clearing",
+            "Logical thinking",
+            "Study material",
+            "Regular tests",
+            "Guidance sessions",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
-              <span className="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center">
+              <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center">
                 <FaCheck size={12} />
               </span>
-              <span className="text-gray-700">{item}</span>
+              {item}
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* DETAILS */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="bg-[#FBFBFA] p-8 rounded-xl border shadow-sm">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">
-              Course Details
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-4 text-gray-700">
-              <p>
-                <b>Target:</b> IIT-JEE Foundation
-              </p>
-              <p>
-                <b>Eligibility:</b> After Class 10
-              </p>
-              <p>
-                <b>Course Duration:</b> 1 Month
-              </p>
-              <p>
-                <b>Course Start:</b> After Board Exams
-              </p>
-              <p>
-                <b>Admission:</b> Direct / Selection
-              </p>
-              <p>
-                <b>Hostel:</b> Available (Boys & Girls)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHO SHOULD JOIN */}
-      <section className="py-16">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-            Who Should Join
-          </h2>
-
-          <p className="text-gray-600 mt-5">
-            Students who have completed Class 10 and want to start early
-            preparation for IIT-JEE with strong conceptual clarity and
-            problem-solving skills.
-          </p>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-16 bg-primary text-white text-center">
         <h2 className="text-2xl md:text-4xl font-bold">
-          Build Your IIT Foundation Early
+          Start Your IIT Journey Today 🚀
         </h2>
 
-        <p className="mt-4 text-white/90">
-          Limited seats. Start your journey towards IIT today.
-        </p>
+        <p className="mt-4">Limited seats available. Enroll now.</p>
 
         <a href="/contact">
           <button className="mt-6 bg-white text-primary px-8 py-4 rounded-lg font-bold">
