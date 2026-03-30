@@ -5,6 +5,18 @@ import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 export default function Programs() {
   const programs = [
     {
+      title: "IIT /NEET Foundation Program (After 10th)",
+      items: [
+        "Designed for CBSE / ICSE / State Board Students",
+        "Build Strong Concepts for IIT JEE",
+        "Offline Mode",
+      ],
+      // items: [
+      //   "1-month foundation program to strengthen basics and problem-solving ability.",
+      // ],
+      link: "/iit-foundation-crash-course",
+    },
+    {
       title: "Integrated Inter + IIT Programme(2 Years)",
       subtitle: "IIT JEE, BITSAT, EAMCET & Other Engineering Entrances",
       items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],
@@ -67,14 +79,6 @@ export default function Programs() {
         "Offline/Online Mode",
       ],
       link: "/regular-tutions",
-    },
-    {
-      title: "IIT Foundation (After 10th)",
-      items: ["IIT JEE", "3 months", "Offline Mode"],
-      // items: [
-      //   "1-month foundation program to strengthen basics and problem-solving ability.",
-      // ],
-      link: "/iit-foundation-crash-course",
     },
   ];
 

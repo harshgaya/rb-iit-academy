@@ -63,30 +63,125 @@ export default function IitFoundation() {
         </div>
       </section>
 
-      {/* COURSE INFO */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+      <section id="bridge-course-section" className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          {/* Heading */}
+          <h2
+            id="bridge-heading"
+            className="text-2xl md:text-3xl font-bold text-gray-900"
+          >
             Bridge Course + Foundation for IIT / NEET After 10th
           </h2>
 
-          <p className="text-gray-600 mt-6">
-            RB IIT NEET Academy’s Foundation Crash Course is designed to bridge
-            the gap between different academic backgrounds and prepare students
-            for competitive exams like IIT JEE and NEET. Students from various
-            boards often miss essential foundational concepts or lack proper
-            subject guidance, especially in core areas like Physics and
-            Mathematics/Biology. This course systematically fills those gaps,
-            strengthens fundamentals, and upgrades students from school-level
-            understanding to competitive exam level. We also provide
-            well-structured study material to support learning and practice. In
-            addition, we conduct regular tests to continuously monitor student
-            performance, identify weak areas, and provide proper guidance and
-            counseling to help students improve and progress effectively. By
-            covering missing topics, reinforcing core concepts, and training
-            students in problem-solving and analytical thinking, we ensure that
-            every student becomes confident, well-prepared, and capable of
-            facing any type of question in a competitive environment.
+          {/* Subtitle */}
+          <p
+            id="bridge-subtitle"
+            className="text-gray-600 mt-4 max-w-3xl mx-auto"
+          >
+            A specially designed crash course to strengthen fundamentals and
+            prepare students for IIT JEE & NEET with confidence.
+          </p>
+
+          {/* Points Grid */}
+          <div
+            id="bridge-points"
+            className="grid md:grid-cols-2 gap-6 mt-10 text-left"
+          >
+            {/* Point 1 */}
+            <div
+              id="point-gap"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Bridge Academic Gaps
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Covers missing concepts from different boards and ensures a
+                strong foundation in Physics, Chemistry, Mathematics, and
+                Biology.
+              </p>
+            </div>
+
+            {/* Point 2 */}
+            <div
+              id="point-foundation"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Strong Concept Building
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Focus on conceptual clarity and deep understanding required for
+                competitive exams like IIT JEE and NEET.
+              </p>
+            </div>
+
+            {/* Point 3 */}
+            <div
+              id="point-material"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Structured Study Material
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Well-designed notes and practice material to support learning
+                and improve problem-solving skills.
+              </p>
+            </div>
+
+            {/* Point 4 */}
+            <div
+              id="point-tests"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Regular Tests & Analysis
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Frequent tests to track progress, identify weak areas, and
+                improve performance with proper feedback.
+              </p>
+            </div>
+
+            {/* Point 5 */}
+            <div
+              id="point-guidance"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Personal Guidance & Mentorship
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Expert mentoring and counseling to help students stay focused,
+                motivated, and on the right track.
+              </p>
+            </div>
+
+            {/* Point 6 */}
+            <div
+              id="point-confidence"
+              className="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Exam-Level Preparation
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Training in analytical thinking and problem-solving to handle
+                any type of competitive exam question confidently.
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Description */}
+          <p
+            id="bridge-description"
+            className="text-gray-600 mt-10 max-w-3xl mx-auto"
+          >
+            This course transforms students from basic school-level
+            understanding to competitive exam readiness by strengthening
+            concepts, improving practice, and building confidence for IIT JEE
+            and NEET success.
           </p>
         </div>
       </section>
