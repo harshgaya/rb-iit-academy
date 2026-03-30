@@ -31,6 +31,11 @@ export default function CrashCourses() {
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
             {
+              title: "IIT/NEET Foundation Crash Course (After 10th)",
+              desc: "1-month foundation program to strengthen basics and problem-solving ability.",
+              link: "/iit-foundation-crash-course",
+            },
+            {
               title:
                 "EAMCET (EAPCET) Crash Course Coaching in Hyderabad – 2026",
               subtitle:
@@ -59,12 +64,6 @@ export default function CrashCourses() {
             //   desc: "Crash preparation program for medical stream EAMCET students.",
             //   link: "/eamcet-neet-crash",
             // },
-
-            {
-              title: "IIT Foundation (After 10th)",
-              desc: "1-month foundation program to strengthen basics and problem-solving ability.",
-              link: "/iit-foundation-crash-course",
-            },
           ].map((course) => (
             <div
               key={course.title}
