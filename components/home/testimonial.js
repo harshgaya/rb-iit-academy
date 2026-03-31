@@ -20,8 +20,9 @@ export default function Testimonials() {
       text: `"I am very glad to say that mathematics is my favourite subject/ There is nothing without MATHS. It was Ramabrahmam sir's lectures which even deepened my interest towards maths. His lecture made a lot of change in the thought process. He taught us how to deal maths in a simpler way. Each and every lecture of him delivered a different strategy to solve math. Thank you sir for your efforts to strengthen our maths."`,
       name: "K.Sri Harsha",
       role: "Second Year Under Graduate,Department of Mechanical Engineering,IIT MADRAS",
-      img: "",
+      img: "/testimonial/k.harsha_testi.jpeg",
     },
+
     {
       text: `"Ram Brahmam sir was very proficient in maths and could give very simple, short and very understandable solutions even to the most complex problems. I had thoroughly benefited from his teachings which help me in my academics at IIT Madras even to this day. Just after I had joined  IPL campus, I realised that I was very poor in maths. But Ram Brahmam sir was really helpful to me and guided me a lot. As a result, towards the end of the first year, I was able to do really well and my performance was very comparable to others. And finally, towards the end of my second year, due to constant efforts, I was able to do well in maths and finally I got the highest marks among all three subjects in IIT JEE. I would like to dedicate this result  to Ram Brahmam sir, without whom I feel that I wouldn't be able to achieve such a thing"`,
       name: "Dilip Chakravarthy",
