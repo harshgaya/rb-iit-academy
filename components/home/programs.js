@@ -47,7 +47,7 @@ export default function Programs() {
     {
       title: "EAMCET / EAPCET Crash Course",
       items: ["Class 12 / Droppers", "40 -50 DAYS", "Offline Mode"],
-      link: "/eamcet-neet-crash",
+      link: "/eamcet-crash-course",
     },
     {
       title: "NEET Crash Course",

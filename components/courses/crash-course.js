@@ -41,7 +41,7 @@ export default function CrashCourses() {
               subtitle:
                 "Best EAMCET Coaching Institute in Nallakunta, Hyderabad",
               desc: "Complete revision and practice tests for Engineering EAMCET aspirants.",
-              link: "/eamcet-neet-crash",
+              link: "/eamcet-crash-course",
             },
             {
               title: "NEET Crash Course",

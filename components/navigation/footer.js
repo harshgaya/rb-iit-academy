@@ -2,6 +2,7 @@
 
 import { SOCIAL_LINKS } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
@@ -61,19 +62,30 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li className="hover:text-white cursor-pointer">Home</li>
-              <li className="hover:text-white cursor-pointer">About Us</li>
-              <li className="hover:text-white cursor-pointer">Courses</li>
-              {/* <li className="hover:text-white cursor-pointer">
-                Previous Year Papers
-              </li>
               <li className="hover:text-white cursor-pointer">
-                Study Material
+                <Link href="/">Home</Link>
               </li>
+
               <li className="hover:text-white cursor-pointer">
-                Privacy Policy
-              </li> */}
-              <li className="hover:text-white cursor-pointer">Contact Us</li>
+                <Link href="/about">About Us</Link>
+              </li>
+
+              <li className="hover:text-white cursor-pointer">
+                <Link href="/crash-course">Crash Courses</Link>
+              </li>
+
+              {/* Optional pages */}
+              <li className="hover:text-white cursor-pointer">
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </li>
+
+              <li className="hover:text-white cursor-pointer">
+                <Link href="/terms-and-conditions">Terms & Conditions</Link>
+              </li>
+
+              <li className="hover:text-white cursor-pointer">
+                <Link href="/contact">Contact Us</Link>
+              </li>
             </ul>
           </div>
 
