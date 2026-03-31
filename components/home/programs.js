@@ -85,11 +85,11 @@ export default function Programs() {
   return (
     <section className="bg-[#FBFBFA]  md:py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-10">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-5 pt-5">
           Programs Offered
         </h2>
 
-        <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-3">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-3">
           {programs.map((prog, i) => (
             <div
               key={i}
