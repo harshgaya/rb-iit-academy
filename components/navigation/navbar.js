@@ -24,7 +24,7 @@ export default function Navbar() {
       { name: "Crash Course", href: "/crash-course" },
       {
         name: "IIT JEE & NEET Master Batch(Morning & Evening)",
-        href: "/regular-tutions",
+        href: "/iit-jee-and-neet-coaching",
       },
       // { name: "EAMCET Crash Course", href: "/eamcet-neet-crash" },
       // { name: "NEET Crash Course", href: "/neet-crash-course" },

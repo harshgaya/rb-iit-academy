@@ -4,6 +4,7 @@ import FloatingContactButtons from "@/components/navigation/floating-button";
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/footer";
 import TopHeader from "@/components/navigation/top-header";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,6 +75,20 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${poppins.className} ${geistMono.variable} antialiased`}
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17886698493"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17886698493');
+          `}
+        </Script>
         <TopHeader />
         <Navbar />
         {children}

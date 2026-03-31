@@ -80,20 +80,28 @@ export default function EamcetNeetCrash() {
           <p className="text-gray-600 mt-6">
             This EAMCET (EAPCET) Crash Course in Hyderabad is an intensive
             short-term coaching programme designed for students aiming to
-            achieve top ranks in EAMCET 2026 within a limited time. The
-            programme is structured to effectively cover the equivalent of a
-            2-year syllabus in just 40–50 days through a well-planned schedule
-            that includes focused revision, daily exams, and continuous
-            assessment. Our expert faculty deliver complete theory in a
-            simplified synopsis-based approach, followed by formula revision,
-            standard problem-solving techniques, and practice of most frequently
-            asked questions from previous years. Special emphasis is given to
-            high-weightage topics, speed, and accuracy. Along with academic
-            training, we provide continuous mentoring, motivation, and
-            monitoring to help students overcome exam fear and stress, ensuring
-            they stay confident and focused. Our goal is to improve student
-            performance rapidly and help them achieve the best possible rank in
-            EAMCET 2026 through dedicated guidance and result-oriented training.
+            achieve top ranks in EAMCET 2026 within a limited time. The course
+            is structured to cover a complete 2-year syllabus in just 40–50 days
+            with a focused and result-oriented approach.
+          </p>
+
+          {/* Points */}
+          <ul className="text-left mt-6 space-y-3 text-gray-700 max-w-3xl mx-auto">
+            <li>✔️ Complete syllabus coverage in 40–50 days</li>
+            <li>✔️ Daily exams and continuous performance assessment</li>
+            <li>✔️ Simplified theory with synopsis-based learning</li>
+            <li>✔️ Formula revision and standard problem-solving techniques</li>
+            <li>✔️ Practice of frequently asked previous year questions</li>
+            <li>✔️ Special focus on high-weightage topics</li>
+            <li>✔️ Speed and accuracy improvement training</li>
+            <li>✔️ Continuous mentoring and performance monitoring</li>
+            <li>✔️ Motivation support to reduce exam fear and stress</li>
+          </ul>
+
+          <p className="text-gray-600 mt-6">
+            Our goal is to help students improve rapidly, build confidence, and
+            achieve the best possible rank in EAMCET 2026 through structured
+            guidance and focused preparation.
           </p>
         </div>
       </section>

@@ -78,7 +78,7 @@ export default function Programs() {
         "Till Exam",
         "Offline/Online Mode",
       ],
-      link: "/regular-tutions",
+      link: "/iit-jee-and-neet-coaching",
     },
   ];
 
