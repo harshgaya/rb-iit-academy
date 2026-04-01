@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

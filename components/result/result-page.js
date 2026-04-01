@@ -702,6 +702,15 @@ export const toppers = [
 
   // ── Engineering / EAMCET (46) — ranked ASC, then SELECTED ─────────────────
   {
+    img: "/results/new4/nikhil_eamcet_94.jpeg",
+    exam: "EAMCET",
+    title: "Rank",
+    value: "Rank 94",
+    name: "Nikhil",
+    quote:
+      "Targeting rank under 100 from day one kept my preparation sharply focused and goal-oriented.",
+  },
+  {
     img: "/results/new3/varshit.jpeg",
     exam: "Engineering",
     title: "Rank",
@@ -710,6 +719,7 @@ export const toppers = [
     quote:
       "Targeting rank under 500 from day one kept my preparation sharply focused and goal-oriented.",
   },
+
   {
     img: "/results/new3/nitin_eamcet_ran_686.jpeg",
     exam: "Engineering",

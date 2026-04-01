@@ -11,10 +11,18 @@ export default function Programs() {
         "Build Strong Concepts for IIT JEE",
         "Offline Mode",
       ],
-      // items: [
-      //   "1-month foundation program to strengthen basics and problem-solving ability.",
-      // ],
+
       link: "/iit-foundation-crash-course",
+    },
+    {
+      title: "IIT Maths",
+      items: [
+        "IIT JEE, BITSAT, EAMCET & Other Engineering Entrances",
+        "Get Top Ranks in IIT JEE with our Specialized Maths Program",
+        "Online/Offline Mode",
+      ],
+
+      link: "/iit-maths",
     },
     {
       title: "Integrated Inter + IIT Programme(2 Years)",
