@@ -79,7 +79,7 @@ function StatItem({ value, suffix, label, start }) {
 const STATS = [
   { value: 36, suffix: "+", label: "Years of Excellence" },
   { value: 4000, suffix: "+", label: "Students Coached" },
-  { value: 9, suffix: "", label: "Best IIT Rank Achieved" },
+  { value: 36, suffix: "", label: "Best IIT Rank Achieved" },
   { value: 98, suffix: "%", label: "Concept Mastery Rate" },
 ];
 
@@ -90,7 +90,7 @@ const BATCHES = [
     title: "1st Year (JR Inter)",
     subtitle: "Build Your Foundation Strong",
     tag: "Class XI · Starting Fresh",
-    days: "3 Days / Week",
+    days: "6 Days / Week",
     color: PRIMARY,
     imgSrc: "/courses/jr-inter.jpg",
     imgAlt: "JR Inter Batch",
@@ -110,7 +110,7 @@ const BATCHES = [
     title: "2nd Year + Droppers",
     subtitle: "Sharpen Your Skills and Rank Higher",
     tag: "Class XII · Repeat Aspirants",
-    days: "3 Days / Week",
+    days: "6 Days / Week",
     color: PRIMARY,
     imgSrc: "/courses/sr-inter.jpg",
     imgAlt: "SR Inter Batch",

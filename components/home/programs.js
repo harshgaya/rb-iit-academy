@@ -17,7 +17,7 @@ export default function Programs() {
     {
       title: "IIT Maths",
       items: [
-        "IIT JEE, BITSAT, EAMCET & Other Engineering Entrances",
+        "IIT Maths (JEE Mains & Advanced)",
         "Get Top Ranks in IIT JEE with our Specialized Maths Program",
         "Online/Offline Mode",
       ],
