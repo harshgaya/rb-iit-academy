@@ -1,6 +1,5 @@
 "use client";
 
-import { addLead } from "@/lib/api";
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { useState } from "react";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
@@ -36,13 +35,16 @@ export default function CTASection() {
     try {
       setLoading(true);
 
-      await addLead({
-        name: form.name,
-        mobile: form.mobile,
-        class: form.studentClass,
-        message: form.message,
+      const res = await fetch("/api/form-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          mobile: form.mobile,
+          class: form.studentClass,
+          message: form.message,
+        }),
       });
-
       setSuccess(true);
       setForm({
         name: "",

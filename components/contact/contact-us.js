@@ -1,6 +1,4 @@
 "use client";
-
-import { addLead } from "@/lib/api";
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { useState } from "react";
 import {
@@ -38,15 +36,24 @@ export default function ContactUs() {
 
     try {
       setLoading(true);
-
-      await addLead({
-        name: form.name,
-        mobile: form.mobile,
-        class: form.studentClass,
-        message: form.message,
+      const res = await fetch("/api/form-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          mobile: form.mobile,
+          class: form.studentClass,
+          message: form.message,
+        }),
       });
-
       setSuccess(true);
+
+      if (!res.ok) {
+        const error = await res.json();
+        throw new Error(error.message || "Something went wrong");
+      }
+
+      const data = await res.json();
       setForm({
         name: "",
         mobile: "",
