@@ -60,7 +60,7 @@ export default function EamcetNeetCrash() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/courses/new2/eamcet-crash.jpeg"
+              src="/courses/eamcet-poster.jpeg"
               alt="Crash course"
               width={600}
               height={500}

@@ -25,6 +25,15 @@ export default function Programs() {
       link: "/iit-maths",
     },
     {
+      title: "NEET Physics Mastery",
+      items: [
+        "Advanced Physics Program for NEET Excellence",
+        "Concept-to-Rank Approach with Deep Problem Solving",
+        "Hybrid Learning: Online + Classroom Experience",
+      ],
+      link: "/neet-physics",
+    },
+    {
       title: "Integrated Inter + IIT Programme(2 Years)",
       subtitle: "IIT JEE, BITSAT, EAMCET & Other Engineering Entrances",
       items: ["Class 11 & 12", "2 Years Duration", "Offline Mode"],

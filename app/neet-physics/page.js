@@ -18,14 +18,14 @@ import {
   FaBrain,
   FaCalendarAlt,
   FaArrowRight,
-  FaDraftingCompass,
+  FaAtom,
+  FaBolt,
 } from "react-icons/fa";
 import { MdVerified, MdSpeed } from "react-icons/md";
 import { SOCIAL_LINKS } from "@/lib/constants";
 
 const PRIMARY = "#6b1013";
 const PRIMARY_LIGHT = "#f9e8e8";
-const PRIMARY_MID = "#8b1518";
 
 // ── Counter hook ───────────────────────────────────────────────────────────
 function useCountUp(target, duration, start) {
@@ -80,50 +80,67 @@ function StatItem({ value, suffix, label, start }) {
 const STATS = [
   { value: 36, suffix: "+", label: "Years of Excellence" },
   { value: 4000, suffix: "+", label: "Students Coached" },
-  { value: 36, suffix: "", label: "Best IIT Rank Achieved" },
+  { value: 720, suffix: "+", label: "NEET Top Scorers" },
   { value: 98, suffix: "%", label: "Concept Mastery Rate" },
 ];
 
 const BATCHES = [
   {
-    id: "jr",
-    badge: "JUNIOR INTER",
-    title: "1st Year (JR Inter)",
-    subtitle: "Build Your Foundation Strong",
-    tag: "Class XI · Starting Fresh",
+    id: "class11",
+    badge: "CLASS 11",
+    title: "Class 11 (Junior)",
+    subtitle: "Build a Rock-Solid Physics Foundation",
+    tag: "1st Year · Starting Fresh",
     days: "3 Days / Week",
-    color: PRIMARY,
-    imgSrc: "/courses/jr-inter.jpg",
-    imgAlt: "JR Inter Batch",
+    imgSrc: "/courses/neet-physics-11.jpeg",
+    imgAlt: "Class 11 NEET Physics Batch",
     popular: false,
     highlights: [
-      "Complete JEE Maths Syllabus Year 1",
-      "Fundamentals and Advanced Concepts",
-      "Weekly Tests and DPP Assignments",
+      "Complete NEET Physics Syllabus Year 1",
+      "Fundamentals with Concept Clarity",
+      "MCQ Practice from Day One",
+      "Weekly Tests and Assignments",
       "Doubt Clearing Sessions Included",
-      "Online and Offline Flexible Options",
     ],
-    cta: "Enroll for JR Inter",
+    cta: "Enroll for Class 11",
   },
   {
-    id: "sr",
-    badge: "SENIOR INTER",
-    title: "2nd Year + Droppers",
-    subtitle: "Sharpen Your Skills and Rank Higher",
-    tag: "Class XII · Repeat Aspirants",
-    days: "6 Days / Week",
-    color: PRIMARY,
-    imgSrc: "/courses/sr-inter.jpg",
-    imgAlt: "SR Inter Batch",
+    id: "class12",
+    badge: "CLASS 12",
+    title: "Class 12 (Senior)",
+    subtitle: "Sharpen Concepts and Crack NEET",
+    tag: "2nd Year · Board + NEET",
+    days: "3 Days / Week",
+    imgSrc: "/courses/neet-physics-12.jpeg",
+    imgAlt: "Class 12 NEET Physics Batch",
     popular: true,
     highlights: [
-      "Complete JEE Maths Syllabus Year 2",
-      "Intensive Problem Solving Sessions",
-      "Previous Year JEE Papers Analysis",
-      "Rank Improvement Focus for Droppers",
+      "Complete NEET Physics Syllabus Year 2",
+      "Board + NEET Integrated Preparation",
+      "Shortcuts and Problem-Solving Tricks",
+      "Previous Year NEET Paper Analysis",
       "Personalized Performance Tracking",
     ],
-    cta: "Enroll for SR Inter",
+    cta: "Enroll for Class 12",
+  },
+  {
+    id: "dropper",
+    badge: "DROPPERS",
+    title: "Droppers Batch",
+    subtitle: "Full NEET Preparation — Score Higher",
+    tag: "Repeat Aspirants · Intensive",
+    days: "6 Days / Week",
+    imgSrc: "/courses/neet-physics-dropper.jpeg",
+    imgAlt: "Droppers NEET Physics Batch",
+    popular: false,
+    highlights: [
+      "Full NEET Physics Syllabus Revision",
+      "Intensive MCQ and Mock Sessions",
+      "Rank Improvement Strategy",
+      "Previous 10 Years NEET Analysis",
+      "One-on-One Doubt Resolution",
+    ],
+    cta: "Enroll for Droppers Batch",
   },
 ];
 
@@ -131,40 +148,110 @@ const FEATURES = [
   {
     icon: <FaBrain size={20} />,
     title: "Concept Clarity First",
-    desc: "Deep understanding before any formula. Builds foundations that last beyond the exam.",
+    desc: "Every topic is taught from scratch with deep understanding before moving to MCQ practice.",
   },
   {
-    icon: <FaDraftingCompass size={20} />,
-    title: "Advanced Problem Solving",
-    desc: "Trained to crack any JEE twist, not just textbook problems seen in standard coaching.",
+    icon: <FaAtom size={20} />,
+    title: "MCQ Practice",
+    desc: "Extensive MCQ banks curated from NEET past papers and expected patterns for exam readiness.",
+  },
+  {
+    icon: <FaBolt size={20} />,
+    title: "Shortcuts and Problem Solving",
+    desc: "Time-saving tricks and smart approaches tailored specifically for NEET Physics questions.",
   },
   {
     icon: <FaChartLine size={20} />,
-    title: "Regular Tests and Analysis",
-    desc: "Weekly assessments with personalised feedback to track each student rank trajectory.",
+    title: "Regular Tests",
+    desc: "Weekly chapter tests and full-length mock exams with detailed performance feedback.",
   },
   {
     icon: <FaUserGraduate size={20} />,
     title: "Individual Attention",
-    desc: "Limited batch size ensures every student gets doubts resolved personally by Sir.",
-  },
-  {
-    icon: <MdSpeed size={20} />,
-    title: "Exam-Oriented Strategy",
-    desc: "Time management and JEE-specific solving techniques baked into every session.",
+    desc: "Limited batch size ensures Sir personally resolves every student&apos;s doubts.",
   },
   {
     icon: <FaBookOpen size={20} />,
     title: "Curated Study Material",
-    desc: "Handcrafted notes and DPPs refined over 36 years. Nothing generic, everything purposeful.",
+    desc: "Handcrafted notes and DPPs refined over 36 years. Precise, purposeful, NEET-focused.",
   },
 ];
 
+// ── Batch Card ─────────────────────────────────────────────────────────────
+function BatchCard({ b, active, onSelect, waLink }) {
+  return (
+    <div
+      onClick={() => onSelect(b.id)}
+      className="bg-white rounded-2xl overflow-hidden cursor-pointer transition-all duration-200"
+      style={{
+        border: `2px solid ${active ? PRIMARY : "#e5e7eb"}`,
+        boxShadow: active ? "0 8px 24px rgba(107,16,19,0.12)" : "none",
+      }}
+    >
+      {b.popular && (
+        <div
+          className="text-white text-xs font-bold text-center py-1.5 tracking-wide"
+          style={{ background: PRIMARY }}
+        >
+          MOST POPULAR
+        </div>
+      )}
+
+      {/* 1:1 image */}
+      <div className="relative w-full" style={{ aspectRatio: "1/1" }}>
+        <Image src={b.imgSrc} alt={b.imgAlt} fill className="object-cover" />
+      </div>
+
+      <div className="p-6">
+        <span
+          className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-3"
+          style={{ background: PRIMARY_LIGHT, color: PRIMARY }}
+        >
+          {b.tag}
+        </span>
+        <h3 className="text-xl font-black text-gray-900 mb-1">{b.title}</h3>
+        <p className="text-gray-500 text-sm mb-3">{b.subtitle}</p>
+        <p
+          className="flex items-center gap-1.5 text-sm font-semibold mb-4"
+          style={{ color: PRIMARY }}
+        >
+          <FaCalendarAlt size={13} /> {b.days}
+        </p>
+        <ul className="space-y-2 mb-5">
+          {b.highlights.map((h, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-2 text-sm text-gray-600"
+            >
+              <FaCheckCircle
+                size={13}
+                className="mt-0.5 flex-shrink-0"
+                style={{ color: PRIMARY }}
+              />
+              {h}
+            </li>
+          ))}
+        </ul>
+        <a
+          href={waLink}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-bold text-sm text-white transition hover:opacity-90"
+          style={{ background: PRIMARY }}
+        >
+          {b.cta} <FaArrowRight size={12} />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 // ═══════════════════════════════════════════════════════════════
-export default function RBIITAcademyPage() {
+export default function NEETPhysicsPage() {
   const [statsRef, statsInView] = useInView(0.3);
   const [floatVisible, setFloatVisible] = useState(false);
-  const [activeBatch, setActiveBatch] = useState("sr");
+  const [activeBatch, setActiveBatch] = useState("class12");
 
   useEffect(() => {
     const fn = () => setFloatVisible(window.scrollY > 400);
@@ -186,19 +273,18 @@ export default function RBIITAcademyPage() {
             border: `1px solid ${PRIMARY}33`,
           }}
         >
-          <FaMedal /> Mentor of Single Digit IIT Rankers &nbsp;&middot;&nbsp;
-          36+ Years Experience
+          <FaMedal /> Mentor of Top NEET Scorers &nbsp;&middot;&nbsp; 36+ Years
+          Experience
         </span>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 max-w-3xl mx-auto">
-          IIT Maths Coaching
+          NEET Physics Coaching
           <br />
-          <span style={{ color: PRIMARY }}>That Gets You Top Ranks</span>
+          <span style={{ color: PRIMARY }}>in Hyderabad</span>
         </h1>
 
         <p className="text-gray-500 text-lg max-w-xl mx-auto mb-8">
-          36+ Years of Excellence in IIT Mathematics &nbsp;|&nbsp; Concept-Based
-          Learning for JEE Mains &amp; Advanced
+          For Class 11, 12 &amp; Droppers &nbsp;|&nbsp; 36+ Years Experience
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
@@ -213,7 +299,7 @@ export default function RBIITAcademyPage() {
           </a>
           <a
             href={`tel:${phone}`}
-            className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-bold text-base border-2 transition hover:text-white"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-bold text-base border-2 transition"
             style={{ borderColor: PRIMARY, color: PRIMARY }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = PRIMARY;
@@ -283,7 +369,7 @@ export default function RBIITAcademyPage() {
               className="mt-4 text-white text-xs font-bold px-3 py-1.5 rounded-full inline-block"
               style={{ background: PRIMARY }}
             >
-              Single Digit IIT Rankers
+              Top NEET Scorers Mentored
             </div>
           </div>
 
@@ -298,27 +384,30 @@ export default function RBIITAcademyPage() {
               P. V. Rama Brahmam Sir
             </h2>
             <p className="text-gray-600 leading-relaxed mb-3">
-              With over{" "}
-              <strong className="text-gray-900">
-                36 years of dedicated teaching
-              </strong>
-              , P. V. Rama Brahmam Sir is one of Hyderabad&apos;s most trusted
-              IIT Maths educators. His students have achieved{" "}
-              <strong style={{ color: PRIMARY }}>single-digit IIT ranks</strong>
-              , a testament to the depth of his teaching method.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6">
               At{" "}
               <strong className="text-gray-900">
                 RB IIT &amp; NEET Academy
               </strong>
-              , every student receives structured guidance from fundamentals to
-              the most advanced JEE problems &mdash; with concept clarity as the
-              non-negotiable foundation.
+              , we provide specialized NEET Physics coaching for students of{" "}
+              <strong className="text-gray-900">
+                Class 11, Class 12, and Droppers
+              </strong>{" "}
+              under the guidance of P. V. Rama Brahmam Sir, who has over{" "}
+              <strong style={{ color: PRIMARY }}>
+                36+ years of teaching experience
+              </strong>
+              .
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Our program focuses on strong{" "}
+              <strong className="text-gray-900">conceptual clarity</strong>, MCQ
+              practice, and exam-oriented preparation to help students achieve
+              top ranks in NEET. Every session is designed to build confidence
+              and ensure no concept is left unclear.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
-                "IIT JEE Expert",
+                "NEET Physics Expert",
                 "Concept-First Method",
                 "Hyderabad Based",
                 "Online Available",
@@ -342,7 +431,7 @@ export default function RBIITAcademyPage() {
 
       {/* ── BATCHES ───────────────────────────────────────────────── */}
       <section className="py-16 px-4 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <p
             className="text-xs font-bold uppercase tracking-widest text-center mb-2"
             style={{ color: PRIMARY }}
@@ -350,7 +439,7 @@ export default function RBIITAcademyPage() {
             Choose Your Batch
           </p>
           <h2 className="text-3xl font-black text-gray-900 text-center mb-2">
-            Two Paths. One Goal &mdash; IIT.
+            Three Paths. One Goal &mdash; NEET.
           </h2>
           <p className="text-gray-500 text-center mb-8 max-w-lg mx-auto">
             Select the batch that matches your academic stage.
@@ -358,12 +447,12 @@ export default function RBIITAcademyPage() {
 
           {/* Tab toggle */}
           <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-white border border-gray-200 rounded-xl p-1 gap-1">
+            <div className="inline-flex bg-white border border-gray-200 rounded-xl p-1 gap-1 flex-wrap justify-center">
               {BATCHES.map((b) => (
                 <button
                   key={b.id}
                   onClick={() => setActiveBatch(b.id)}
-                  className="px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-200"
+                  className="px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-200"
                   style={
                     activeBatch === b.id
                       ? { background: PRIMARY, color: "#fff" }
@@ -376,99 +465,28 @@ export default function RBIITAcademyPage() {
             </div>
           </div>
 
-          {/* Cards */}
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* Cards — 3 column grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BATCHES.map((b) => (
-              <div
+              <BatchCard
                 key={b.id}
-                onClick={() => setActiveBatch(b.id)}
-                className="bg-white rounded-2xl overflow-hidden cursor-pointer transition-all duration-200"
-                style={{
-                  border: `2px solid ${activeBatch === b.id ? PRIMARY : "#e5e7eb"}`,
-                  boxShadow:
-                    activeBatch === b.id
-                      ? "0 8px 24px rgba(107,16,19,0.12)"
-                      : "none",
-                }}
-              >
-                {b.popular && (
-                  <div
-                    className="text-white text-xs font-bold text-center py-1.5 tracking-wide"
-                    style={{ background: PRIMARY }}
-                  >
-                    MOST POPULAR
-                  </div>
-                )}
-
-                {/* 16:9 image */}
-                <div
-                  className="relative w-full"
-                  style={{ aspectRatio: "16/9" }}
-                >
-                  <Image
-                    src={b.imgSrc}
-                    alt={b.imgAlt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <span
-                    className="text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-3"
-                    style={{ background: PRIMARY_LIGHT, color: PRIMARY }}
-                  >
-                    {b.tag}
-                  </span>
-                  <h3 className="text-xl font-black text-gray-900 mb-1">
-                    {b.title}
-                  </h3>
-                  <p className="text-gray-500 text-sm mb-3">{b.subtitle}</p>
-                  <p
-                    className="flex items-center gap-1.5 text-sm font-semibold mb-4"
-                    style={{ color: PRIMARY }}
-                  >
-                    <FaCalendarAlt size={13} /> {b.days}
-                  </p>
-                  <ul className="space-y-2 mb-5">
-                    {b.highlights.map((h, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-sm text-gray-600"
-                      >
-                        <FaCheckCircle
-                          size={13}
-                          className="mt-0.5 flex-shrink-0"
-                          style={{ color: PRIMARY }}
-                        />
-                        {h}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={waLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-bold text-sm text-white transition hover:opacity-90"
-                    style={{ background: PRIMARY }}
-                  >
-                    {b.cta} <FaArrowRight size={12} />
-                  </a>
-                </div>
-              </div>
+                b={b}
+                active={activeBatch === b.id}
+                onSelect={setActiveBatch}
+                waLink={waLink}
+              />
             ))}
           </div>
 
-          {/* Full Course */}
+          {/* Full Course pill */}
           <div className="mt-6 bg-white border border-gray-200 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="font-black text-gray-900 text-lg flex items-center gap-2">
-                <FaStar style={{ color: PRIMARY }} /> Full Course &mdash; 1st +
-                2nd Year
+                <FaStar style={{ color: PRIMARY }} /> Full Course &mdash; Class
+                11 + 12
               </p>
               <p className="text-gray-500 text-sm mt-0.5">
-                6 Days / Week &middot; Complete JEE Maths from scratch to
+                6 Days / Week &middot; Complete NEET Physics from scratch to
                 mastery
               </p>
             </div>
@@ -501,7 +519,7 @@ export default function RBIITAcademyPage() {
             {FEATURES.map((f, i) => (
               <div
                 key={i}
-                className="border border-gray-100 rounded-xl p-5 hover:shadow-sm transition"
+                className="border rounded-xl p-5 hover:shadow-sm transition"
                 style={{ borderColor: "#e5e7eb" }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.borderColor = `${PRIMARY}44`)
@@ -578,11 +596,11 @@ export default function RBIITAcademyPage() {
           <FaFire /> Limited Seats &mdash; Admissions Closing Soon
         </span>
         <h2 className="text-4xl font-black mb-4">
-          Your IIT Rank Starts <span className="text-yellow-300">Here.</span>
+          Your NEET Rank Starts <span className="text-yellow-300">Here.</span>
         </h2>
         <p className="text-white/70 text-lg mb-8 max-w-lg mx-auto">
           Join thousands of students who trusted P. V. Rama Brahmam Sir&apos;s
-          method to crack JEE.
+          method to crack NEET Physics.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
@@ -597,7 +615,6 @@ export default function RBIITAcademyPage() {
           <a
             href={`tel:${phone}`}
             className="flex items-center justify-center gap-2 px-10 py-4 rounded-xl font-bold text-lg border-2 border-white text-white hover:bg-white transition"
-            style={{}}
             onMouseEnter={(e) => {
               e.currentTarget.style.color = PRIMARY;
             }}
@@ -613,6 +630,20 @@ export default function RBIITAcademyPage() {
         </p>
       </section>
 
+      {/* ── FOOTER ────────────────────────────────────────────────── */}
+      <footer className="py-6 px-4 border-t border-gray-200 text-center">
+        <p className="font-bold text-gray-800 mb-0.5">
+          RB IIT &amp; NEET Academy
+        </p>
+        <p className="text-gray-500 text-sm">
+          NEET Physics Coaching by P. V. Rama Brahmam &middot; Hyderabad
+        </p>
+        <p className="text-gray-400 text-xs mt-2">
+          &copy; {new Date().getFullYear()} RB IIT &amp; NEET Academy. All
+          rights reserved.
+        </p>
+      </footer>
+
       {/* ── FLOATING CTA ──────────────────────────────────────────── */}
       <div
         className={`fixed bottom-4 left-0 right-0 z-50 flex justify-center transition-all duration-300 ${floatVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"}`}
@@ -623,7 +654,7 @@ export default function RBIITAcademyPage() {
               Admissions Open &mdash; Limited Seats
             </p>
             <p className="text-gray-400 text-xs">
-              P. V. Rama Brahmam Sir&apos;s IIT Maths batch
+              NEET Physics by P. V. Rama Brahmam Sir
             </p>
           </div>
           <a
