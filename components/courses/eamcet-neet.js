@@ -39,7 +39,7 @@ export default function EamcetNeetCrash() {
               ranks in engineering and medical entrance exams. At RB IIT NEET
               Academy, Nallakunta, we provide intensive revision, daily
               practice, and exam-focused preparation to help students achieve
-              high scores in EAMCET 2026.
+              high scores in EAMCET 2026
             </p>
 
             {/* rating */}
