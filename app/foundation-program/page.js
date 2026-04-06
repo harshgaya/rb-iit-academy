@@ -1,7 +1,21 @@
+"use client";
 import Image from "next/image";
 import { FaCheck, FaStar } from "react-icons/fa";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { SOCIAL_LINKS } from "@/lib/constants";
+const PRIMARY = "#6b1013";
+const PRIMARY_LIGHT = "#f9e8e8";
 
 export default function FoundationCourse() {
+  const [floatVisible, setFloatVisible] = useState(false);
+  const phone = SOCIAL_LINKS.MOBILE;
+  const waLink = SOCIAL_LINKS.WHATSAPP;
+  useEffect(() => {
+    const fn = () => setFloatVisible(window.scrollY > 400);
+    window.addEventListener("scroll", fn);
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
   return (
     <div className="bg-[#FBFBFA] text-black">
       {/* HERO */}
@@ -36,18 +50,30 @@ export default function FoundationCourse() {
               </span>
             </div>
 
-            {/* Buttons */}
-            <div className="flex gap-3 mt-6">
-              <a href="tel:9030565621">
-                <button className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-90">
-                  Call Now
-                </button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-start mt-8">
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl text-white font-bold text-base"
+                style={{ background: "#25D366" }}
+              >
+                <FaWhatsapp size={20} /> Chat on WhatsApp
               </a>
-
-              <a href="/contact">
-                <button className="border px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
-                  Book Free Demo
-                </button>
+              <a
+                href={`tel:${phone}`}
+                className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-bold text-base border-2 transition hover:text-white"
+                style={{ borderColor: PRIMARY, color: PRIMARY }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = PRIMARY;
+                  e.currentTarget.style.color = "#fff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.color = PRIMARY;
+                }}
+              >
+                <FaPhone size={16} /> {phone}
               </a>
             </div>
 
@@ -206,6 +232,29 @@ export default function FoundationCourse() {
           ⚡ Limited Seats Only
         </p>
       </section>
+      <div
+        className={`fixed bottom-4 left-0 right-0 z-50 flex justify-center transition-all duration-300 ${floatVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"}`}
+      >
+        <div className="bg-white border border-gray-200 shadow-xl rounded-2xl px-4 py-3 flex items-center gap-3 max-w-sm w-full mx-4">
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-sm text-gray-900">
+              Admissions Open &mdash; Limited Seats
+            </p>
+            <p className="text-gray-400 text-xs">
+              IIT NEET Foundation batch for Class 6–10 students
+            </p>
+          </div>
+          <a
+            href={waLink}
+            target="_blank"
+            rel="noreferrer"
+            className="flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-xl text-white font-bold text-sm"
+            style={{ background: "#25D366" }}
+          >
+            <FaWhatsapp /> Enroll
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
