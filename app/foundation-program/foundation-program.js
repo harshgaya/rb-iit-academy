@@ -94,6 +94,126 @@ export default function FoundationCourse() {
           </div>
         </div>
       </section>
+      {/* SYLLABUS */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              Common Core Program
+            </h2>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">
+              For 9th &amp; 10th Entering Students &nbsp;|&nbsp; For 8th
+              Students with Strong Basics &amp; 8th Entering Students Also
+              Allowed
+            </p>
+            <p className="mt-1 font-semibold text-gray-700">
+              Mathematics + Physics &nbsp;&mdash;&nbsp; IIT &amp; NEET
+              Foundation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* MATHEMATICS */}
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
+                📐 Mathematics{" "}
+                <span className="text-gray-500 font-normal text-sm">
+                  (35 Hours)
+                </span>
+              </h3>
+              <div className="w-full overflow-x-auto">
+                <div className="min-w-[340px]">
+                  <table className="w-full border text-sm">
+                    <thead style={{ background: PRIMARY_LIGHT }}>
+                      <tr>
+                        <th className="p-2 border text-left">S.No</th>
+                        <th className="p-2 border text-left">Topic</th>
+                        <th className="p-2 border text-center">Hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ["1", "Number Systems + Basics", "5"],
+                        ["2", "Algebra", "9"],
+                        ["3", "Coordinate Geometry", "4"],
+                        ["4", "Trigonometry (Core Concepts)", "6"],
+                        ["5", "Plane Geometry", "8"],
+                        ["6", "Mixed Problem Solving + Tests", "3"],
+                      ].map(([no, topic, hrs]) => (
+                        <tr key={no} className="border-t">
+                          <td className="p-2 border text-center">{no}</td>
+                          <td className="p-2 border">{topic}</td>
+                          <td className="p-2 border text-center">{hrs}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            {/* PHYSICS */}
+            <div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
+                ⚡ Physics{" "}
+                <span className="text-gray-500 font-normal text-sm">
+                  (25 Hours)
+                </span>
+              </h3>
+              <div className="w-full overflow-x-auto">
+                <div className="min-w-[340px]">
+                  <table className="w-full border text-sm">
+                    <thead style={{ background: PRIMARY_LIGHT }}>
+                      <tr>
+                        <th className="p-2 border text-left">S.No</th>
+                        <th className="p-2 border text-left">Topic</th>
+                        <th className="p-2 border text-center">Hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        ["1", "Motion (Concepts + Graphs)", "5"],
+                        ["2", "Vectors (Basics & Applications)", "4"],
+                        ["3", "Newton's Laws", "4"],
+                        ["4", "Work, Energy & Power", "4"],
+                        ["5", "Sound", "4"],
+                        ["6", "Heat & Temperature", "4"],
+                      ].map(([no, topic, hrs]) => (
+                        <tr key={no} className="border-t">
+                          <td className="p-2 border text-center">{no}</td>
+                          <td className="p-2 border">{topic}</td>
+                          <td className="p-2 border text-center">{hrs}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* TOTAL */}
+          <div className="mt-8 bg-white border rounded-2xl p-6 shadow-sm text-center">
+            <h3 className="text-lg font-bold text-gray-900">
+              Total Academic Load
+            </h3>
+            <div className="flex flex-col sm:flex-row justify-center gap-6 mt-4 text-gray-700">
+              <p>
+                📐 Mathematics: <span className="font-semibold">35 Hours</span>
+              </p>
+              <p>
+                ⚡ Physics: <span className="font-semibold">25 Hours</span>
+              </p>
+            </div>
+            <p className="mt-4 font-bold text-lg" style={{ color: PRIMARY }}>
+              ✔ Total: 60 Hours
+            </p>
+            <p className="text-gray-500 text-sm mt-1">
+              Complete Core Concepts in Just 60 Hours
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
