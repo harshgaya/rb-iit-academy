@@ -25,8 +25,8 @@ export default function Hero() {
 
           {/* heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-            Proven <br className="hidden md:block" />
-            IIT-JEE & NEET Results Year After Year
+            Best IIT-JEE & NEET Coaching <br className="hidden md:block" />
+            in Hyderabad
           </h1>
 
           {/* ✅ RESULTS — ALWAYS 2/2 IN MOBILE */}

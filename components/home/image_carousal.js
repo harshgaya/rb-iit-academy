@@ -139,12 +139,21 @@ export default function ResultsCarousel() {
       highlight: "gold",
     },
     {
+      name: "Bhanu Kiran",
+      rank: "127",
+      exam: "NEET 2025",
+      image: "/carousal/car-7.jpeg",
+      highlight: "primary",
+    },
+
+    {
       name: "KMV Akhil",
       rank: "94",
       exam: "IIT-JEE Advanced 2025",
       image: "/carousal/car-2.jpeg",
       highlight: "blue",
     },
+
     {
       name: "Bhanu Kiran",
       rank: "127",
@@ -152,6 +161,7 @@ export default function ResultsCarousel() {
       image: "/carousal/car-3.jpeg",
       highlight: "primary",
     },
+
     {
       name: "Bhanu Kiran",
       rank: "127",
