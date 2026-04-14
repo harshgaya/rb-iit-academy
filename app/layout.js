@@ -5,6 +5,7 @@ import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/footer";
 import TopHeader from "@/components/navigation/top-header";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,11 +90,13 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-17886698493');
           `}
         </Script>
+
         <TopHeader />
         <Navbar />
         {children}
         <FloatingContactButtons />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
