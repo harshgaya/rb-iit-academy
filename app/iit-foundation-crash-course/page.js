@@ -53,7 +53,7 @@ export default function IitFoundation() {
             {/* Batch Info */}
             <div className="mt-5 bg-white border rounded-lg p-4 shadow-sm text-sm">
               <p>
-                📅 <b>Starts:</b> 6th April
+                📅 <b>Starts:</b> 29th April
               </p>
               <p>
                 ⏳ <b>Duration:</b> 40 Days
