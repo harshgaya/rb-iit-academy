@@ -6,7 +6,7 @@ import { FaBriefcase, FaGraduationCap, FaTrophy } from "react-icons/fa";
 export default function Faculty() {
   const faculty = [
     {
-      img: "/faculty/rb.png",
+      img: "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/faculty/rb.png",
       name: "P.V.RAMA BRAHMAM",
       role: "Maths EXPERT",
       exp: "36 Years Exp.",
@@ -15,7 +15,7 @@ export default function Faculty() {
       trained: "5000+ Students Trained",
     },
     {
-      img: "/faculty/sumit.jpeg",
+      img: "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/faculty/sumit.jpeg",
       name: "Sumit Sir",
       role: "Physics Expert",
       exp: "15 Years Exp.",
@@ -24,7 +24,7 @@ export default function Faculty() {
       trained: "1500+ Students Trained",
     },
     {
-      img: "/faculty/jit.png",
+      img: "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/faculty/jit.png",
       name: "N. Jitendara Sir",
       role: "Chemistry Expert",
       exp: "30 Years Exp.",
@@ -33,7 +33,7 @@ export default function Faculty() {
       trained: "4000+ Students Trained",
     },
     {
-      img: "/faculty/chandra.png",
+      img: "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/faculty/chandra.png",
       name: "Chandra Sir",
       role: "Biology Expert",
       exp: "33 Years Exp.",

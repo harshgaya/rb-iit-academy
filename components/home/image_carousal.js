@@ -135,14 +135,16 @@ export default function ResultsCarousel() {
       name: "Anurag Reddy",
       rank: "36",
       exam: "IIT-JEE Advanced 2025",
-      image: "/carousal/car-1.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-1.jpeg",
       highlight: "gold",
     },
     {
       name: "Bhanu Kiran",
       rank: "127",
       exam: "NEET 2025",
-      image: "/carousal/car-7.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-7.jpeg",
       highlight: "primary",
     },
 
@@ -150,7 +152,8 @@ export default function ResultsCarousel() {
       name: "KMV Akhil",
       rank: "94",
       exam: "IIT-JEE Advanced 2025",
-      image: "/carousal/car-2.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-2.jpeg",
       highlight: "blue",
     },
 
@@ -158,7 +161,8 @@ export default function ResultsCarousel() {
       name: "Bhanu Kiran",
       rank: "127",
       exam: "NEET 2025",
-      image: "/carousal/car-3.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-3.jpeg",
       highlight: "primary",
     },
 
@@ -166,21 +170,24 @@ export default function ResultsCarousel() {
       name: "Bhanu Kiran",
       rank: "127",
       exam: "NEET 2025",
-      image: "/carousal/car-4.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-4.jpeg",
       highlight: "primary",
     },
     {
       name: "Bhanu Kiran",
       rank: "127",
       exam: "NEET 2025",
-      image: "/carousal/car-5.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-5.jpeg",
       highlight: "primary",
     },
     {
       name: "Bhanu Kiran",
       rank: "127",
       exam: "NEET 2025",
-      image: "/carousal/car-6.jpeg",
+      image:
+        "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/car-6.jpeg",
       highlight: "primary",
     },
   ];

@@ -78,7 +78,7 @@ export default function StudyTech() {
 
             <div>
               <Image
-                src="/home/study.jpeg"
+                src="https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/study.jpeg"
                 alt="study"
                 width={600}
                 height={420}
@@ -92,7 +92,7 @@ export default function StudyTech() {
           <div className="max-w-7xl mx-auto px-4 py-15 grid md:grid-cols-2 gap-10 items-center ">
             <div className="order-last md:order-first">
               <Image
-                src="/home/tech.jpeg"
+                src="https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/tech.jpeg"
                 alt="tech"
                 width={600}
                 height={420}

@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Environment() {
   const images = [
-    "/home/class-new-woman.jpeg",
-    "/home/class-2.jpeg",
-    "/home/class-3.jpg",
-    "/home/class-4.jpg",
+    "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/class-new-woman.jpeg",
+    "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/class-2.jpeg",
+    "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/class-3.jpg",
+    "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/study-tech/class-4.jpg",
   ];
 
   return (

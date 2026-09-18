@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* Logo + Brand */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/navbar/rb-logo.png"
+              src="https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/rb-logo.png"
               alt="logo"
               width={45}
               height={45}

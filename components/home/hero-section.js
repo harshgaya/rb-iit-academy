@@ -36,28 +36,33 @@ export default function Hero() {
                 name: "Anurag Reddy",
                 rank: "AIR 36",
                 exam: "IIT JEE Advanced",
-                image: "/home/anurag_reddy.jpeg",
+                image:
+                  "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/anurag_reddy.jpeg",
               },
               {
                 name: "Siddharth",
                 rank: "AIR 4",
                 exam: "JEE Main",
-                image: "/results/new/siddhart_jee_main_rank_4.jpeg",
+                image:
+                  "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/home/siddhart_jee_main_rank_4.jpeg",
               },
               {
                 name: "Nikhil",
                 rank: "AEEE Rank 1, EAMCET Rank 94",
                 exam: "AEEE & EAMCET",
-                image: "/results/new/aeee_rank_1.jpg",
+                image:
+                  "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/home/aeee_rank_1.jpg",
               },
               {
                 name: "Elina Senapathi",
                 rank: "AIR 16",
                 exam: "NEET",
-                image: "/results/new/elina.jpeg",
+                image:
+                  "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/home/elina.jpeg",
               },
               {
-                image: "/results/bhanu_kiran_neet.jpeg",
+                image:
+                  "https://pub-348bf9f55d504d0ba3e026db3213202c.r2.dev/RB-IIT-Academy-Website/home/bhanu_kiran_neet.jpeg",
                 exam: "NEET UG",
 
                 rank: "AIR 127",
